@@ -15,5 +15,10 @@
             <artifactId>spark-mllib_2.11</artifactId>
             <version>1.4.1</version>
         </dependency>
+        <dependency>
+        	<groupId>se.walkercrou</groupId>
+        	<artifactId>google-places-api-java</artifactId>
+        	<version>2.1.2</version>
+    	</dependency>
     </dependencies>
 </project>
