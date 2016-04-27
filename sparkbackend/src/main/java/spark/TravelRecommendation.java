@@ -64,14 +64,14 @@ public class TravelRecommendation implements Serializable{
 		
 		List<Tuple2<Integer, Rating>> data = ratings.collect();
 		
-//		Map<Integer, String> products = productData.mapToPair(
-//		        new PairFunction<String, Integer, String>() {
-//		            public Tuple2<Integer, String> call(String s) throws Exception {
-//		                String[] sarray = s.split("::");
-//		                return new Tuple2<Integer, String>(Integer.parseInt(sarray[0]), sarray[1]);
-//		            }
-//		        }
-//		).collectAsMap();
+		Map<Integer, String> products = productData.mapToPair(
+		        new PairFunction<String, Integer, String>() {
+		            public Tuple2<Integer, String> call(String s) throws Exception {
+		                String[] sarray = s.split("::");
+		                return new Tuple2<Integer, String>(Integer.parseInt(sarray[0]), sarray[1]);
+		            }
+		        }
+		).collectAsMap();
 //		
 //        long ratingCount = ratingRDD.count();
 //        long userCount = ratings.map(
