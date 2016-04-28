@@ -1,0 +1,16 @@
+CREATE TABLE `location` (
+  `locationid` int(11) NOT NULL,
+  `locationName` text,
+  `description` text,
+  `type` text,
+  `country` text,
+  `state` text,
+  `address` text,
+  `minTemp` double DEFAULT NULL,
+  `maxTemp` double DEFAULT NULL,
+  `minPrice` double DEFAULT NULL,
+  `maxPrice` double DEFAULT NULL,
+  `currency` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`locationid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
