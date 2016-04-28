@@ -339,13 +339,11 @@ public class DataGeneration {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(DB_URL, USER, PASS);
 			stmt = conn.createStatement();
-
+			//types : historical, tourists, 
 			try {
-				List<Place> places = client.getPlacesByQuery("tourists places near Maharashtra, India", 30);
-				for (Place place : places) {
-					for (String type : types) {
-						generatePlacesSQL(place, type, "India", "Maharashtra", count++, stmt);
-					}
+				List<Place> places = client.getPlacesByQuery("places in Maharashtra, India", 30);
+				for (Place place : places) {						
+						generatePlacesSQL(place, "historical", "India", "maharashtra", count++, stmt);
 				}
 			} catch (Exception e) {
 			}
