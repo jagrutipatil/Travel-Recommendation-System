@@ -57,6 +57,4 @@ INSERT INTO location VALUES (31 , 'Govindaji Temple' , 'historical Manipur' , 'h
 INSERT INTO location VALUES (32 , 'Ancelin Place' , 'historical Manipur' , 'historical' , 'Manipur' , 'India' , 'Opposite CRPF Camp, NH39, Mantripukhri, Achanbigei, Imphal, Manipur 795002, India' , 12.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
 INSERT INTO location VALUES (33 , 'ISKCON Temple' , 'historical Manipur' , 'historical' , 'Manipur' , 'India' , 'Imphal, Manipur 795140, India' , 15.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
 INSERT INTO location VALUES (34 , 'Mahabali Temple' , 'historical Manipur' , 'historical' , 'Manipur' , 'India' , 'Wangkhei, Imphal, Manipur 795001, India' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
-	
-
 

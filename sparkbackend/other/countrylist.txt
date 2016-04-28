@@ -1,65 +1,85 @@
-package com.edu.spark.generation;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.List;
+Afghanistan		states[1]="Badakhshan|Badghis|Baghlan|Balkh|Bamian|Farah|Faryab|Ghazni|Ghowr|Helmand|Herat|Jowzjan|Kabol|Kandahar|Kapisa|Konar|Kondoz|Laghman|Lowgar|Nangarhar|Nimruz|Oruzgan|Paktia|Paktika|Parvan|Samangan|Sar-e Pol|Takhar|Vardak|Zabol";
 
-import se.walkercrou.places.GooglePlaces;
-import se.walkercrou.places.Place;
+Albania	states[2]="Berat|Bulqize|Delvine|Devoll (Bilisht)|Diber (Peshkopi)|Durres|Elbasan|Fier|Gjirokaster|Gramsh|Has (Krume)|Kavaje|Kolonje (Erseke)|Korce|Kruje|Kucove|Kukes|Kurbin|Lezhe|Librazhd|Lushnje|Malesi e Madhe (Koplik)|Mallakaster (Ballsh)|Mat (Burrel)|Mirdite (Rreshen)|Peqin|Permet|Pogradec|Puke|Sarande|Shkoder|Skrapar(Corovode)|Tepelene|Tirane (Tirana)|Tirane (Tirana)|Tropoje (Bajram Curri)|Vlore";
 
-public class DataGeneration {
-	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://52.39.124.157:3306/vacationinfo";
-	static final String USER = "root";
-	static final String PASS = "root";
-	static final String[] countries = {"Afghanistan", "Albania", "Algeria", "American Samoa", "Angola", "Anguilla", "Antartica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Ashmore and Cartier Island", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Christmas Island", "Clipperton Island", "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Cook Islands", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czeck Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Europa Island", "Falkland Islands (Islas Malvinas)", "Faroe Islands", "Fiji", "Finland", "France", "French Guiana", "French Polynesia", "French Southern and Antarctic Lands", "Gabon", "Gambia, The", "Gaza Strip", "Georgia", "Germany", "Ghana", "Gibraltar", "Glorioso Islands", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Heard Island and McDonald Islands", "Holy See (Vatican City)", "Honduras", "Hong Kong", "Howland Island", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Ireland, Northern", "Israel", "Italy", "Jamaica", "Jan Mayen", "Japan", "Jarvis Island", "Jersey", "Johnston Atoll", "Jordan", "Juan de Nova Island", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macau", "Macedonia, Former Yugoslav Republic of", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Man, Isle of", "Marshall Islands", "Martinique", "Mauritania", "Mauritius", "Mayotte", "Mexico", "Micronesia, Federated States of", "Midway Islands", "Moldova", "Monaco", "Mongolia", "Montserrat", "Morocco", "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlands", "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfolk Island", "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcaim Islands", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romainia", "Russia", "Rwanda", "Saint Helena", "Saint Kitts and Nevis", "Saint Lucia", "Saint Pierre and Miquelon", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Scotland", "Senegal", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Georgia and South Sandwich Islands", "Spain", "Spratly Islands", "Sri Lanka", "Sudan", "Suriname", "Svalbard", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Tobago", "Toga", "Tokelau", "Tonga", "Trinidad", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "Uruguay", "USA", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Virgin Islands", "Wales", "Wallis and Futuna", "West Bank", "Western Sahara", "Yemen", "Yugoslavia", "Zambia", "Zimbabwe"};
-	static final String[] types = {"historical "};
-	long count = 1000;
-	static String[] states = {};
+Algeria		states[3]="Adrar|Ain Defla|Ain Temouchent|Alger|Annaba|Batna|Bechar|Bejaia|Biskra|Blida|Bordj Bou Arreridj|Bouira|Boumerdes|Chlef|Constantine|Djelfa|El Bayadh|El Oued|El Tarf|Ghardaia|Guelma|Illizi|Jijel|Khenchela|Laghouat|M'Sila|Mascara|Medea|Mila|Mostaganem|Naama|Oran|Ouargla|Oum el Bouaghi|Relizane|Saida|Setif|Sidi Bel Abbes|Skikda|Souk Ahras|Tamanghasset|Tebessa|Tiaret|Tindouf|Tipaza|Tissemsilt|Tizi Ouzou|Tlemcen";
+
+American Samoa		states[4]="Eastern|Manu'a|Rose Island|Swains Island|Western";
+
+			states[5]="Andorra la Vella|Bengo|Benguela|Bie|Cabinda|Canillo|Cuando Cubango|Cuanza Norte|Cuanza Sul|Cunene|Encamp|Escaldes-Engordany|Huambo|Huila|La Massana|Luanda|Lunda Norte|Lunda Sul|Malanje|Moxico|Namibe|Ordino|Sant Julia de Loria|Uige|Zaire";
 	
-	
-	public void addStates() {
-		states = new String[253];
-		states[0]="";
-		states[1]="Badakhshan|Badghis|Baghlan|Balkh|Bamian|Farah|Faryab|Ghazni|Ghowr|Helmand|Herat|Jowzjan|Kabol|Kandahar|Kapisa|Konar|Kondoz|Laghman|Lowgar|Nangarhar|Nimruz|Oruzgan|Paktia|Paktika|Parvan|Samangan|Sar-e Pol|Takhar|Vardak|Zabol";
-		states[2]="Berat|Bulqize|Delvine|Devoll (Bilisht)|Diber (Peshkopi)|Durres|Elbasan|Fier|Gjirokaster|Gramsh|Has (Krume)|Kavaje|Kolonje (Erseke)|Korce|Kruje|Kucove|Kukes|Kurbin|Lezhe|Librazhd|Lushnje|Malesi e Madhe (Koplik)|Mallakaster (Ballsh)|Mat (Burrel)|Mirdite (Rreshen)|Peqin|Permet|Pogradec|Puke|Sarande|Shkoder|Skrapar (Corovode)|Tepelene|Tirane (Tirana)|Tirane (Tirana)|Tropoje (Bajram Curri)|Vlore";
-		states[3]="Adrar|Ain Defla|Ain Temouchent|Alger|Annaba|Batna|Bechar|Bejaia|Biskra|Blida|Bordj Bou Arreridj|Bouira|Boumerdes|Chlef|Constantine|Djelfa|El Bayadh|El Oued|El Tarf|Ghardaia|Guelma|Illizi|Jijel|Khenchela|Laghouat|M'Sila|Mascara|Medea|Mila|Mostaganem|Naama|Oran|Ouargla|Oum el Bouaghi|Relizane|Saida|Setif|Sidi Bel Abbes|Skikda|Souk Ahras|Tamanghasset|Tebessa|Tiaret|Tindouf|Tipaza|Tissemsilt|Tizi Ouzou|Tlemcen";
-		states[4]="Eastern|Manu'a|Rose Island|Swains Island|Western";
-		states[5]="Andorra la Vella|Bengo|Benguela|Bie|Cabinda|Canillo|Cuando Cubango|Cuanza Norte|Cuanza Sul|Cunene|Encamp|Escaldes-Engordany|Huambo|Huila|La Massana|Luanda|Lunda Norte|Lunda Sul|Malanje|Moxico|Namibe|Ordino|Sant Julia de Loria|Uige|Zaire";
 		states[6]="Anguilla";
+
 		states[7]="Antartica";
+
 		states[8]="Barbuda|Redonda|Saint George|Saint John|Saint Mary|Saint Paul|Saint Peter|Saint Philip";
+
 		states[9]="Antartica e Islas del Atlantico Sur|Buenos Aires|Buenos Aires Capital Federal|Catamarca|Chaco|Chubut|Cordoba|Corrientes|Entre Rios|Formosa|Jujuy|La Pampa|La Rioja|Mendoza|Misiones|Neuquen|Rio Negro|Salta|San Juan|San Luis|Santa Cruz|Santa Fe|Santiago del Estero|Tierra del Fuego|Tucuman";
+
 		states[10]="Aragatsotn|Ararat|Armavir|Geghark'unik'|Kotayk'|Lorri|Shirak|Syunik'|Tavush|Vayots' Dzor|Yerevan";
+
 		states[11]="Aruba";
+
 		states[12]="Ashmore and Cartier Island";
+
 		states[13]="Australian Capital Territory|New South Wales|Northern Territory|Queensland|South Australia|Tasmania|Victoria|Western Australia";
+
 		states[14]="Burgenland|Kaernten|Niederoesterreich|Oberoesterreich|Salzburg|Steiermark|Tirol|Vorarlberg|Wien";
+
 		states[15]="Abseron Rayonu|Agcabadi Rayonu|Agdam Rayonu|Agdas Rayonu|Agstafa Rayonu|Agsu Rayonu|Ali Bayramli Sahari|Astara Rayonu|Baki Sahari|Balakan Rayonu|Barda Rayonu|Beylaqan Rayonu|Bilasuvar Rayonu|Cabrayil Rayonu|Calilabad Rayonu|Daskasan Rayonu|Davaci Rayonu|Fuzuli Rayonu|Gadabay Rayonu|Ganca Sahari|Goranboy Rayonu|Goycay Rayonu|Haciqabul Rayonu|Imisli Rayonu|Ismayilli Rayonu|Kalbacar Rayonu|Kurdamir Rayonu|Lacin Rayonu|Lankaran Rayonu|Lankaran Sahari|Lerik Rayonu|Masalli Rayonu|Mingacevir Sahari|Naftalan Sahari|Naxcivan Muxtar Respublikasi|Neftcala Rayonu|Oguz Rayonu|Qabala Rayonu|Qax Rayonu|Qazax Rayonu|Qobustan Rayonu|Quba Rayonu|Qubadli Rayonu|Qusar Rayonu|Saatli Rayonu|Sabirabad Rayonu|Saki Rayonu|Saki Sahari|Salyan Rayonu|Samaxi Rayonu|Samkir Rayonu|Samux Rayonu|Siyazan Rayonu|Sumqayit Sahari|Susa Rayonu|Susa Sahari|Tartar Rayonu|Tovuz Rayonu|Ucar Rayonu|Xacmaz Rayonu|Xankandi Sahari|Xanlar Rayonu|Xizi Rayonu|Xocali Rayonu|Xocavand Rayonu|Yardimli Rayonu|Yevlax Rayonu|Yevlax Sahari|Zangilan Rayonu|Zaqatala Rayonu|Zardab Rayonu";
+
+
 		states[16]="Acklins and Crooked Islands|Bimini|Cat Island|Exuma|Freeport|Fresh Creek|Governor's Harbour|Green Turtle Cay|Harbour Island|High Rock|Inagua|Kemps Bay|Long Island|Marsh Harbour|Mayaguana|New Providence|Nicholls Town and Berry Islands|Ragged Island|Rock Sound|San Salvador and Rum Cay|Sandy Point";
+
+
 		states[17]="Al Hadd|Al Manamah|Al Mintaqah al Gharbiyah|Al Mintaqah al Wusta|Al Mintaqah ash Shamaliyah|Al Muharraq|Ar Rifa' wa al Mintaqah al Janubiyah|Jidd Hafs|Juzur Hawar|Madinat 'Isa|Madinat Hamad|Sitrah";
+
+
 		states[18]="Barguna|Barisal|Bhola|Jhalokati|Patuakhali|Pirojpur|Bandarban|Brahmanbaria|Chandpur|Chittagong|Comilla|Cox's Bazar|Feni|Khagrachari|Lakshmipur|Noakhali|Rangamati|Dhaka|Faridpur|Gazipur|Gopalganj|Jamalpur|Kishoreganj|Madaripur|Manikganj|Munshiganj|Mymensingh|Narayanganj|Narsingdi|Netrokona|Rajbari|Shariatpur|Sherpur|Tangail|Bagerhat|Chuadanga|Jessore|Jhenaidah|Khulna|Kushtia|Magura|Meherpur|Narail|Satkhira|Bogra|Dinajpur|Gaibandha|Jaipurhat|Kurigram|Lalmonirhat|Naogaon|Natore|Nawabganj|Nilphamari|Pabna|Panchagarh|Rajshahi|Rangpur|Sirajganj|Thakurgaon|Habiganj|Maulvi bazar|Sunamganj|Sylhet";
+
+
 		states[19]="Bridgetown|Christ Church|Saint Andrew|Saint George|Saint James|Saint John|Saint Joseph|Saint Lucy|Saint Michael|Saint Peter|Saint Philip|Saint Thomas";
+
+
 		states[20]="Brestskaya (Brest)|Homyel'skaya (Homyel')|Horad Minsk|Hrodzyenskaya (Hrodna)|Mahilyowskaya (Mahilyow)|Minskaya|Vitsyebskaya (Vitsyebsk)";
+
+
 		states[21]="Antwerpen|Brabant Wallon|Brussels Capitol Region|Hainaut|Liege|Limburg|Luxembourg|Namur|Oost-Vlaanderen|Vlaams Brabant|West-Vlaanderen";
+
 		states[22]="Belize|Cayo|Corozal|Orange Walk|Stann Creek|Toledo";
+
 		states[23]="Alibori|Atakora|Atlantique|Borgou|Collines|Couffo|Donga|Littoral|Mono|Oueme|Plateau|Zou";
+
 		states[24]="Devonshire|Hamilton|Hamilton|Paget|Pembroke|Saint George|Saint Georges|Sandys|Smiths|Southampton|Warwick";
+
 		states[25]="Bumthang|Chhukha|Chirang|Daga|Geylegphug|Ha|Lhuntshi|Mongar|Paro|Pemagatsel|Punakha|Samchi|Samdrup Jongkhar|Shemgang|Tashigang|Thimphu|Tongsa|Wangdi Phodrang";
+
 		states[26]="Beni|Chuquisaca|Cochabamba|La Paz|Oruro|Pando|Potosi|Santa Cruz|Tarija";
+
 		states[27]="Federation of Bosnia and Herzegovina|Republika Srpska";
+
 		states[28]="Central|Chobe|Francistown|Gaborone|Ghanzi|Kgalagadi|Kgatleng|Kweneng|Lobatse|Ngamiland|North-East|Selebi-Pikwe|South-East|Southern";
+
 		states[29]="Acre|Alagoas|Amapa|Amazonas|Bahia|Ceara|Distrito Federal|Espirito Santo|Goias|Maranhao|Mato Grosso|Mato Grosso do Sul|Minas Gerais|Para|Paraiba|Parana|Pernambuco|Piaui|Rio de Janeiro|Rio Grande do Norte|Rio Grande do Sul|Rondonia|Roraima|Santa Catarina|Sao Paulo|Sergipe|Tocantins";
+
 		states[30]="Anegada|Jost Van Dyke|Tortola|Virgin Gorda";
+
 		states[31]="Belait|Brunei and Muara|Temburong|Tutong";
+
 		states[32]="Blagoevgrad|Burgas|Dobrich|Gabrovo|Khaskovo|Kurdzhali|Kyustendil|Lovech|Montana|Pazardzhik|Pernik|Pleven|Plovdiv|Razgrad|Ruse|Shumen|Silistra|Sliven|Smolyan|Sofiya|Sofiya-Grad|Stara Zagora|Turgovishte|Varna|Veliko Turnovo|Vidin|Vratsa|Yambol";
+
 		states[33]="Bale|Bam|Banwa|Bazega|Bougouriba|Boulgou|Boulkiemde|Comoe|Ganzourgou|Gnagna|Gourma|Houet|Ioba|Kadiogo|Kenedougou|Komandjari|Kompienga|Kossi|Koupelogo|Kouritenga|Kourweogo|Leraba|Loroum|Mouhoun|Nahouri|Namentenga|Naumbiel|Nayala|Oubritenga|Oudalan|Passore|Poni|Samentenga|Sanguie|Seno|Sissili|Soum|Sourou|Tapoa|Tuy|Yagha|Yatenga|Ziro|Zondomo|Zoundweogo";
+
 		states[34]="Ayeyarwady|Bago|Chin State|Kachin State|Kayah State|Kayin State|Magway|Mandalay|Mon State|Rakhine State|Sagaing|Shan State|Tanintharyi|Yangon";
+
 		states[35]="Bubanza|Bujumbura|Bururi|Cankuzo|Cibitoke|Gitega|Karuzi|Kayanza|Kirundo|Makamba|Muramvya|Muyinga|Mwaro|Ngozi|Rutana|Ruyigi";
+
 		states[36]="Banteay Mean Cheay|Batdambang|Kampong Cham|Kampong Chhnang|Kampong Spoe|Kampong Thum|Kampot|Kandal|Kaoh Kong|Keb|Kracheh|Mondol Kiri|Otdar Mean Cheay|Pailin|Phnum Penh|Pouthisat|Preah Seihanu (Sihanoukville)|Preah Vihear|Prey Veng|Rotanah Kiri|Siem Reab|Stoeng Treng|Svay Rieng|Takev";
+
 		states[37]="Adamaoua|Centre|Est|Extreme-Nord|Littoral|Nord|Nord-Ouest|Ouest|Sud|Sud-Ouest";
+
 		states[38]="Alberta|British Columbia|Manitoba|New Brunswick|Newfoundland|Northwest Territories|Nova Scotia|Nunavut|Ontario|Prince Edward Island|Quebec|Saskatchewan|Yukon Territory";
+
 		states[39]="Boa Vista|Brava|Maio|Mosteiros|Paul|Porto Novo|Praia|Ribeira Grande|Sal|Santa Catarina|Santa Cruz|Sao Domingos|Sao Filipe|Sao Nicolau|Sao Vicente|Tarrafal";
 		states[40]="Creek|Eastern|Midland|South Town|Spot Bay|Stake Bay|West End|Western";
 		states[41]="Bamingui-Bangoran|Bangui|Basse-Kotto|Gribingui|Haut-Mbomou|Haute-Kotto|Haute-Sangha|Kemo-Gribingui|Lobaye|Mbomou|Nana-Mambere|Ombella-Mpoko|Ouaka|Ouham|Ouham-Pende|Sangha|Vakaga";
@@ -277,206 +297,4 @@ public class DataGeneration {
 		states[251]="Central|Copperbelt|Eastern|Luapula|Lusaka|North-Western|Northern|Southern|Western";
 		states[252]="Bulawayo|Harare|ManicalandMashonaland Central|Mashonaland East|Mashonaland West|Masvingo|Matabeleland North|Matabeleland South|Midlands";
 	}
-	
-	public String[] populateStates(int selectedCountryIndex){
-		String text = states[selectedCountryIndex];
-		String[] state =  text.split("\\|");
-		return state;
-	}
 
-//	public void populateCountries(countryElementId, stateElementId){
-		// given the id of the <select> tag as function argument, it inserts <option> tags
-//		var countryElement = document.getElementById(countryElementId);
-//		countryElement.length=0;
-//		countryElement.options[0] = new Option('Select Country','-1');
-//		countryElement.selectedIndex = 0;
-
-//		for (var i=0; i<country_arr.length; i++) {
-//			countryElement.options[countryElement.length] = new Option(country_arr[i],country_arr[i]);
-//		}
-// 		Assigned all countries. Now assign event listener for the states.
-//	}
-	
-	public int getRandomIntInclusive(int min, int max) {
-		  return (int) (Math.floor(Math.random() * (max - min + 1)) + min);
-	}
-	
-	
-	public void printCountryStates() {
-		addStates();
-		for (int i = 0; i < countries.length; i++) {
-			for (String state: populateStates(i+1)) {
-				System.out.println(countries[i] + " " + state);
-			}
-		}	
-	}
-	
-	public void insertLocationData() {
-		Connection conn = null;
-		Statement stmt = null;
-		int count = 31;
-//		clearDb("location");
-		// locaion_Id, location name, description, type, country, state, city, address, min temp, max temp, price
-		GooglePlaces client = new GooglePlaces("AIzaSyD5AG9O2Nscqkz-LzZhhcrPKHNzXqVRFLw");
-		
-		addStates();
-		try {
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
-//			conn = DriverManager.getConnection(DB_URL, USER, PASS);
-//			stmt = conn.createStatement();
-			//types : historical, tourists, 
-			try {
-				List<Place> places = client.getPlacesByQuery("places in Manipur, India", 30);
-				for (Place place : places) {						
-						generatePlacesSQL(place, "historical", "Manipur", "India", count++, stmt);
-				}
-			} catch (Exception e) {
-			}
-//			stmt.executeBatch();
-		} catch (Exception se) {
-			se.printStackTrace();
-		}	finally {
-			try {
-				if (stmt != null)
-					conn.close();
-			} catch (SQLException se) {
-			}
-			try {
-				if (conn != null)
-					conn.close();
-			} catch (SQLException se) {
-				se.printStackTrace();
-			}
-		}
-	}
-	
-	public void generatePlacesSQL(Place place, String type, String country, String state, int count, Statement stmt) throws SQLException {
-		// locaion_Id, location name, description, type, country, state, city, address, min temp, max temp, price		
-//			System.out.println("Name: " + place.getName() + "\t\tAddress:" + place.getAddress());
-			generateLocationSQL(stmt, count, place.getName(), type + " " + country, type, country, state, place.getAddress(), getRandomIntInclusive(10, 20), getRandomIntInclusive(30, 40), 3000, 15000, "INR");		
-	}
-	
-	public void generateLocationSQL(Statement stmnt, int locationID, String name, String description, String type, 
-			String country, String state, String address, double minTemp, double maxTemp, double minPrice, double maxPrice, String currency) throws SQLException {
-			
-		String insertQuery = "INSERT INTO location VALUES ("+ addValue(locationID) + addComma() + addString(name) + addComma() 
-			   + addString(description) + addComma() + addString(type) + addComma() 
-			   + addString(country) + addComma() + addString(state)  + addComma() 
-			   + addString(address) + addComma() + addValue(minTemp) + addComma()
-			   + addValue(maxTemp) + addComma() + addValue(minPrice) + addComma() 
-			   + addValue(maxPrice) + addComma() 
-			   + addString(currency) + ");";
-		System.out.println(insertQuery);
-//		stmnt.addBatch(insertQuery);		
-	}
-	
-	
-	
-	public String addComma() {
-		return " , ";
-	}
-	
-	public String addString(String str) {
-		return "'"+ str +"'";
-	}
-	
-
-	public String addValue(Object integer) {
-		return ""+ integer +"";
-	}
-	
-	public void insertData() {
-//		clearDb("users");
-//		clearDb("location");
-		clearDb("ratings");
-		Connection conn = null;
-		Statement stmt = null;
-		
-		String[] fNames = {"Jagruti", "Prashant", "Vijay", "Pooja", "Mangesh", "Gauri"};
-		String[] lNames = {"Patil", "Raut", "Sanap", "Pawara", "Taklikar", "Bhamre"};
-		
-		String[] location = {"Himalaya", "Kerla", "Kashmir", "Pune", "Mumbai", "Lakhnau"};
-		String[] locType = {"Hill_Station", "Historical", "Shopping", "WeekendGateway", "SpringVacation", "Island"};
-		
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(DB_URL,USER,PASS);
-			stmt = conn.createStatement();
-
-//	    	generateUserSQL(stmt, i+1, fNames[(int) (i % location.length)], lNames[(int) (i % location.length)]);
-//	    	generateLocationSQL(stmt, i+1, location[(int) (i % location.length)], locType[(int) (i % locType.length)]);
-
-		    for (long i = 0; i < count; i++) {
-		    	for (long j = 0; j < count; j++) {
-		    		generateRatingSQL(stmt, i+1, j+1, getRandomIntInclusive(1, 10), System.currentTimeMillis() + (i %10));
-		    	}		    	
-		    }
-	      stmt.executeBatch();	 	      
-		} catch(SQLException se){
-		      se.printStackTrace();
-		   }catch(Exception e){
-		      e.printStackTrace();
-		   }finally{
-		      try{
-		         if(stmt!=null)
-		            conn.close();
-		      }catch(SQLException se){
-		      }
-		      try{
-		         if(conn!=null)
-		            conn.close();
-		      }catch(SQLException se){
-		         se.printStackTrace();
-		      }
-		   }
-	}
-	
-	
-	
-	public void clearDb(String tableName) {
-		Connection conn = null;
-		Statement stmt = null;
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(DB_URL,USER,PASS);
-			stmt = conn.createStatement();			
-			stmt.executeUpdate("Delete from "+ tableName + ";");	 
-	      
-		}catch(SQLException se){
-		      se.printStackTrace();
-		   }catch(Exception e){
-		      e.printStackTrace();
-		   }finally{
-		      try{
-		         if(stmt!=null)
-		            conn.close();
-		      }catch(SQLException se){
-		      }
-		      try{
-		         if(conn!=null)
-		            conn.close();
-		      }catch(SQLException se){
-		         se.printStackTrace();
-		      }
-		   }		
-	}
-	
-	public void generateUserSQL(Statement stmnt, long userid, String firstname, String lastname) throws SQLException {
-		stmnt.addBatch("INSERT INTO users VALUES ( "+ userid + ", '"+ firstname+ "', '"+ lastname + "'); \n");
-	}
-
-	public void generateRatingSQL(Statement stmnt, long userId, long locationId, int rating, long timestamp) throws SQLException {
-		stmnt.addBatch("INSERT INTO ratings VALUES (" + userId + ", " + locationId + ", "+ rating + " , "+ timestamp + "); \n");
-	}
-
-	public void generateLocationSQL(Statement stmnt, long locationid, String locationName, String locationType) throws SQLException {
-		stmnt.addBatch("INSERT INTO location VALUES ("+ locationid + " , '"+ locationName+ "', '"+ locationType + "'); \n");
-	}
-	
-	public static void main(String args[]) {
-		DataGeneration db = new  DataGeneration();
-//		db.insertData();
-		db.insertLocationData();
-//		db.printCountryStates();
-	}
-}
