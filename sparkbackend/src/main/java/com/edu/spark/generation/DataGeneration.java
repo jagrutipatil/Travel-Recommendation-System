@@ -336,45 +336,37 @@ public class DataGeneration {
 		
 		addStates();
 		try {
-		Class.forName("com.mysql.jdbc.Driver");
-		conn = DriverManager.getConnection(DB_URL,USER,PASS);
-		stmt = conn.createStatement();
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(DB_URL, USER, PASS);
+			stmt = conn.createStatement();
 
-		int i = 1;
-		try {
-			for (String state: populateStates(i+1)) {
-				for (String type: types) {
-					try {
-						List<Place> places = client.getPlacesByQuery("places near "  + countries[i], 10);
-						for (Place place: places) {
-							generatePlacesSQL(place, type, countries[i], state, count++, stmt);
-						}
-					} catch(Exception e) {	
-						System.out.println("No Results for:  " + type + " in " + state + " , " + countries[104]);
-						continue;
+			try {
+				List<Place> places = client.getPlacesByQuery("tourists places near Maharashtra, India", 30);
+				for (Place place : places) {
+					for (String type : types) {
+						generatePlacesSQL(place, type, "India", "Maharashtra", count++, stmt);
 					}
-				}				
+				}
+			} catch (Exception e) {
 			}
-			} catch(Exception e) {											
-			}		
 			stmt.executeBatch();
 		} catch (SQLException se) {
-		      se.printStackTrace();
+			se.printStackTrace();
 		} catch (Exception e) {
-		      e.printStackTrace();
+			e.printStackTrace();
 		} finally {
-		    try {
-		         if(stmt!=null)
-		            conn.close();
-		      	} catch(SQLException se){
-		      	}
-		    try{
-		         if(conn!=null)
-		            conn.close();
-		      } catch(SQLException se) {
-		         se.printStackTrace();
-		      }
-		 }
+			try {
+				if (stmt != null)
+					conn.close();
+			} catch (SQLException se) {
+			}
+			try {
+				if (conn != null)
+					conn.close();
+			} catch (SQLException se) {
+				se.printStackTrace();
+			}
+		}
 	}
 	
 	public void generatePlacesSQL(Place place, String type, String country, String state, int count, Statement stmt) throws SQLException {
