@@ -339,43 +339,24 @@ public class DataGeneration {
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection(DB_URL,USER,PASS);
 		stmt = conn.createStatement();
-		
-		for (String state: populateStates(105)) {
-			for (String type: types) {
-				try {
-					List<Place> places = client.getPlacesByQuery("places near "  + countries[104], 15);
-					for (Place place: places) {
-						generatePlacesSQL(place, type, countries[104], state, count++, stmt);
-					}
-				} catch(Exception e) {	
-					System.out.println("No Results for:  " + type + " in " + state + " , " + countries[104]);
-					continue;
-				}
-			}				
-		}
 
-		
-//		try {
-//			Class.forName("com.mysql.jdbc.Driver");
-//			conn = DriverManager.getConnection(DB_URL,USER,PASS);
-//			stmt = conn.createStatement();
-//			
-//			for (int i = 0; i < countries.length; i++) {
-//				for (String state: populateStates(i+1)) {
-//					for (String type: types) {
-//						try {
-//							List<Place> places = client.getPlacesByQuery("places near "  + countries[i], 10);
-//							for (Place place: places) {
-//								generatePlacesSQL(place, type, countries[i], state, count++, stmt);
-//							}
-//						} catch(Exception e) {	
-//							System.out.println("No Results for:  " + type + " in " + state + " , " + countries[104]);
-//							continue;
-//						}
-//					}				
-//				}
-//			}			
-//			
+		int i = 1;
+		try {
+			for (String state: populateStates(i+1)) {
+				for (String type: types) {
+					try {
+						List<Place> places = client.getPlacesByQuery("places near "  + countries[i], 10);
+						for (Place place: places) {
+							generatePlacesSQL(place, type, countries[i], state, count++, stmt);
+						}
+					} catch(Exception e) {	
+						System.out.println("No Results for:  " + type + " in " + state + " , " + countries[104]);
+						continue;
+					}
+				}				
+			}
+			} catch(Exception e) {											
+			}		
 			stmt.executeBatch();
 		} catch (SQLException se) {
 		      se.printStackTrace();
