@@ -1,20 +1,32 @@
 package com.edu.spark.generation;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
+import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.api.java.function.Function;
+import org.apache.spark.mllib.recommendation.Rating;
+
+import scala.Tuple2;
 import se.walkercrou.places.GooglePlaces;
 import se.walkercrou.places.Place;
 
-public class DataGeneration {
+public class DataGeneration implements Serializable{
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 	static final String DB_URL = "jdbc:mysql://52.39.124.157:3306/vacationinfo";
 	static final String USER = "root";
 	static final String PASS = "root";
 	static final String[] countries = {"Afghanistan", "Albania", "Algeria", "American Samoa", "Angola", "Anguilla", "Antartica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Ashmore and Cartier Island", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Christmas Island", "Clipperton Island", "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Cook Islands", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czeck Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Europa Island", "Falkland Islands (Islas Malvinas)", "Faroe Islands", "Fiji", "Finland", "France", "French Guiana", "French Polynesia", "French Southern and Antarctic Lands", "Gabon", "Gambia, The", "Gaza Strip", "Georgia", "Germany", "Ghana", "Gibraltar", "Glorioso Islands", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Heard Island and McDonald Islands", "Holy See (Vatican City)", "Honduras", "Hong Kong", "Howland Island", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Ireland, Northern", "Israel", "Italy", "Jamaica", "Jan Mayen", "Japan", "Jarvis Island", "Jersey", "Johnston Atoll", "Jordan", "Juan de Nova Island", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macau", "Macedonia, Former Yugoslav Republic of", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Man, Isle of", "Marshall Islands", "Martinique", "Mauritania", "Mauritius", "Mayotte", "Mexico", "Micronesia, Federated States of", "Midway Islands", "Moldova", "Monaco", "Mongolia", "Montserrat", "Morocco", "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlands", "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfolk Island", "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcaim Islands", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romainia", "Russia", "Rwanda", "Saint Helena", "Saint Kitts and Nevis", "Saint Lucia", "Saint Pierre and Miquelon", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Scotland", "Senegal", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Georgia and South Sandwich Islands", "Spain", "Spratly Islands", "Sri Lanka", "Sudan", "Suriname", "Svalbard", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Tobago", "Toga", "Tokelau", "Tonga", "Trinidad", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "Uruguay", "USA", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Virgin Islands", "Wales", "Wallis and Futuna", "West Bank", "Western Sahara", "Yemen", "Yugoslavia", "Zambia", "Zimbabwe"};
-	static final String[] types = {"historical "};
+	static final String[] types = {"Historical", "Hill Station", "Adventure", "Lakes", "Beach", "Scenery", "Temple", "Jungle", "Sports" , "Tourist", "Family Vacation", "Clubbing", "Night Life", "Winter Vacation", "Swimming", "Wild Life", "African Safaris", "Religious"};
 	long count = 1000;
 	static String[] states = {};
 	
@@ -24,7 +36,7 @@ public class DataGeneration {
 		states[0]="";
 		states[1]="Badakhshan|Badghis|Baghlan|Balkh|Bamian|Farah|Faryab|Ghazni|Ghowr|Helmand|Herat|Jowzjan|Kabol|Kandahar|Kapisa|Konar|Kondoz|Laghman|Lowgar|Nangarhar|Nimruz|Oruzgan|Paktia|Paktika|Parvan|Samangan|Sar-e Pol|Takhar|Vardak|Zabol";
 		states[2]="Berat|Bulqize|Delvine|Devoll (Bilisht)|Diber (Peshkopi)|Durres|Elbasan|Fier|Gjirokaster|Gramsh|Has (Krume)|Kavaje|Kolonje (Erseke)|Korce|Kruje|Kucove|Kukes|Kurbin|Lezhe|Librazhd|Lushnje|Malesi e Madhe (Koplik)|Mallakaster (Ballsh)|Mat (Burrel)|Mirdite (Rreshen)|Peqin|Permet|Pogradec|Puke|Sarande|Shkoder|Skrapar (Corovode)|Tepelene|Tirane (Tirana)|Tirane (Tirana)|Tropoje (Bajram Curri)|Vlore";
-		states[3]="Adrar|Ain Defla|Ain Temouchent|Alger|Annaba|Batna|Bechar|Bejaia|Biskra|Blida|Bordj Bou Arreridj|Bouira|Boumerdes|Chlef|Constantine|Djelfa|El Bayadh|El Oued|El Tarf|Ghardaia|Guelma|Illizi|Jijel|Khenchela|Laghouat|M'Sila|Mascara|Medea|Mila|Mostaganem|Naama|Oran|Ouargla|Oum el Bouaghi|Relizane|Saida|Setif|Sidi Bel Abbes|Skikda|Souk Ahras|Tamanghasset|Tebessa|Tiaret|Tindouf|Tipaza|Tissemsilt|Tizi Ouzou|Tlemcen";
+		states[3]="Adrar|Ain Defla|Ain Temouchent|Alger|Annaba|Batna|Bechar|Bejaia|Biskra|Blida|Bordj Bou Arreridj|Bouira|Boumerdes|Chlef|Constantine|Djelfa|El Bayadh|El Oued|El Tarf|Ghardaia|Guelma|Illizi|Jijel|Khenchela|Laghouat|Mascara|Medea|Mila|Mostaganem|Naama|Oran|Ouargla|Oum el Bouaghi|Relizane|Saida|Setif|Sidi Bel Abbes|Skikda|Souk Ahras|Tamanghasset|Tebessa|Tiaret|Tindouf|Tipaza|Tissemsilt|Tizi Ouzou|Tlemcen";
 		states[4]="Eastern|Manu'a|Rose Island|Swains Island|Western";
 		states[5]="Andorra la Vella|Bengo|Benguela|Bie|Cabinda|Canillo|Cuando Cubango|Cuanza Norte|Cuanza Sul|Cunene|Encamp|Escaldes-Engordany|Huambo|Huila|La Massana|Luanda|Lunda Norte|Lunda Sul|Malanje|Moxico|Namibe|Ordino|Sant Julia de Loria|Uige|Zaire";
 		states[6]="Anguilla";
@@ -77,8 +89,8 @@ public class DataGeneration {
 		states[52]="Aitutaki|Atiu|Avarua|Mangaia|Manihiki|Manuae|Mauke|Mitiaro|Nassau Island|Palmerston|Penrhyn|Pukapuka|Rakahanga|Rarotonga|Suwarrow|Takutea";
 		states[53]="Alajuela|Cartago|Guanacaste|Heredia|Limon|Puntarenas|San Jose";
 		states[54]="Abengourou|Abidjan|Aboisso|Adiake'|Adzope|Agboville|Agnibilekrou|Ale'pe'|Bangolo|Beoumi|Biankouma|Bocanda|Bondoukou|Bongouanou|Bouafle|Bouake|Bouna|Boundiali|Dabakala|Dabon|Daloa|Danane|Daoukro|Dimbokro|Divo|Duekoue|Ferkessedougou|Gagnoa|Grand Bassam|Grand-Lahou|Guiglo|Issia|Jacqueville|Katiola|Korhogo|Lakota|Man|Mankono|Mbahiakro|Odienne|Oume|Sakassou|San-Pedro|Sassandra|Seguela|Sinfra|Soubre|Tabou|Tanda|Tiassale|Tiebissou|Tingrela|Touba|Toulepleu|Toumodi|Vavoua|Yamoussoukro|Zuenoula";
-		states[55]="Bjelovarsko-Bilogorska Zupanija|Brodsko-Posavska Zupanija|Dubrovacko-Neretvanska Zupanija|Istarska Zupanija|Karlovacka Zupanija|Koprivnicko-Krizevacka Zupanija|Krapinsko-Zagorska Zupanija|Licko-Senjska Zupanija|Medimurska Zupanija|Osjecko-Baranjska Zupanija|Pozesko-Slavonska Zupanija|Primorsko-Goranska Zupanija|Sibensko-Kninska Zupanija|Sisacko-Moslavacka Zupanija|Splitsko-Dalmatinska Zupanija|Varazdinska Zupanija|Viroviticko-Podravska Zupanija|Vukovarsko-Srijemska Zupanija|Zadarska Zupanija|Zagreb|Zagrebacka Zupanija";
 		states[56]="Camaguey|Ciego de Avila|Cienfuegos|Ciudad de La Habana|Granma|Guantanamo|Holguin|Isla de la Juventud|La Habana|Las Tunas|Matanzas|Pinar del Rio|Sancti Spiritus|Santiago de Cuba|Villa Clara";
+		states[55]="Bjelovarsko-Bilogorska Zupanija|Brodsko-Posavska Zupanija|Dubrovacko-Neretvanska Zupanija|Istarska Zupanija|Karlovacka Zupanija|Koprivnicko-Krizevacka Zupanija|Krapinsko-Zagorska Zupanija|Licko-Senjska Zupanija|Medimurska Zupanija|Osjecko-Baranjska Zupanija|Pozesko-Slavonska Zupanija|Primorsko-Goranska Zupanija|Sibensko-Kninska Zupanija|Sisacko-Moslavacka Zupanija|Splitsko-Dalmatinska Zupanija|Varazdinska Zupanija|Viroviticko-Podravska Zupanija|Vukovarsko-Srijemska Zupanija|Zadarska Zupanija|Zagreb|Zagrebacka Zupanija";
 		states[57]="Famagusta|Kyrenia|Larnaca|Limassol|Nicosia|Paphos";
 		states[58]="Brnensky|Budejovicky|Jihlavsky|Karlovarsky|Kralovehradecky|Liberecky|Olomoucky|Ostravsky|Pardubicky|Plzensky|Praha|Stredocesky|Ustecky|Zlinsky";
 		states[59]="Arhus|Bornholm|Fredericksberg|Frederiksborg|Fyn|Kobenhavn|Kobenhavns|Nordjylland|Ribe|Ringkobing|Roskilde|Sonderjylland|Storstrom|Vejle|Vestsjalland|Viborg";
@@ -297,10 +309,60 @@ public class DataGeneration {
 // 		Assigned all countries. Now assign event listener for the states.
 //	}
 	
+	public void writeToFile(String [] args) throws IOException {
+
+        // The name of the file to open.
+		String fileName = "temp.txt";
+        FileWriter fileWriter = new FileWriter(fileName);
+
+        try {
+            // Assume default encoding.
+
+            // Always wrap FileWriter in BufferedWriter.
+            BufferedWriter bufferedWriter =
+                new BufferedWriter(fileWriter);
+
+            bufferedWriter.write("Hello there,");
+            bufferedWriter.newLine();
+
+            // Always close files.
+            bufferedWriter.close();
+        }
+        catch(IOException ex) {
+            System.out.println("Error writing to file '"+ fileName + "'");
+        }
+    }
+	
 	public int getRandomIntInclusive(int min, int max) {
 		  return (int) (Math.floor(Math.random() * (max - min + 1)) + min);
 	}
 	
+	public void locationSQLToFiles() throws SQLException, IOException {
+		int count = 801181;
+		NameGenerator gen = new NameGenerator();
+		String fileName = "sql1.txt";
+        FileWriter fileWriter = new FileWriter(fileName);
+        
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);        
+        addStates();
+        
+		for (int i = 0; i < countries.length; i++) {
+			for (String state: populateStates(i+1)) {
+				for (String type: types) {
+					for (int k = 0; k < 10; k++) {
+						System.out.println(countries[i] + " " + state);
+						String name = gen.getName();
+						int minPrice = getRandomIntInclusive(500, 9000);
+						int minTemp = getRandomIntInclusive(10, 20);
+						bufferedWriter.write(generateLocationSQL(count++, name, type + " " + countries[i], type, countries[i], state, name + " , " + state + " , " + countries[i], minTemp, minTemp + getRandomIntInclusive(10, 60), minPrice, minPrice + getRandomIntInclusive(10000, 20000), "INR"));
+			            bufferedWriter.newLine();
+					}
+				}
+			}
+		}
+		
+        bufferedWriter.close();
+	}
 	
 	public void printCountryStates() {
 		addStates();
@@ -311,52 +373,30 @@ public class DataGeneration {
 		}	
 	}
 	
+			
 	public void insertLocationData() {
-		Connection conn = null;
-		Statement stmt = null;
 		int count = 31;
-//		clearDb("location");
-		// locaion_Id, location name, description, type, country, state, city, address, min temp, max temp, price
 		GooglePlaces client = new GooglePlaces("AIzaSyD5AG9O2Nscqkz-LzZhhcrPKHNzXqVRFLw");
 		
 		addStates();
 		try {
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
-//			conn = DriverManager.getConnection(DB_URL, USER, PASS);
-//			stmt = conn.createStatement();
-			//types : historical, tourists, 
 			try {
-				List<Place> places = client.getPlacesByQuery("places in Manipur, India", 30);
+				List<Place> places = client.getPlacesByQuery("places in India", 100);
 				for (Place place : places) {						
-						generatePlacesSQL(place, "historical", "Manipur", "India", count++, stmt);
+						generateSQLFromPlace(place, "historical", "India", "Andhra Pradesh", count++);
 				}
 			} catch (Exception e) {
 			}
-//			stmt.executeBatch();
-		} catch (Exception se) {
-			se.printStackTrace();
-		}	finally {
-			try {
-				if (stmt != null)
-					conn.close();
-			} catch (SQLException se) {
-			}
-			try {
-				if (conn != null)
-					conn.close();
-			} catch (SQLException se) {
+			} catch (Exception se) {
 				se.printStackTrace();
 			}
-		}
+	}		
+	
+	public void generateSQLFromPlace(Place place, String type, String country, String state, int count) throws SQLException {
+			generateLocationSQL(count, place.getName(), type + " " + country, type, country, state, place.getAddress(), getRandomIntInclusive(10, 20), getRandomIntInclusive(30, 40), 3000, 15000, "INR");		
 	}
 	
-	public void generatePlacesSQL(Place place, String type, String country, String state, int count, Statement stmt) throws SQLException {
-		// locaion_Id, location name, description, type, country, state, city, address, min temp, max temp, price		
-//			System.out.println("Name: " + place.getName() + "\t\tAddress:" + place.getAddress());
-			generateLocationSQL(stmt, count, place.getName(), type + " " + country, type, country, state, place.getAddress(), getRandomIntInclusive(10, 20), getRandomIntInclusive(30, 40), 3000, 15000, "INR");		
-	}
-	
-	public void generateLocationSQL(Statement stmnt, int locationID, String name, String description, String type, 
+	public String generateLocationSQL(int locationID, String name, String description, String type, 
 			String country, String state, String address, double minTemp, double maxTemp, double minPrice, double maxPrice, String currency) throws SQLException {
 			
 		String insertQuery = "INSERT INTO location VALUES ("+ addValue(locationID) + addComma() + addString(name) + addComma() 
@@ -367,11 +407,10 @@ public class DataGeneration {
 			   + addValue(maxPrice) + addComma() 
 			   + addString(currency) + ");";
 		System.out.println(insertQuery);
-//		stmnt.addBatch(insertQuery);		
+		return insertQuery;
 	}
 	
-	
-	
+		
 	public String addComma() {
 		return " , ";
 	}
@@ -430,9 +469,7 @@ public class DataGeneration {
 		      }
 		   }
 	}
-	
-	
-	
+			
 	public void clearDb(String tableName) {
 		Connection conn = null;
 		Statement stmt = null;
@@ -475,8 +512,16 @@ public class DataGeneration {
 	
 	public static void main(String args[]) {
 		DataGeneration db = new  DataGeneration();
+		try {
+			db.locationSQLToFiles();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 //		db.insertData();
-		db.insertLocationData();
+//		db.insertLocationData();
 //		db.printCountryStates();
 	}
 }

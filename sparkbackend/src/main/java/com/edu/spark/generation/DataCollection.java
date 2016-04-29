@@ -1,4 +1,4 @@
-package spark;
+package com.edu.spark.generation;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -37,111 +37,20 @@ import scala.runtime.AbstractFunction0;
 import scala.runtime.AbstractFunction1;
 
 @SuppressWarnings("serial")
-public class TravelRecommendation implements Serializable{
+public class DataCollection implements Serializable{
 	private Properties properties = new Properties();
 	private String dataSetPath = "";
-	private static TravelRecommendation instance = null;
-	
-	public static TravelRecommendation getInstance() {
-		if (instance == null) {
-			instance = new TravelRecommendation();
-		}
-		return instance;
-	}
-	
-	private TravelRecommendation() {
-		init();
-	}
-	
-	
+
 	public void init() {
-		getRecommendation();
-	}
-	
-	
-	public List<Rating> getRecommendationForUser(int user) {
-        final int userId = 2;
-        List<Rating> recommendations;
-        JavaRDD<Tuple2<Integer, Rating>> ratings = DataService.getInstance().getRatings();        
-        JavaSparkContext sc = DataService.getInstance().getSc();
-        Map<Integer, String> products = DataService.getInstance().getProducts();
-        
-        //Getting the users ratings
-        JavaRDD<Rating> userRatings = ratings.filter(
-                new Function<Tuple2<Integer, Rating>, Boolean>() {
-                    public Boolean call(Tuple2<Integer, Rating> tuple) throws Exception {
-                        return tuple._2().user() == userId;
-                    }
-                }
-        ).map(
-                new Function<Tuple2<Integer, Rating>, Rating>() {
-                    public Rating call(Tuple2<Integer, Rating> tuple) throws Exception {
-                        return tuple._2();
-                    }
-                }
-        );
-        
-        //Getting the product ID's of the products that user rated
-        JavaRDD<Tuple2<Object, Object>> userProducts = userRatings.map(
-                new Function<Rating, Tuple2<Object, Object>>() {
-                    public Tuple2<Object, Object> call(Rating r) {
-                        return new Tuple2<Object, Object>(r.user(), r.product());
-                    }
-                }
-        );
-        
-        List<Integer> productSet = new ArrayList<Integer>();
-        productSet.addAll(products.keySet());
-        
-        Iterator<Tuple2<Object, Object>> productIterator = userProducts.toLocalIterator();
-        
-        //Removing the user watched (rated) set from the all product set
-        while(productIterator.hasNext()) {
-            Integer movieId = (Integer)productIterator.next()._2();
-            if(productSet.contains(movieId)){
-                productSet.remove(movieId);
-            }
-        }
-        
-        JavaRDD<Integer> candidates = sc.parallelize(productSet);
-        
-        JavaRDD<Tuple2<Integer, Integer>> userCandidates = candidates.map(
-                new Function<Integer, Tuple2<Integer, Integer>>() {
-                    public Tuple2<Integer, Integer> call(Integer integer) throws Exception {
-                        return new Tuple2<Integer, Integer>(userId, integer);
-                    }
-                }
-        );
-        
-        MatrixFactorizationModel bestModel = DataService.getInstance().getBestModel();
-        recommendations = bestModel.predict(JavaPairRDD.fromJavaRDD(userCandidates)).collect();        
-        
-        //Sorting the recommended products and sort them according to the rating
-        Collections.sort(recommendations, new Comparator<Rating>() {
-            public int compare(Rating r1, Rating r2) {
-                return r1.rating() < r2.rating() ? -1 : r1.rating() > r2.rating() ? 1 : 0;
-            }
-        });
-        
-        //get top 50 from the recommended products.
-        recommendations = recommendations.subList(0, 50);
-        
-        System.out.println("Recommendations for user: " + userId);
-        for (Rating r : recommendations) {
-        	System.out.println("Product: " + r.product() + "\tRating:" + r.rating());
-        }        
-        return recommendations;
 	}
 	
 	
 	public void getRecommendation() {
 		SparkConf conf = new SparkConf().setAppName("MovieRecommendation").setMaster("local");
-		JavaSparkContext sc = new JavaSparkContext(conf);		
-		DataService.getInstance().setSc(sc);
-		
+		JavaSparkContext sc = new JavaSparkContext(conf);
+
 		//Reading Data
-		final JavaRDD<String> ratingRDD = sc.textFile("/home/jagruti/workspace/dataset-239/dataset/ml-1m/ratings.dat");
-		final JavaRDD<String> productData = sc.textFile("/home/jagruti/workspace/dataset-239/dataset/ml-1m/movies.dat");
+		final JavaRDD<String> ratingRDD = sc.textFile("/home/jagruti/workspace/dataset-239/dataset/IN/IN.txt");
 		
 		JavaRDD<Tuple2<Integer, Rating>> ratings = ratingRDD.map(new Function<String, Tuple2<Integer, Rating>>(){
             public Tuple2<Integer, Rating> call(String s) throws Exception {
@@ -152,135 +61,8 @@ public class TravelRecommendation implements Serializable{
             }
 		});
 		
-		DataService.getInstance().setRatings(ratings);		
 		List<Tuple2<Integer, Rating>> data = ratings.collect();
-		
-		Map<Integer, String> products = productData.mapToPair(
-		        new PairFunction<String, Integer, String>() {
-		            public Tuple2<Integer, String> call(String s) throws Exception {
-		                String[] sarray = s.split("::");
-		                return new Tuple2<Integer, String>(Integer.parseInt(sarray[0]), sarray[1]);
-		            }
-		        }
-		).collectAsMap();
-		DataService.getInstance().setProducts(products);
-
-		//		
-//        long ratingCount = ratingRDD.count();
-//        long userCount = ratings.map(
-//                new Function<Tuple2<Integer, Rating>, Object>() {
-//                    public Object call(Tuple2<Integer, Rating> tuple) throws Exception {
-//                        return tuple._2.user();
-//                    }
-//                }
-//        ).distinct().count();
-//        
-//        long locationCount = ratings.map(
-//                new Function<Tuple2<Integer, Rating>, Object>() {
-//                    public Object call(Tuple2<Integer, Rating> tuple) throws Exception {
-//                        return tuple._2.product();
-//                    }
-//                }
-//        ).distinct().count();
         
-//        System.out.println("Got "+ ratingCount+ " ratings from " + userCount + " users for " + locationCount + " locations");
-        
-        //SPLITTING DATA
-        int numPartitions = 10;
-        
-		// Divide data into training data, validation data, test data
-        //TRAINING DATASET
-        JavaRDD<Rating> training = ratings.filter(
-                new Function<Tuple2<Integer, Rating>, Boolean>() {
-                    public Boolean call(Tuple2<Integer, Rating> tuple) throws Exception {
-                        return tuple._1() < 6;
-                    }
-                }
-        ).map(
-                new Function<Tuple2<Integer, Rating>, Rating>() {
-                    public Rating call(Tuple2<Integer, Rating> tuple) throws Exception {
-                        return tuple._2();
-                    }
-                }
-        ).repartition(numPartitions).cache();
-
-        StorageLevel storageLevel = new StorageLevel();
-
-        //VALIDATION DATASET
-        JavaRDD<Rating> validation = ratings.filter(
-                new Function<Tuple2<Integer, Rating>, Boolean>() {
-                    public Boolean call(Tuple2<Integer, Rating> tuple) throws Exception {
-                        return tuple._1() >= 6 && tuple._1() < 8;
-                    }
-                }
-        ).map(
-                new Function<Tuple2<Integer, Rating>, Rating>() {
-                    public Rating call(Tuple2<Integer, Rating> tuple) throws Exception {
-                        return tuple._2();
-                    }
-                }
-        ).repartition(numPartitions).persist(storageLevel);
-
-        //test data set
-        JavaRDD<Rating> test = ratings.filter(
-                new Function<Tuple2<Integer, Rating>, Boolean>() {
-                    public Boolean call(Tuple2<Integer, Rating> tuple) throws Exception {
-                        return tuple._1() >= 8;
-                    }
-                }
-        ).map(
-                new Function<Tuple2<Integer, Rating>, Rating>() {
-                    public Rating call(Tuple2<Integer, Rating> tuple) throws Exception {
-                        return tuple._2();
-                    }
-                }
-        ).persist(storageLevel);
-
-        long numTraining = training.count();
-        long numValidation = validation.count();
-        long numTest = test.count();
-
-        System.out.println("Training: " + numTraining + ", validation: " + numValidation + ", test: " + numTest);
-
-        
-        //TRAINING MODEL
-        int[] ranks = {8, 12};
-        float[] lambdas = {0.1f, 10.0f};
-        int[] numIters = {10, 20};
-
-        double bestValidationRmse = Double.MAX_VALUE;
-        int bestRank = 0;
-        float bestLambda = -1.0f;
-        int bestNumIter = -1;
-        MatrixFactorizationModel bestModel = null;
-
-        for (int currentRank : ranks) {
-            for (float currentLambda : lambdas) {
-                for (int currentNumIter : numIters) {
-                    MatrixFactorizationModel model = ALS.train(JavaRDD.toRDD(training), currentRank, currentNumIter, currentLambda);
-
-                    Double validationRmse = computeRMSE(model, validation);
-
-                    if (validationRmse < bestValidationRmse) {
-                        bestModel = model;
-                        bestValidationRmse = validationRmse;
-                        bestRank = currentRank;
-                        bestLambda = currentLambda;
-                        bestNumIter = currentNumIter;
-                    }
-                }
-            }
-        }
-        
-        DataService.getInstance().setBestModel(bestModel);
-        System.out.println("RMSE (validation) = " + bestValidationRmse + " for the model trained with rank = "
-                + bestRank + ", lambda = " + bestLambda + ", and numIter = " + bestNumIter + ".");
-
-        
-        //Computing Root Mean Square Error in the test dataset
-        Double testRmse = computeRMSE(bestModel, test);
-        System.out.println("The best model was trained with rank = " + bestRank + " and lambda = " + bestLambda
-                + ", and numIter = " + bestNumIter + ", and its RMSE on the test set is " + testRmse + ".");               
 	}
 	
 	
@@ -440,10 +222,8 @@ public class TravelRecommendation implements Serializable{
 	}
 
 	public static void main(String args[]) {
-		TravelRecommendation recomm = new TravelRecommendation();
-		recomm.readProperties(args[0]);
-		recomm.init();
-		recomm.getRecommendationForUser(1);
+		DataCollection recomm = new DataCollection();
+		recomm.getRecommendation();
 	}
 	
 	static class MapResult extends AbstractFunction1<ResultSet, Object[]> implements Serializable {
