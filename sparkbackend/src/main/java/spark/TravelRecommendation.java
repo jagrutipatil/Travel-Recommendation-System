@@ -411,17 +411,17 @@ public class TravelRecommendation implements Serializable{
 	}
 	
 	public void printLocation(JavaRDD<Object[]> locationRDD) {
-		System.out.println("Total Location: " + locationRDD.count());
-        List<Tuple2<Integer, Location>> locations = locationRDD.map(new Function<Object[], Tuple2<Integer, Location>>() {
-            @Override
-            public Tuple2<Integer, Location> call(final Object[] record) throws Exception {
-                return new Tuple2<Integer, Location>(Integer.parseInt(record[0] + ""), new Location(record[1] + "", record[2] + ""));
-            }
-        }).collect();
-
-        for (Tuple2<Integer, Location> location: locations) {
-        	System.out.println(location._1() + " " + location._2.getLocationName() + " " + location._2.getLocationType());
-        }       
+//		System.out.println("Total Location: " + locationRDD.count());
+//        List<Tuple2<Integer, Location>> locations = locationRDD.map(new Function<Object[], Tuple2<Integer, Location>>() {
+//            @Override
+//            public Tuple2<Integer, Location> call(final Object[] record) throws Exception {
+//                return new Tuple2<Integer, Location>(Integer.parseInt(record[0] + ""), new Location(record[1] + "", record[2] + ""));
+//            }
+//        }).collect();
+//
+//        for (Tuple2<Integer, Location> location: locations) {
+//        	System.out.println(location._1() + " " + location._2.getLocationName() + " " + location._2.getLocationType());
+//        }       
 	}
 
 
