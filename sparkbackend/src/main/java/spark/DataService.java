@@ -9,11 +9,12 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.mllib.recommendation.MatrixFactorizationModel;
 import org.apache.spark.mllib.recommendation.Rating;
 
+import edu.data.model.Location;
 import scala.Tuple2;
 
 public class DataService implements Serializable{
 	private JavaRDD<Tuple2<Integer, Rating>> ratings = null;
-	private Map<Integer, String> products = null;
+	private Map<Integer, Location> products = null;
 	private Map<Integer, String> users = null;
 	
 	private JavaSparkContext sc = null;
@@ -41,11 +42,11 @@ public class DataService implements Serializable{
 		this.ratings = ratings;
 	}
 	
-	public Map<Integer, String> getProducts() {
+	public Map<Integer, Location> getProducts() {
 		return products;
 	}
 	
-	public void setProducts(Map<Integer, String> products) {
+	public void setProducts(Map<Integer, Location> products) {
 		this.products = products;
 	}
 	

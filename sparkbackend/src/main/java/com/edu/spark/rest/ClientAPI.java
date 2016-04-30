@@ -11,7 +11,7 @@ import org.restlet.resource.ServerResource;
 
 import com.edu.util.HelperUtils;
 
-import edu.data.model.Product;
+import edu.data.model.Location;
 import spark.TravelRecommendation;
 
 public class ClientAPI extends ServerResource{	
@@ -28,12 +28,12 @@ public class ClientAPI extends ServerResource{
 	
 	@Get
 	public String readMethod() throws Exception{
-		List<Product> products = TravelRecommendation.getInstance().getRecommendationForUser(2);
+		List<Location> products = TravelRecommendation.getInstance().getRecommendationForUser(2);
 		JSONObject responseDetailsJson = new JSONObject();
 	    JSONArray jsonArray = new JSONArray();
-
-	    for(Product p : products) {
-	       jsonArray.add(HelperUtils.productTOJSON(p));
+	    
+	    for(Location p : products) {
+	       jsonArray.add(HelperUtils.locationTOJSON(p));
 	    }
 	    responseDetailsJson.put("forms", jsonArray);//Here you can see the data in json format
 	    return responseDetailsJson.toJSONString();	    
