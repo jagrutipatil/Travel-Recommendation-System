@@ -3,6 +3,7 @@ package spark;
 import java.io.Serializable;
 import java.util.Map;
 
+import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.mllib.recommendation.MatrixFactorizationModel;
@@ -13,6 +14,8 @@ import scala.Tuple2;
 public class DataService implements Serializable{
 	private JavaRDD<Tuple2<Integer, Rating>> ratings = null;
 	private Map<Integer, String> products = null;
+	private Map<Integer, String> users = null;
+	
 	private JavaSparkContext sc = null;
 	private MatrixFactorizationModel bestModel = null;
 	
@@ -20,12 +23,14 @@ public class DataService implements Serializable{
 	
 	public static DataService getInstance() {
 		if (instance == null) {
-			instance = new DataService();
+						instance = new DataService();
 		}
 		return instance;
 	}
 	
-	private DataService() {		
+	private DataService() {
+		SparkConf conf = new SparkConf().setAppName("TravelRecommendation").setMaster("local");
+		sc = new JavaSparkContext(conf);		
 	}
 	
 	public JavaRDD<Tuple2<Integer, Rating>> getRatings() {

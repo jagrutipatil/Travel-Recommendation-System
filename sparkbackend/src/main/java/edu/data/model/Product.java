@@ -2,11 +2,11 @@ package edu.data.model;
 
 public class Product {
 	String id;
-	String name;
+	String json;
 	
 	public Product(String id, String name) {
 		this.id = id;
-		this.name = name;
+		this.json = name;
 	}
 
 	public String getId() {
@@ -17,11 +17,11 @@ public class Product {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getJson() {
+		return json;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setJson(String name) {
+		this.json = name;
 	}
 }

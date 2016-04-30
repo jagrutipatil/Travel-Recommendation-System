@@ -10,21 +10,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
-import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
-import org.apache.spark.api.java.function.Function;
-import org.apache.spark.mllib.recommendation.Rating;
-
-import scala.Tuple2;
 import se.walkercrou.places.GooglePlaces;
 import se.walkercrou.places.Place;
 
 public class DataGeneration implements Serializable{
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://52.39.124.157:3306/vacationinfo";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/cmpe239";
 	static final String USER = "root";
-	static final String PASS = "root";
+	static final String PASS = "linux2015";
 	static final String[] countries = {"Afghanistan", "Albania", "Algeria", "American Samoa", "Angola", "Anguilla", "Antartica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Ashmore and Cartier Island", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Christmas Island", "Clipperton Island", "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Cook Islands", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czeck Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Europa Island", "Falkland Islands (Islas Malvinas)", "Faroe Islands", "Fiji", "Finland", "France", "French Guiana", "French Polynesia", "French Southern and Antarctic Lands", "Gabon", "Gambia, The", "Gaza Strip", "Georgia", "Germany", "Ghana", "Gibraltar", "Glorioso Islands", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Heard Island and McDonald Islands", "Holy See (Vatican City)", "Honduras", "Hong Kong", "Howland Island", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Ireland, Northern", "Israel", "Italy", "Jamaica", "Jan Mayen", "Japan", "Jarvis Island", "Jersey", "Johnston Atoll", "Jordan", "Juan de Nova Island", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macau", "Macedonia, Former Yugoslav Republic of", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Man, Isle of", "Marshall Islands", "Martinique", "Mauritania", "Mauritius", "Mayotte", "Mexico", "Micronesia, Federated States of", "Midway Islands", "Moldova", "Monaco", "Mongolia", "Montserrat", "Morocco", "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlands", "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfolk Island", "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcaim Islands", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romainia", "Russia", "Rwanda", "Saint Helena", "Saint Kitts and Nevis", "Saint Lucia", "Saint Pierre and Miquelon", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Scotland", "Senegal", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Georgia and South Sandwich Islands", "Spain", "Spratly Islands", "Sri Lanka", "Sudan", "Suriname", "Svalbard", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Tobago", "Toga", "Tokelau", "Tonga", "Trinidad", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "Uruguay", "USA", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Virgin Islands", "Wales", "Wallis and Futuna", "West Bank", "Western Sahara", "Yemen", "Yugoslavia", "Zambia", "Zimbabwe"};
 	static final String[] types = {"Historical", "Hill Station", "Adventure", "Lakes", "Beach", "Scenery", "Temple", "Jungle", "Sports" , "Tourist", "Family Vacation", "Clubbing", "Night Life", "Winter Vacation", "Swimming", "Wild Life", "African Safaris", "Religious"};
 	long count = 1000;
@@ -424,10 +417,10 @@ public class DataGeneration implements Serializable{
 		return ""+ integer +"";
 	}
 	
-	public void insertData() {
-//		clearDb("users");
+	public void insertUserData() {
+		clearDb("users");
 //		clearDb("location");
-		clearDb("ratings");
+//		clearDb("ratings");
 		Connection conn = null;
 		Statement stmt = null;
 		
@@ -436,20 +429,23 @@ public class DataGeneration implements Serializable{
 		
 		String[] location = {"Himalaya", "Kerla", "Kashmir", "Pune", "Mumbai", "Lakhnau"};
 		String[] locType = {"Hill_Station", "Historical", "Shopping", "WeekendGateway", "SpringVacation", "Island"};
-		
+		int count =6040;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 			stmt = conn.createStatement();
-
-//	    	generateUserSQL(stmt, i+1, fNames[(int) (i % location.length)], lNames[(int) (i % location.length)]);
+			
+			for (int i = 0; i < count; i++) {
+				generateUserSQL(stmt, i+1, fNames[(int) (i % location.length)], lNames[(int) (i % location.length)]);
+			}
+	    	
 //	    	generateLocationSQL(stmt, i+1, location[(int) (i % location.length)], locType[(int) (i % locType.length)]);
 
-		    for (long i = 0; i < count; i++) {
-		    	for (long j = 0; j < count; j++) {
-		    		generateRatingSQL(stmt, i+1, j+1, getRandomIntInclusive(1, 10), System.currentTimeMillis() + (i %10));
-		    	}		    	
-		    }
+//		    for (long i = 0; i < count; i++) {
+//		    	for (long j = 0; j < count; j++) {
+//		    		generateRatingSQL(stmt, i+1, j+1, getRandomIntInclusive(1, 10), System.currentTimeMillis() + (i %10));
+//		    	}		    	
+//		    }
 	      stmt.executeBatch();	 	      
 		} catch(SQLException se){
 		      se.printStackTrace();
@@ -513,10 +509,9 @@ public class DataGeneration implements Serializable{
 	public static void main(String args[]) {
 		DataGeneration db = new  DataGeneration();
 		try {
-			db.locationSQLToFiles();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
+//			db.locationSQLToFiles();
+			db.insertUserData();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
