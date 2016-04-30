@@ -1,0 +1,33 @@
+CREATE TABLE `users` (
+  `userid` int(11) NOT NULL,
+  `firstname` varchar(100) DEFAULT NULL,
+  `lastname` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `ratings` (
+  `userid` int(11) NOT NULL,
+  `locationid` int(11) NOT NULL,
+  `rating` double DEFAULT NULL,
+  `timestamp` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`userid`,`locationid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `location` (
+  `locationid` int(11) NOT NULL,
+  `locationName` text,
+  `description` text,
+  `type` text,
+  `country` text,
+  `state` text,
+  `address` text,
+  `minTemp` double DEFAULT NULL,
+  `maxTemp` double DEFAULT NULL,
+  `minPrice` double DEFAULT NULL,
+  `maxPrice` double DEFAULT NULL,
+  `currency` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`locationid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
