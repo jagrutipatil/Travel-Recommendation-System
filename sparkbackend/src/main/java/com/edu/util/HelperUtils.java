@@ -16,13 +16,16 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import edu.data.model.Location;
+import edu.data.model.Product;
+import edu.data.model.User;
 
 
 
@@ -126,4 +129,20 @@ public class HelperUtils {
 	public static String mapToJSONStr(Map<String, String> keyValues) {
 	    return new GsonBuilder().setPrettyPrinting().create().toJson(keyValues);
 	}
+	
+	public static String locationTOJSON(Location location){		
+		Gson gson = new Gson();
+		return gson.toJson(location); 
+	}
+
+	public static String userTOJSON(User user){		
+		Gson gson = new Gson();
+		return gson.toJson(user); 
+	}
+
+	public static String productTOJSON(Product product){		
+		Gson gson = new Gson();
+		return gson.toJson(product); 
+	}
+
 }

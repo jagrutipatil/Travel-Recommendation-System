@@ -21,8 +21,9 @@ public class Location implements Serializable{
 
 	private String currency;
 	
-	public Location (String name, String type, String desc, String country, String state, String address, 
+	public Location (Integer locationId, String name, String desc, String type, String country, String state, String address, 
 			double minTemp, double maxTemp, double minPrice, double maxPrice) {
+		this.locationId = locationId;
 		this.name = name;
 		this.type = type;
 		this.desc = desc;
