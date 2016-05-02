@@ -52,7 +52,7 @@ public class ClientAPI extends ServerResource{
 	    JSONArray jsonArray = new JSONArray();
 	    
 	    for(Location p : products) {
-	       jsonArray.add(HelperUtils.locationTOJSON(p));
+	       jsonArray.add(p);
 	    }
 	    responseDetailsJson.put("forms", jsonArray);//Here you can see the data in json format
 	    return responseDetailsJson.toJSONString();	    

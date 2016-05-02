@@ -421,6 +421,7 @@ public class TravelRecommendation implements Serializable{
         }).collect();
 	}
 	
+
 	public void loadFromDB() {		
 
 //		printRatings(ratingRDD);
