@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Map;
 
 import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.mllib.recommendation.MatrixFactorizationModel;
@@ -14,7 +15,7 @@ import scala.Tuple2;
 
 public class DataService implements Serializable{
 	private JavaRDD<Tuple2<Integer, Rating>> ratings = null;
-	private Map<Integer, Location> products = null;
+	private JavaPairRDD<Integer, Location> products = null;
 	private Map<Integer, String> users = null;
 	
 	private JavaSparkContext sc = null;
@@ -42,11 +43,11 @@ public class DataService implements Serializable{
 		this.ratings = ratings;
 	}
 	
-	public Map<Integer, Location> getProducts() {
+	public JavaPairRDD<Integer, Location> getProducts() {
 		return products;
 	}
 	
-	public void setProducts(Map<Integer, Location> products) {
+	public void setProducts(JavaPairRDD<Integer, Location> products) {
 		this.products = products;
 	}
 	

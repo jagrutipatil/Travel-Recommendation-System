@@ -24,7 +24,7 @@ public class ClientAPI extends ServerResource{
 		String state = (String) jObj.get(SystemConstants.STATE);		
 		String type = (String) jObj.get(SystemConstants.TYPE);
 		String key = (String) jObj.get(SystemConstants.USERID);
-		int userId = Integer.parseInt(key);
+		int userId = Integer.parseInt(key);		
 		
 		List<Location> products = TravelRecommendation.getInstance().getFilteredRecommendation(country, state, type, userId);
 		JSONObject responseDetailsJson = new JSONObject();
@@ -33,6 +33,7 @@ public class ClientAPI extends ServerResource{
 	    for(Location p : products) {
 	       jsonArray.add(HelperUtils.locationTOJSON(p));
 	    }
+	    
 	    responseDetailsJson.put("forms", jsonArray);//Here you can see the data in json format
 	    return responseDetailsJson.toJSONString();	    
 	}

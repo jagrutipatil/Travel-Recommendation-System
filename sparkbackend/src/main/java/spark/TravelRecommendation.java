@@ -71,7 +71,7 @@ public class TravelRecommendation implements Serializable{
         List<Rating> recommendations;
         JavaRDD<Tuple2<Integer, Rating>> ratings = DataService.getInstance().getRatings();        
         JavaSparkContext sc = DataService.getInstance().getSc();
-        Map<Integer, Location> products = DataService.getInstance().getProducts();
+        Map<Integer, Location> products = DataService.getInstance().getProducts().collectAsMap();
         
         //Getting the users ratings
         JavaRDD<Rating> userRatings = ratings.filter(
@@ -142,12 +142,16 @@ public class TravelRecommendation implements Serializable{
         return locations;
 	}
 
-	public List<Location> getFilteredRecommendation(String country, String state, String type, int user) {
+	public List<Location> getFilteredRecommendation(String inCountry, String inState, String inType, int user) {
 		final int userId = user;
+		final String country = inCountry;
+		final String state = inState;
+		final String type = inType;
+		
         List<Rating> recommendations;
         JavaRDD<Tuple2<Integer, Rating>> ratings = DataService.getInstance().getRatings();        
         JavaSparkContext sc = DataService.getInstance().getSc();
-        Map<Integer, Location> products = DataService.getInstance().getProducts();
+        JavaPairRDD<Integer, Location> productRDD = DataService.getInstance().getProducts();
         
         //Getting the users ratings
         JavaRDD<Rating> userRatings = ratings.filter(
@@ -173,22 +177,31 @@ public class TravelRecommendation implements Serializable{
                 }
         );
         
-        List<Integer> productSet = new ArrayList<Integer>();
-        productSet.addAll(products.keySet());
         
+        List<Integer> productSet = new ArrayList<Integer>();               
+        JavaPairRDD<Integer, Location> filteredProducts = productRDD.filter(
+                new Function<Tuple2<Integer, Location>, Boolean>() {
+                    public Boolean call(Tuple2<Integer, Location> tuple) throws Exception {
+                        return tuple._2().getCountry().equalsIgnoreCase(country) && tuple._2().getState().equalsIgnoreCase(state) &&
+                        		tuple._2().getType().equalsIgnoreCase(type);
+                    }
+                }
+        );
+        
+        Map<Integer, Location> products = filteredProducts.collectAsMap();
+        
+        productSet.addAll(products.keySet());        
         Iterator<Tuple2<Object, Object>> productIterator = userProducts.toLocalIterator();
-        
-        //Removing the user watched (rated) set from the all product set
-        while(productIterator.hasNext()) {
+                
+		while(productIterator.hasNext()) {
             Integer locId = (Integer)productIterator.next()._2();
-            if(productSet.contains(locId) || !products.get(locId).getCountry().equalsIgnoreCase(country) 
-            		|| !products.get(locId).getState().equalsIgnoreCase(state) || !products.get(locId).getType().equalsIgnoreCase(type)){
+            if(productSet.contains(locId)){
                 productSet.remove(locId);
             }
         }
-        
-        JavaRDD<Integer> candidates = sc.parallelize(productSet);
-        
+		
+		
+        JavaRDD<Integer> candidates = sc.parallelize(productSet);        
         JavaRDD<Tuple2<Integer, Integer>> userCandidates = candidates.map(
                 new Function<Integer, Tuple2<Integer, Integer>>() {
                     public Tuple2<Integer, Integer> call(Integer integer) throws Exception {
@@ -364,7 +377,7 @@ public class TravelRecommendation implements Serializable{
                 499999999, 10, new MapResult(), ClassManifestFactory$.MODULE$.fromClass(Object[].class));
 		JavaRDD<Object[]> locationRDD = JavaRDD.fromRDD(locationJdbcRDD, ClassManifestFactory$.MODULE$.fromClass(Object[].class));
 
-		Map<Integer, Location> locations = locationRDD.mapToPair(
+		JavaPairRDD<Integer, Location> locations = locationRDD.mapToPair(
 		        new PairFunction<Object[], Integer, Location>() {
 		            public Tuple2<Integer, Location> call(final Object[] record) throws Exception {
 		            	Location loc = new Location(Integer.parseInt(record[0] + ""), record[1] + "", record[2] + "", record[3] + "", record[4] + "", record[5] + "", record[6] + "", Double.parseDouble(record[7] + ""), Double.parseDouble(record[8] + ""), Double.parseDouble(record[9] + ""), Double.parseDouble(record[10] + ""));
@@ -372,7 +385,8 @@ public class TravelRecommendation implements Serializable{
 		                	return new Tuple2<Integer, Location>(Integer.parseInt(record[0] + ""), loc);
 		                }
 		        }
-		).collectAsMap();
+		);
+		
 		DataService.getInstance().setProducts(locations);
 		System.out.println("Loaded Location Data");
 		printLocation(locations);
@@ -405,7 +419,6 @@ public class TravelRecommendation implements Serializable{
                 return new Tuple2<Integer, String>(Integer.parseInt(record[0] + ""), json);
             }
         }).collect();
-        printUsers(users);
 	}
 	
 	public void loadFromDB() {		
@@ -493,7 +506,8 @@ public class TravelRecommendation implements Serializable{
 	}
 
 	
-	public void printLocation(Map<Integer, Location> locations) {
+	public void printLocation(JavaPairRDD<Integer, Location> locationRDD) {
+		Map<Integer, Location> locations = locationRDD.collectAsMap();
 		System.out.println("Total Location: " + locations.size());
 		
         for (Map.Entry<Integer, Location> location: locations.entrySet()) {
