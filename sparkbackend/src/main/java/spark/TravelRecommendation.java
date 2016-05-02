@@ -141,7 +141,84 @@ public class TravelRecommendation implements Serializable{
         }        
         return locations;
 	}
-		
+
+	public List<Location> getFilteredRecommendation(String country, String state, String type, int user) {
+		final int userId = user;
+        List<Rating> recommendations;
+        JavaRDD<Tuple2<Integer, Rating>> ratings = DataService.getInstance().getRatings();        
+        JavaSparkContext sc = DataService.getInstance().getSc();
+        Map<Integer, Location> products = DataService.getInstance().getProducts();
+        
+        //Getting the users ratings
+        JavaRDD<Rating> userRatings = ratings.filter(
+                new Function<Tuple2<Integer, Rating>, Boolean>() {
+                    public Boolean call(Tuple2<Integer, Rating> tuple) throws Exception {
+                        return tuple._2().user() == userId;
+                    }
+                }
+        ).map(
+                new Function<Tuple2<Integer, Rating>, Rating>() {
+                    public Rating call(Tuple2<Integer, Rating> tuple) throws Exception {
+                        return tuple._2();
+                    }
+                }
+        );
+        
+        //Getting the product ID's of the products that user rated
+        JavaRDD<Tuple2<Object, Object>> userProducts = userRatings.map(
+                new Function<Rating, Tuple2<Object, Object>>() {
+                    public Tuple2<Object, Object> call(Rating r) {
+                        return new Tuple2<Object, Object>(r.user(), r.product());
+                    }
+                }
+        );
+        
+        List<Integer> productSet = new ArrayList<Integer>();
+        productSet.addAll(products.keySet());
+        
+        Iterator<Tuple2<Object, Object>> productIterator = userProducts.toLocalIterator();
+        
+        //Removing the user watched (rated) set from the all product set
+        while(productIterator.hasNext()) {
+            Integer locId = (Integer)productIterator.next()._2();
+            if(productSet.contains(locId) || !products.get(locId).getCountry().equalsIgnoreCase(country) 
+            		|| !products.get(locId).getState().equalsIgnoreCase(state) || !products.get(locId).getType().equalsIgnoreCase(type)){
+                productSet.remove(locId);
+            }
+        }
+        
+        JavaRDD<Integer> candidates = sc.parallelize(productSet);
+        
+        JavaRDD<Tuple2<Integer, Integer>> userCandidates = candidates.map(
+                new Function<Integer, Tuple2<Integer, Integer>>() {
+                    public Tuple2<Integer, Integer> call(Integer integer) throws Exception {
+                        return new Tuple2<Integer, Integer>(userId, integer);
+                    }
+                }
+        );
+        
+        MatrixFactorizationModel bestModel = DataService.getInstance().getBestModel();
+        recommendations = bestModel.predict(JavaPairRDD.fromJavaRDD(userCandidates)).collect();        
+        
+        //Sorting the recommended products and sort them according to the rating
+        Collections.sort(recommendations, new Comparator<Rating>() {
+            public int compare(Rating r1, Rating r2) {
+                return r1.rating() < r2.rating() ? -1 : r1.rating() > r2.rating() ? 1 : 0;
+            }
+        });
+        
+        //get top 50 from the recommended products.
+        recommendations = recommendations.subList(0, 10);
+        List<Location> locations = new ArrayList<Location>();
+
+        //TODO fetch product ID Information
+        System.out.println("Recommendations for user: " + userId);
+        for (Rating r : recommendations) {
+        	locations.add(products.get(r.product()));
+        }        
+        return locations;
+	}
+
 	public void printDataCount(JavaRDD<Tuple2<Integer, Rating>> ratings) {
       long ratingCount = ratings.count();
       long userCount = ratings.map(
@@ -265,7 +342,23 @@ public class TravelRecommendation implements Serializable{
 //                + ", and numIter = " + bestNumIter + ", and its RMSE on the test set is " + testRmse + ".");               
 	}
 	
-		
+	public Map<Integer, Location> loadFilteredLocationFromDB(String country, String state, String type) {		
+		JdbcRDD<Object[]> locationJdbcRDD = new JdbcRDD<>(DataService.getInstance().getSc().sc(), conn, "select * from location where location.locationid > ? and location.locationid < ? and location.country = ' "+ country + "' and location.state = '"+ state +"' and location.type = '"+ type +"' ", -1,
+                499999999, 10, new MapResult(), ClassManifestFactory$.MODULE$.fromClass(Object[].class));
+		JavaRDD<Object[]> locationRDD = JavaRDD.fromRDD(locationJdbcRDD, ClassManifestFactory$.MODULE$.fromClass(Object[].class));
+
+		Map<Integer, Location> locations = locationRDD.mapToPair(
+		        new PairFunction<Object[], Integer, Location>() {
+		            public Tuple2<Integer, Location> call(final Object[] record) throws Exception {
+		            	Location loc = new Location(Integer.parseInt(record[0] + ""), record[1] + "", record[2] + "", record[3] + "", record[4] + "", record[5] + "", record[6] + "", Double.parseDouble(record[7] + ""), Double.parseDouble(record[8] + ""), Double.parseDouble(record[9] + ""), Double.parseDouble(record[10] + ""));
+		            	String str = HelperUtils.locationTOJSON(loc);
+		                	return new Tuple2<Integer, Location>(Integer.parseInt(record[0] + ""), loc);
+		                }
+		        }
+		).collectAsMap();
+		return locations;
+	}
+
 	public void loadLocationFromDB() {		
 		JdbcRDD<Object[]> locationJdbcRDD = new JdbcRDD<>(DataService.getInstance().getSc().sc(), conn, "select * from location where location.locationid > ? and location.locationid < ?", -1,
                 499999999, 10, new MapResult(), ClassManifestFactory$.MODULE$.fromClass(Object[].class));

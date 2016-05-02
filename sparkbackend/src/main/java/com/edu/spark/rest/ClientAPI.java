@@ -10,6 +10,7 @@ import org.restlet.resource.Put;
 import org.restlet.resource.ServerResource;
 
 import com.edu.util.HelperUtils;
+import com.edu.util.SystemConstants;
 
 import edu.data.model.Location;
 import spark.TravelRecommendation;
@@ -17,8 +18,23 @@ import spark.TravelRecommendation;
 public class ClientAPI extends ServerResource{	
 	
 	@Post
-	public String writeMethod(String jStr) {
-		return "Post";
+	public String writeMethod(String jsonStr) {
+		JSONObject jObj = HelperUtils.toJSONObj(jsonStr);
+		String country = (String) jObj.get(SystemConstants.COUNTRY);
+		String state = (String) jObj.get(SystemConstants.STATE);		
+		String type = (String) jObj.get(SystemConstants.TYPE);
+		String key = (String) jObj.get(SystemConstants.USERID);
+		int userId = Integer.parseInt(key);
+		
+		List<Location> products = TravelRecommendation.getInstance().getFilteredRecommendation(country, state, type, userId);
+		JSONObject responseDetailsJson = new JSONObject();
+	    JSONArray jsonArray = new JSONArray();
+	    
+	    for(Location p : products) {
+	       jsonArray.add(HelperUtils.locationTOJSON(p));
+	    }
+	    responseDetailsJson.put("forms", jsonArray);//Here you can see the data in json format
+	    return responseDetailsJson.toJSONString();	    
 	}
 		
 	@Delete
@@ -28,7 +44,9 @@ public class ClientAPI extends ServerResource{
 	
 	@Get
 	public String readMethod() throws Exception{
-		List<Location> products = TravelRecommendation.getInstance().getRecommendationForUser(2);
+		String requestedKey = (String) this.getRequestAttributes().get(SystemConstants.KEY);		
+		int userId = Integer.parseInt(requestedKey);
+		List<Location> products = TravelRecommendation.getInstance().getRecommendationForUser(userId);
 		JSONObject responseDetailsJson = new JSONObject();
 	    JSONArray jsonArray = new JSONArray();
 	    
