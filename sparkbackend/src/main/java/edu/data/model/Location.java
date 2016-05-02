@@ -22,7 +22,7 @@ public class Location implements Serializable{
 	private String currency;
 	
 	public Location (Integer locationId, String name, String desc, String type, String country, String state, String address, 
-			double minTemp, double maxTemp, double minPrice, double maxPrice) {
+			double minTemp, double maxTemp, double minPrice, double maxPrice, String currency) {
 		this.locationId = locationId;
 		this.name = name;
 		this.type = type;
@@ -34,6 +34,7 @@ public class Location implements Serializable{
 		this.maxTemp = maxTemp;
 		this.minPrice = minPrice;
 		this.maxPrice = maxPrice;
+		this.currency = currency;
 	}
 	
 

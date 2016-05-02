@@ -363,7 +363,7 @@ public class TravelRecommendation implements Serializable{
 		Map<Integer, Location> locations = locationRDD.mapToPair(
 		        new PairFunction<Object[], Integer, Location>() {
 		            public Tuple2<Integer, Location> call(final Object[] record) throws Exception {
-		            	Location loc = new Location(Integer.parseInt(record[0] + ""), record[1] + "", record[2] + "", record[3] + "", record[4] + "", record[5] + "", record[6] + "", Double.parseDouble(record[7] + ""), Double.parseDouble(record[8] + ""), Double.parseDouble(record[9] + ""), Double.parseDouble(record[10] + ""));
+		            	Location loc = new Location(Integer.parseInt(record[0] + ""), record[1] + "", record[2] + "", record[3] + "", record[4] + "", record[5] + "", record[6] + "", Double.parseDouble(record[7] + ""), Double.parseDouble(record[8] + ""), Double.parseDouble(record[9] + ""), Double.parseDouble(record[10] + ""), "" + record[11]);
 		            	String str = HelperUtils.locationTOJSON(loc);
 		                	return new Tuple2<Integer, Location>(Integer.parseInt(record[0] + ""), loc);
 		                }
@@ -380,7 +380,7 @@ public class TravelRecommendation implements Serializable{
 		JavaPairRDD<Integer, Location> locations = locationRDD.mapToPair(
 		        new PairFunction<Object[], Integer, Location>() {
 		            public Tuple2<Integer, Location> call(final Object[] record) throws Exception {
-		            	Location loc = new Location(Integer.parseInt(record[0] + ""), record[1] + "", record[2] + "", record[3] + "", record[4] + "", record[5] + "", record[6] + "", Double.parseDouble(record[7] + ""), Double.parseDouble(record[8] + ""), Double.parseDouble(record[9] + ""), Double.parseDouble(record[10] + ""));
+		            	Location loc = new Location(Integer.parseInt(record[0] + ""), record[1] + "", record[2] + "", record[3] + "", record[4] + "", record[5] + "", record[6] + "", Double.parseDouble(record[7] + ""), Double.parseDouble(record[8] + ""), Double.parseDouble(record[9] + ""), Double.parseDouble(record[10] + ""), "" + record[11]);
 		            	String str = HelperUtils.locationTOJSON(loc);
 		                	return new Tuple2<Integer, Location>(Integer.parseInt(record[0] + ""), loc);
 		                }
