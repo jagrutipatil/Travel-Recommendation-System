@@ -133,6 +133,22 @@ public class HelperUtils {
 	public static String locationTOJSON(Location location){		
 		Gson gson = new Gson();
 		return gson.toJson(location); 
+	}	
+
+
+	public static JSONObject locationToJSONObj(Location location){
+		
+		JSONObject obj = new JSONObject();
+		obj.put(SystemConstants.LOCATIONID, location.getLocationId());
+		obj.put(SystemConstants.NAME, location.getName());
+		obj.put(SystemConstants.DESC, location.getDesc());
+		obj.put(SystemConstants.COUNTRY, location.getCountry());
+		obj.put(SystemConstants.STATE, location.getState());
+		obj.put(SystemConstants.ADDRESS, location.getAddress());
+		obj.put(SystemConstants.MINTEMP, location.getMinTemp());
+		obj.put(SystemConstants.MAXTEMP, location.getMaxTemp());		
+		obj.put(SystemConstants.CURRENCY, location.getCurrency());
+		return obj;
 	}
 
 	public static String userTOJSON(User user){		
