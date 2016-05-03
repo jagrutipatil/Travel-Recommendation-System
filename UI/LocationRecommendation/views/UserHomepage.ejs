@@ -9,7 +9,7 @@
 		<title>User Homepage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -118,7 +118,30 @@
 	<form>
 	Select Country (with states):   <select ng-model="country" id="country" name ="country"></select> </br></br>
 	Select State: <select ng-model="state" name ="state" id ="state"></select>  </br> </br></hr>
-	Select Type of Location: <select ng-model="type" name ="type" id=" type"><option>Beach</option><option>Hill-Top</option><option>Historical Place</option><option>National Park</option></select>
+	Select Type of Location: <select ng-model="type" name ="type" id=" type">
+	<option>Historical</option>
+	<option>Hill Station</option>
+	<option>Adventure</option>
+	<option>Lakes</option>
+	<option>Beach</option>
+	<option>Scenery</option>
+	<option>Temple</option>
+	<option>Jungle</option>
+	<option>Sports</option>
+	<option>Tourist</option>
+	<option>Family Vacation</option>
+	<option>Clubbing</option>
+	<option>Night Life</option>
+	<option>Winter Vacation</option>
+	<option>Swimming</option>
+	<option>Wild Life</option>
+	<option>African Safaris</option>
+	<option>Religious</option>
+	
+	
+	
+	
+	</select>
 	<br>
 	<input type="submit"  ng-click="getData();" value="Get Trip Locations"></input>
 	</form>
@@ -186,10 +209,9 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<pre>You can contact us on our following ID:
+							Haddophunters.sjsu.edu
+							</pre>
 
 							<form method="post" action="#">
 								<div class="row">
@@ -226,7 +248,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main1.js"></script>
 
 	</body>
 </html>

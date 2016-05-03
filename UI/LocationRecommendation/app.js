@@ -52,7 +52,7 @@ app.post('/success_login',index.redirectToHome);
 
 
 app.get('/getData',index.getData);
-app.get('/getData1',index.getData1);
+app.post('/getData1',index.getData1);
 
 //////
 
