@@ -31,7 +31,8 @@ public class ClientAPI extends ServerResource{
 	    JSONArray jsonArray = new JSONArray();
 	    
 	    for(Location p : products) {
-	       jsonArray.add(p);
+	    	JSONObject jsonObject = HelperUtils.locationToJSONObj(p);
+	    	jsonArray.add(jsonObject);
 	    }
 	    
 	    responseDetailsJson.put("forms", jsonArray);//Here you can see the data in json format
