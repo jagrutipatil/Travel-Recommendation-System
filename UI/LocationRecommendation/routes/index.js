@@ -121,27 +121,23 @@ exports.redirectToHome=function(req,res)
 
 exports.Signup=function(req,res)
 {
-	var getUser="select * from admin where Username='"+req.param("email")+"'";
+	var getUser="select * from users where username='"+req.param("email")+"'";
 	var Message="";	
 	mysql.fetchData(function(err,results){
 		if(err){
 			throw err;
+//			var json_responses = {"statusCode" : 500};
+//			res.send(json_responses);
 		}
 		else 
 		{
 			if(results.length > 0)
 			{
 				console.log("User is already present");
-				Message="User is already present";
-				ejs.renderFile('./views/Error.ejs', {Message : Message}, function(err, result) {
-			        if (!err) {
-			            res.end(result);
-			        }
-			        else {
-			            res.end('An error occurred');
-			            console.log(err);
-			        }
-			    });
+				//Message="User is already present";
+				var json_responses = {"statusCode" : 401};
+				console.log(json_responses);
+				res.send(json_responses);
 			}
 			else {    
 				
@@ -154,25 +150,17 @@ exports.Signup=function(req,res)
 				var Password=req.param("password");
 				var confirmPassword=req.param("confirmPassword");
 				
-				var putUser="insert into admin values('"+Email+"','"+Password+"','"+Fname+"','"+Lname+"');";
+				var putUser="insert into users(firstname,lastname,username,password) values('"+Fname+"','"+Lname+"','"+Email+"','"+Password+"');";
 				mysql.fetchData(function(err2,result2){
 				      if(err2){
 					        throw err2;
 				       }
 				      else 
 				      {
-				    	  Message="User is added successfully please login with the credentials";
-				    	  ejs.renderFile('./views/Signup.ejs',{Message : Message},function(err3, result3) {
-						        // render on success
-						        if (!err3) {
-						            res.end(result3);
-						        }
-						        // render or error
-						        else {
-						            res.end('An error occurred');
-						            console.log(err3);
-						        }
-						    });
+				    	   json_responses = {"statusCode" : 200};
+							console.log(json_responses);
+							res.send(json_responses);
+				    	  
 				      }
 			    },putUser);         
 				

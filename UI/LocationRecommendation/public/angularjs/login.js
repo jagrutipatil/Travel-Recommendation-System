@@ -1,8 +1,12 @@
 //loading the 'login' angularJS module
 var login = angular.module('LocationRecommendation', []);
 //defining the login controller
-login.controller('LocationCtrl', function($scope, $http,$route) {
+login.controller('LocationCtrl', function($scope, $http) {
 		
+	$scope.UserAlreadyPresent = true;
+	//$scope.unexpected_error = true;
+	$scope.SuccessSignup=true;
+	
 	$scope.invalid_login = true;
 	$scope.unexpected_error = true;
 	//$scope.recommendation[]=new 
@@ -16,6 +20,7 @@ login.controller('LocationCtrl', function($scope, $http,$route) {
 			}
 		}).success(function(data) {
 	       
+			alert(data.StatusCode);
 			if(data.statusCode==401)
 				{
 					$scope.invalid_login = false;
@@ -45,12 +50,53 @@ login.controller('LocationCtrl', function($scope, $http,$route) {
 			alert($scope.status);
 			var temp=JSON.parse(data.JsonData);
 			$scope.storeItems = temp.forms;
-			alert($scope.storeItems);
-			$route.reload();
+			alert(JSON.stringify($scope.storeItems));
+			alert($scope.storeItems[0].maxTemp);
+			//$route.reload();
 		
 		}).error(function(error)
 		{
 			alert("error");
+		});
+	};
+	
+	
+	$scope.Signup = function() {
+		$http({
+			method : "POST",
+			url : '/Signup',
+			data : {
+				"firstname":$scope.firstname,
+				"lastname":$scope.lastname,
+				"email" : $scope.email,
+				"password" : $scope.password,
+				"confirmPassword":$scope.confirmPassword
+			}
+		}).success(function(data) {
+			//console.log("inside success function");
+			alert("inside success signup");
+			alert(data.statusCode);
+			//checking the response data for statusCode
+			if (data.statusCode == 401) {
+				$scope.UserAlreadyPresent = false;
+				$scope.unexpected_error = true;
+				$scope.SuccessSignup=true;
+				//window.location.assign("/failLogin");
+				window.alert("Invalid login");
+			}
+			else if(data.statusCode == 200)
+				{
+				$scope.UserAlreadyPresent = true;
+				$scope.unexpected_error = true;
+				$scope.SuccessSignup=false;
+				//Making a get call to the '/redirectToHomepage' API
+				//window.location = '/LoginPage';
+				}
+				 
+		}).error(function(error) {
+			$scope.unexpected_error = false;
+			$scope.UserAlreadyPresent = true;
+			$scope.SuccessSignup=true;
 		});
 	};
 	

@@ -133,33 +133,26 @@
 <table class="table table-striped table-bordered">
                <thead>
                   <tr>
-                     <th>Location ID</th>
+                  
                      <th>Name</th>
                      <th>Type</th>
                      <th>Description</th>
                      <th>Country</th>
                      <th>State</th>
                      <th>Address</th>
-                     <th>Min Temp</th>
-                     <th>Max Temp</th>
-                     <th>Min Price</th>
-                     <th>Max Price</th>
+                     
                   </tr>
                </thead>
                <tbody>
                   <tr ng-repeat="item in storeItems">
-                     <td>${{ item.locationId }}</td>
-                     <td>${{ item.name }}</td>
-                     <td>${{ item.type }}</td>
-               		<td>${{ item.desc }}</td>
-               		<td>${{ item.country }}</td>
-               		<td>${{ item.state }}</td>
-               		<td>${{ item.address }}</td>
-               		<td>${{ item.minTemp }}</td>
-               		<td>${{ item.maxTemp }}</td>
-               		<td>${{ item.minPrice }}</td>
-               		<td>${{ item.maxPrice }}</td>
-                  </tr>
+                  
+                     <td>{{ item.name }}</td>
+                     <td>{{ item.type }}</td>
+               		<td>{{ item.desc }}</td>
+               		<td>{{ item.country }}</td>
+               		<td>{{ item.state }}</td>
+               		<td>{{ item.address }}</td>
+               	</tr>
                </tbody>
             </table>
 </div>
