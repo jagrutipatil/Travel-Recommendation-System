@@ -71,7 +71,7 @@ public class TravelRecommendation implements Serializable{
         List<Rating> recommendations;
         JavaRDD<Tuple2<Integer, Rating>> ratings = DataService.getInstance().getRatings();        
         JavaSparkContext sc = DataService.getInstance().getSc();
-        Map<Integer, Location> products = DataService.getInstance().getProducts().collectAsMap();
+        final Map<Integer, Location> products = DataService.getInstance().getProducts().collectAsMap();
         
         //Getting the users ratings
         JavaRDD<Rating> userRatings = ratings.filter(
@@ -123,12 +123,26 @@ public class TravelRecommendation implements Serializable{
         MatrixFactorizationModel bestModel = DataService.getInstance().getBestModel();
         recommendations = bestModel.predict(JavaPairRDD.fromJavaRDD(userCandidates)).collect();        
         
+        final List<String> history = getUserHistory(user);
+        
         //Sorting the recommended products and sort them according to the rating
         Collections.sort(recommendations, new Comparator<Rating>() {
             public int compare(Rating r1, Rating r2) {
-                return r1.rating() < r2.rating() ? -1 : r1.rating() > r2.rating() ? 1 : 0;
+            	String type1 = products.get(r1.product()).getType();
+            	String type2 = products.get(r2.product()).getType();
+            	if (history.contains(type1)) {
+            		return 1;
+            	} else if (history.contains(type2)) {
+            		return -1;
+            	} else if (r1.rating() < r2.rating()) {
+            		return -1;
+            	} else if (r1.rating() > r2.rating()) {
+            		return 1;
+            	}
+                return 0;
             }
         });
+        
         
         //get top 50 from the recommended products.
         recommendations = recommendations.subList(0, 10);
@@ -188,7 +202,7 @@ public class TravelRecommendation implements Serializable{
                 }
         );
         
-        Map<Integer, Location> products = filteredProducts.collectAsMap();
+        final Map<Integer, Location> products = filteredProducts.collectAsMap();
         
         productSet.addAll(products.keySet());        
         Iterator<Tuple2<Object, Object>> productIterator = userProducts.toLocalIterator();
@@ -213,12 +227,26 @@ public class TravelRecommendation implements Serializable{
         MatrixFactorizationModel bestModel = DataService.getInstance().getBestModel();
         recommendations = bestModel.predict(JavaPairRDD.fromJavaRDD(userCandidates)).collect();        
         
+        final List<String> history = getUserHistory(user);
+        
         //Sorting the recommended products and sort them according to the rating
         Collections.sort(recommendations, new Comparator<Rating>() {
             public int compare(Rating r1, Rating r2) {
-                return r1.rating() < r2.rating() ? -1 : r1.rating() > r2.rating() ? 1 : 0;
+            	String type1 = products.get(r1.product()).getType();
+            	String type2 = products.get(r2.product()).getType();
+            	if (history.contains(type1)) {
+            		return 1;
+            	} else if (history.contains(type2)) {
+            		return -1;
+            	} else if (r1.rating() < r2.rating()) {
+            		return -1;
+            	} else if (r1.rating() > r2.rating()) {
+            		return 1;
+            	}
+                return 0;
             }
         });
+        
         
         //get top 50 from the recommended products.
         recommendations = recommendations.subList(0, 10);
@@ -232,13 +260,13 @@ public class TravelRecommendation implements Serializable{
         return locations;
 	}
 
-	public List<Tuple2<String, String>> getuserHistory(int inUserID) {
+	public List<String> getUserHistory(int inUserID) {
 		final int userId = inUserID;
 		JdbcRDD<Object[]> historyJdbcRDD = new JdbcRDD<>(DataService.getInstance().getSc().sc(), conn, "select * from checkin_history where checkin_history.locationid > ? and checkin_history.locationid < ?", -1,
                 499999999, 10, new MapResult(), ClassManifestFactory$.MODULE$.fromClass(Object[].class));
 		JavaRDD<Object[]> historyRDD = JavaRDD.fromRDD(historyJdbcRDD, ClassManifestFactory$.MODULE$.fromClass(Object[].class));
 		
-        List<Tuple2<String, String>> history = historyRDD.filter(
+        List<String> history = historyRDD.filter(
                 new Function<Object[], Boolean>() {
                     public Boolean call(final Object[] record) throws Exception {
                     	int user = Integer.parseInt(record[0] + "");
@@ -246,9 +274,9 @@ public class TravelRecommendation implements Serializable{
                     }
                 }
         ).map(
-                new Function<Object[], Tuple2<String,String>>() {
-                    public Tuple2<String, String> call(Object[] record) throws Exception {
-                        return new Tuple2<String, String>(record[1] + "", record[2]+"");
+                new Function<Object[], String>() {
+                    public String call(Object[] record) throws Exception {
+                        return  record[3]+"";
                     }
                 }
         ).collect();
