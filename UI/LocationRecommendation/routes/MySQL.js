@@ -6,7 +6,7 @@ function getConnection(){
 	    host     : '127.0.0.1',
 	    user     : 'root',
 	    password : 'Aparna',
-	    database : 'locationproject',
+	    database : 'cmpe239',
 	    port	 : 3310
 	});
 	return connection;

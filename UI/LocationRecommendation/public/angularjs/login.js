@@ -1,11 +1,11 @@
 //loading the 'login' angularJS module
 var login = angular.module('LocationRecommendation', []);
 //defining the login controller
-login.controller('LocationCtrl', function($scope, $http) {
+login.controller('LocationCtrl', function($scope, $http,$route) {
 		
 	$scope.invalid_login = true;
 	$scope.unexpected_error = true;
-	$scope.recommendation[]=new 
+	//$scope.recommendation[]=new 
 	$scope.signin = function() {
 		$http({
 			method : "POST",
@@ -29,6 +29,7 @@ login.controller('LocationCtrl', function($scope, $http) {
 	////get data
 	$scope.getData = function()
 	{
+		alert("inside getData");
 		$http({
 			method : "GET",
 			url : '/getData',
@@ -40,10 +41,13 @@ login.controller('LocationCtrl', function($scope, $http) {
 		}).success(function(data)
 		{
 			// checking the response data for statusCode
-			$scope.storeItems = data.forms;
-			alert("data is::::"+$scope.storeItems);
-			
-			//$scope.total = data.total;
+			$scope.status=data.Status;
+			alert($scope.status);
+			var temp=JSON.parse(data.JsonData);
+			$scope.storeItems = temp.forms;
+			alert($scope.storeItems);
+			$route.reload();
+		
 		}).error(function(error)
 		{
 			alert("error");

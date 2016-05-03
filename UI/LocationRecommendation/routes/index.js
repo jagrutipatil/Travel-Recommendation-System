@@ -5,7 +5,7 @@
 var ejs = require("ejs");
 var mysql = require('./MYSQL');
 var session=require('client-sessions');
-
+var request = require('sync-request');
 
 var https = require("https");
 var http = require("http");
@@ -62,7 +62,7 @@ exports.GetSignUpPage=function(req,res)
 
 exports.Login=function(req,res)
 {
-	var getUser="select * from admin where Username='"+req.param("email")+"' and Password='" + req.param("password") +"'";
+	var getUser="select * from users where username='"+req.param("email")+"' and password='" + req.param("password") +"'";
 	console.log("Query is: "+getUser);
 	
 	mysql.fetchData(function(err,results){
@@ -75,8 +75,9 @@ exports.Login=function(req,res)
 				
 				console.log("valid Login");
 				console.log(results);
+				req.session.userId=results[0].userid;
 				req.session.username=req.param("username");
-				//console.log(req.session.username);
+				console.log("User Id is..........."+req.session.userId);
 				json_responses={"statusCode":200};
 				console.log(json_responses);
 				ejs.renderFile('./views/UserHomepage.ejs',function(err, result) {
@@ -180,50 +181,41 @@ exports.Signup=function(req,res)
 	},getUser);
 };
 
-//exports.getRecomm=function(req,res)
-//{
-//
-//	
-//}
-
-
-
+////Without preference
 exports.getData=function(req,res)
 {
-
-	var options = {
-			  host: 'localhost',
-			  port: 8081,
-			  path: '/restlet/test',
-			  method: 'GET'
-			};
-
-			http.request(options, function(res) {
-			  console.log('STATUS: ' + res.statusCode);
-			  console.log('HEADERS: ' + JSON.stringify(res.headers));
-			  
-			  res.setEncoding('utf8');
-			  var obj;
-			 // console.log('data:'+JSON.stringify(res.data));
-			  res.on('data', function (chunk) {
-				  
-				  console.log('BODY: ' + chunk);
-				  console.log('********JSON Data*******' );
-				  req.session.storeItems=JSON.parse(chunk);
-				  var obj=JSON.parse(chunk);
-				  console.log("Json data is*******");
-				  for(var i=0;i<obj.forms.length;i++)
-					  {
-					  console.log(obj.forms[i]);
-					  }
-				  
-			  });
-			  console.log('out of res.on function before send');
-			  //console.log(obj);
-			  //res.send(obj); 
-			}).end();
+			var str='http://localhost:8081/restlet/test/'+req.session.userId;
+			console.log("api call is......."+str);
+			var httpcall = request('GET', str, {
+			  'headers': {
+			    'user-agent': 'example-user-agent'
+			  }
+			});
+			console.log("Sync call");
+			console.log(httpcall.getBody('utf8'));
+			var json_responses = {"Status" : "success","JsonData" : httpcall.getBody('utf8')};
 			
-			
-	
+			 res.send(json_responses);
+}
 
+//with country state and type
+exports.getData1=function(req,res)
+{
+
+		var fcountry=req.param("country");
+		var fstate=req.param("state");
+		var ftype=req.param("type");
+			
+		var httpcall = request('POST', 'http://localhost:8081/restlet/test', {
+			  json: { country: fcountry,
+				  state:fstate,
+				  type:ftype,
+				  userId:""+req.session.userId}
+			});
+			
+			console.log("Sync call");
+			console.log(httpcall.getBody('utf8'));
+			var json_responses = {"Status" : "success","JsonData" : httpcall.getBody('utf8')};
+			 res.send(json_responses);
+			 
 }

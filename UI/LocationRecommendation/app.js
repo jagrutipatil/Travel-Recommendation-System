@@ -51,8 +51,8 @@ app.post('/success_login',index.redirectToHome);
 
 
 
-
-app.get('/test',index.getData);
+app.get('/getData',index.getData);
+app.get('/getData1',index.getData1);
 
 //////
 

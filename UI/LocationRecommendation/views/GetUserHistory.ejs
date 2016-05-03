@@ -1,0 +1,190 @@
+<html>
+<body>
+<div id="fb-root"></div>
+<script>
+var access;
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1687049591543840', // Set YOUR APP ID
+      //channelUrl : 'http://hayageek.com/examples/oauth/facebook/oauth-javascript/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+ 
+    FB.Event.subscribe('auth.authResponseChange', function(response) 
+    {
+     if (response.status === 'connected') 
+    {
+        document.getElementById("message").innerHTML +=  "<br>Connected to Facebook";
+        //SUCCESS
+ 
+    }    
+    else if (response.status === 'not_authorized') 
+    {
+        document.getElementById("message").innerHTML +=  "<br>Failed to Connect";
+ 
+        //FAILED
+    } else 
+    {
+        document.getElementById("message").innerHTML +=  "<br>Logged Out";
+ 
+        //UNKNOWN ERROR
+    }
+    }); 
+ 
+    };
+ 
+    function Login()
+    {
+ 
+        FB.login(function(response) {
+           if (response.authResponse) 
+           {
+               //getAuthResponse(); 
+               access= response.authResponse.accessToken;
+               //alert(JSON.stringify(response.authResponse));
+        	   getUserInfo();
+                //getCheckIns();
+            } else 
+            {
+             console.log('User cancelled login or did not fully authorize.');
+            }
+         },{scope: 'email,user_photos,user_videos'});
+ 
+    }
+ 
+   
+    
+  function getUserInfo() {
+        FB.api('/me', function(response) {
+ 
+      var str="<b>Name</b> : "+response.name+"<br>";
+          str +="<b>Link: </b>"+response.link+"<br>";
+          str +="<b>Username:</b> "+response.username+"<br>";
+          str +="<b>id: </b>"+response.id+"<br>";
+          str +="<b>Email:</b> "+response.email+"<br>";
+          //str +="<b>Access Token:</b>"+response.authResponse.accessToken+"<br>"
+          str +="<input type='button' value='Get Photo' onclick='getPhoto();'/>";
+          str +="<input type='button' value='Get Check Ins' onclick='getCheckIns();'/>";
+          str +="<input type='button' value='Logout' onclick='Logout();'/>";
+          document.getElementById("status").innerHTML=str;
+ 
+    });
+    }
+  
+ /*  function getCheckIns(){
+	  
+	  FB.api("/me/checkins", dojo.hitch(this, function(response){
+		    if(response.data && response.data.length > 0) {
+		        dojo.forEach(response.data, function(item) {
+		            var locationId = item.id; 
+		            var locationName = item.place.name; //name of the place
+		            // To get a Facebook link to the location
+		            var locationLink = getLocationLink(locationName, locationId);
+		            console.log(locationLink); //print location link
+		            document.getElementById("status2").innerHTML+=locationLink;
+		        });
+		    }
+		}));
+	  
+   }
+	  
+	  function getLocationLink(locationName, locationId) {        
+	        var baseURL = 'http://wwww.facebook.com/pages/';
+	        var locationNameArr = locationName.split(' ');
+	        var locationLink = '';
+	        for(var i = 0; i < locationNameArr.length; i++) {
+	            locationLink += locationNameArr[i];
+	            if(i != locationNameArr.length-1) locationLink += "-";
+	        }        
+	        return baseURL + locationLink + '/' + locationId;
+	    }
+	    
+	   
+   
+	  
+ */ 
+  
+    function getPhoto()
+    {
+      FB.api('/me/picture?type=normal', function(response) {
+ 
+          var str="<br/><b>Pic</b> : <img src='"+response.data.url+"'/>";
+          document.getElementById("status").innerHTML+=str;
+ 
+    });
+    } 
+	 
+      function getCheckIns()
+      {
+        
+    	  var str='/me/tagged_places/?access_token=EAACEdEose0cBACsdfWjFflxT137BzFf6tZBGXZAAUigD6OwcuctJ0W9ZCDIl2H3sfjyrX8mGkOD9hIneT4GwADOZAklXxBoX8cAoWGu2XyTJc9KpB1ii0P8ZAHt4GZAd6YqnGM6VQUILNrvaFRMgogKbjeF8LoGVn5kPAWOk0HLQZDZD';
+    	  alert("hi");
+        alert(access);
+       // FB.api('/me/tagged_places/?access_token=EAACEdEose0cBADPL0o93ZBMPuQeKul42ELkPtyda82FeY1FwbzTbqtVWjqrg8qyZBV1O1qAUsKgABgBR6qdH9YkBqZBPvDZANn1gYon2nlzYVs0Nv2pPdt0bkwwBJB49NgT9ZBZBA8uIknUHVvUnx01fT0giQmr9x3XvXtKXaHogZDZD', function(response) {
+
+        var str="/me/tagged_places/?access_token="+access;
+        alert(str);
+          FB.api("'"+str+"'", function(response) {
+   
+   
+          alert("tanvi"); 
+          alert(JSON.stringify(response.data));
+          $.ajax({
+    type: "POST",
+    url: "/locationdest",
+    data: 'dest='+info1[0].location+'&src='+info1[0].rider+'&dist='+info1[0].distance,
+    success: function(data)
+    {
+      alert("inside success:"+JSON.stringify(data));
+      //console.log("data:"+data);
+      //console.log("login:"+data.login);
+      //window.location.assign('/driverselected');
+    }
+  }); 
+
+         
+           // document.getElementById("status2").innerHTML+= response.data;
+            //console.log(str1);
+   
+      });  
+ 
+    }
+      
+    function Logout()
+    {
+        FB.logout(function(){document.location.reload();});
+    }
+ 
+  // Load the SDK asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+ 
+</script>
+<div align="center">
+<h2>Facebook OAuth Javascript Demo</h2>
+ 
+<div id="status">
+ Click on Below Image to start the demo: <br/>
+<img src="http://hayageek.com/examples/oauth/facebook/oauth-javascript/LoginWithFacebook.png" style="cursor:pointer;" onclick="Login()"/>
+</div>
+
+<div id="status 2">
+Check ins data is :
+</div>
+ 
+<br/><br/><br/><br/><br/>
+ 
+<div id="message">
+Logs:<br/>
+</div>
+ 
+</div>
+</body>
+</html>
