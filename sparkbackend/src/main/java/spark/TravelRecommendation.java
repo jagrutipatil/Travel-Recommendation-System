@@ -131,7 +131,7 @@ public class TravelRecommendation implements Serializable{
         });
         
         //get top 50 from the recommended products.
-        recommendations = recommendations.subList(0, 8);
+        recommendations = recommendations.subList(0, recommendations.size());
         List<Location> locations = new ArrayList<Location>();
 
         //TODO fetch product ID Information
@@ -221,7 +221,7 @@ public class TravelRecommendation implements Serializable{
         });
         
         //get top 50 from the recommended products.
-        recommendations = recommendations.subList(0, 8);
+        recommendations = recommendations.subList(0, recommendations.size());
         List<Location> locations = new ArrayList<Location>();
 
         //TODO fetch product ID Information
