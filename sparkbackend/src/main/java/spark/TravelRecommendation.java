@@ -232,6 +232,30 @@ public class TravelRecommendation implements Serializable{
         return locations;
 	}
 
+	public List<Tuple2<String, String>> getuserHistory(int inUserID) {
+		final int userId = inUserID;
+		JdbcRDD<Object[]> historyJdbcRDD = new JdbcRDD<>(DataService.getInstance().getSc().sc(), conn, "select * from checkin_history where checkin_history.locationid > ? and checkin_history.locationid < ?", -1,
+                499999999, 10, new MapResult(), ClassManifestFactory$.MODULE$.fromClass(Object[].class));
+		JavaRDD<Object[]> historyRDD = JavaRDD.fromRDD(historyJdbcRDD, ClassManifestFactory$.MODULE$.fromClass(Object[].class));
+		
+        List<Tuple2<String, String>> history = historyRDD.filter(
+                new Function<Object[], Boolean>() {
+                    public Boolean call(final Object[] record) throws Exception {
+                    	int user = Integer.parseInt(record[0] + "");
+                        return user == userId;
+                    }
+                }
+        ).map(
+                new Function<Object[], Tuple2<String,String>>() {
+                    public Tuple2<String, String> call(Object[] record) throws Exception {
+                        return new Tuple2<String, String>(record[1] + "", record[2]+"");
+                    }
+                }
+        ).collect();
+        
+        return history;
+	}
+	
 	public void printDataCount(JavaRDD<Tuple2<Integer, Rating>> ratings) {
       long ratingCount = ratings.count();
       long userCount = ratings.map(
@@ -354,6 +378,7 @@ public class TravelRecommendation implements Serializable{
 //        System.out.println("The best model was trained with rank = " + bestRank + " and lambda = " + bestLambda
 //                + ", and numIter = " + bestNumIter + ", and its RMSE on the test set is " + testRmse + ".");               
 	}
+
 	
 	public Map<Integer, Location> loadFilteredLocationFromDB(String country, String state, String type) {		
 		JdbcRDD<Object[]> locationJdbcRDD = new JdbcRDD<>(DataService.getInstance().getSc().sc(), conn, "select * from location where location.locationid > ? and location.locationid < ? and location.country = ' "+ country + "' and location.state = '"+ state +"' and location.type = '"+ type +"' ", -1,
