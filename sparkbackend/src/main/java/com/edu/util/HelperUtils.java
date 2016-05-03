@@ -144,6 +144,7 @@ public class HelperUtils {
 		obj.put(SystemConstants.DESC, location.getDesc());
 		obj.put(SystemConstants.COUNTRY, location.getCountry());
 		obj.put(SystemConstants.STATE, location.getState());
+		obj.put(SystemConstants.TYPE, location.getType());
 		obj.put(SystemConstants.ADDRESS, location.getAddress());
 		obj.put(SystemConstants.MINTEMP, location.getMinTemp());
 		obj.put(SystemConstants.MAXTEMP, location.getMaxTemp());		
