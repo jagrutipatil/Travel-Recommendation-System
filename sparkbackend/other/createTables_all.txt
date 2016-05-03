@@ -33,3 +33,15 @@ CREATE TABLE `location` (
   PRIMARY KEY (`locationid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+CREATE TABLE `checkin_history` (
+  `userid` int(11) NOT NULL,
+  `locationid` int(11) NOT NULL,
+  `location_name` varchar(45) DEFAULT NULL,
+  `location_type` varchar(45) DEFAULT NULL,
+  `country` varchar(45) DEFAULT NULL,
+  `state` varchar(45) DEFAULT NULL,
+  `city` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`userid`,`locationid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
