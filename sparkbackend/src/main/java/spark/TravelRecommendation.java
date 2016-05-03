@@ -71,7 +71,7 @@ public class TravelRecommendation implements Serializable{
         List<Rating> recommendations;
         JavaRDD<Tuple2<Integer, Rating>> ratings = DataService.getInstance().getRatings();        
         JavaSparkContext sc = DataService.getInstance().getSc();
-        final Map<Integer, Location> products = DataService.getInstance().getProducts().collectAsMap();
+        Map<Integer, Location> products = DataService.getInstance().getProducts().collectAsMap();
         
         //Getting the users ratings
         JavaRDD<Rating> userRatings = ratings.filter(
@@ -123,29 +123,15 @@ public class TravelRecommendation implements Serializable{
         MatrixFactorizationModel bestModel = DataService.getInstance().getBestModel();
         recommendations = bestModel.predict(JavaPairRDD.fromJavaRDD(userCandidates)).collect();        
         
-        final List<String> history = getUserHistory(user);
-        
         //Sorting the recommended products and sort them according to the rating
         Collections.sort(recommendations, new Comparator<Rating>() {
             public int compare(Rating r1, Rating r2) {
-            	String type1 = products.get(r1.product()).getType();
-            	String type2 = products.get(r2.product()).getType();
-            	if (history.contains(type1)) {
-            		return 1;
-            	} else if (history.contains(type2)) {
-            		return -1;
-            	} else if (r1.rating() < r2.rating()) {
-            		return -1;
-            	} else if (r1.rating() > r2.rating()) {
-            		return 1;
-            	}
-                return 0;
+                return r1.rating() < r2.rating() ? -1 : r1.rating() > r2.rating() ? 1 : 0;
             }
         });
         
-        
         //get top 50 from the recommended products.
-        recommendations = recommendations.subList(0, 10);
+        recommendations = recommendations.subList(0, 8);
         List<Location> locations = new ArrayList<Location>();
 
         //TODO fetch product ID Information
@@ -202,7 +188,7 @@ public class TravelRecommendation implements Serializable{
                 }
         );
         
-        final Map<Integer, Location> products = filteredProducts.collectAsMap();
+        Map<Integer, Location> products = filteredProducts.collectAsMap();
         
         productSet.addAll(products.keySet());        
         Iterator<Tuple2<Object, Object>> productIterator = userProducts.toLocalIterator();
@@ -227,29 +213,15 @@ public class TravelRecommendation implements Serializable{
         MatrixFactorizationModel bestModel = DataService.getInstance().getBestModel();
         recommendations = bestModel.predict(JavaPairRDD.fromJavaRDD(userCandidates)).collect();        
         
-        final List<String> history = getUserHistory(user);
-        
         //Sorting the recommended products and sort them according to the rating
         Collections.sort(recommendations, new Comparator<Rating>() {
             public int compare(Rating r1, Rating r2) {
-            	String type1 = products.get(r1.product()).getType();
-            	String type2 = products.get(r2.product()).getType();
-            	if (history.contains(type1)) {
-            		return 1;
-            	} else if (history.contains(type2)) {
-            		return -1;
-            	} else if (r1.rating() < r2.rating()) {
-            		return -1;
-            	} else if (r1.rating() > r2.rating()) {
-            		return 1;
-            	}
-                return 0;
+                return r1.rating() < r2.rating() ? -1 : r1.rating() > r2.rating() ? 1 : 0;
             }
         });
         
-        
         //get top 50 from the recommended products.
-        recommendations = recommendations.subList(0, 10);
+        recommendations = recommendations.subList(0, 8);
         List<Location> locations = new ArrayList<Location>();
 
         //TODO fetch product ID Information
@@ -260,30 +232,6 @@ public class TravelRecommendation implements Serializable{
         return locations;
 	}
 
-	public List<String> getUserHistory(int inUserID) {
-		final int userId = inUserID;
-		JdbcRDD<Object[]> historyJdbcRDD = new JdbcRDD<>(DataService.getInstance().getSc().sc(), conn, "select * from checkin_history where checkin_history.locationid > ? and checkin_history.locationid < ?", -1,
-                499999999, 10, new MapResult(), ClassManifestFactory$.MODULE$.fromClass(Object[].class));
-		JavaRDD<Object[]> historyRDD = JavaRDD.fromRDD(historyJdbcRDD, ClassManifestFactory$.MODULE$.fromClass(Object[].class));
-		
-        List<String> history = historyRDD.filter(
-                new Function<Object[], Boolean>() {
-                    public Boolean call(final Object[] record) throws Exception {
-                    	int user = Integer.parseInt(record[0] + "");
-                        return user == userId;
-                    }
-                }
-        ).map(
-                new Function<Object[], String>() {
-                    public String call(Object[] record) throws Exception {
-                        return  record[3]+"";
-                    }
-                }
-        ).collect();
-        
-        return history;
-	}
-	
 	public void printDataCount(JavaRDD<Tuple2<Integer, Rating>> ratings) {
       long ratingCount = ratings.count();
       long userCount = ratings.map(
@@ -406,7 +354,6 @@ public class TravelRecommendation implements Serializable{
 //        System.out.println("The best model was trained with rank = " + bestRank + " and lambda = " + bestLambda
 //                + ", and numIter = " + bestNumIter + ", and its RMSE on the test set is " + testRmse + ".");               
 	}
-
 	
 	public Map<Integer, Location> loadFilteredLocationFromDB(String country, String state, String type) {		
 		JdbcRDD<Object[]> locationJdbcRDD = new JdbcRDD<>(DataService.getInstance().getSc().sc(), conn, "select * from location where location.locationid > ? and location.locationid < ? and location.country = ' "+ country + "' and location.state = '"+ state +"' and location.type = '"+ type +"' ", -1,
@@ -639,4 +586,3 @@ public class TravelRecommendation implements Serializable{
 		}						
 	}
 }
-
