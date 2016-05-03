@@ -35,9 +35,9 @@ CREATE TABLE `location` (
 
 
 CREATE TABLE `checkin_history` (
-  `userid` int(11) NOT NULL,
-  `locationid` int(11) NOT NULL,
-  `location_name` varchar(45) DEFAULT NULL,
+  `userid` varchar(40) NOT NULL,
+  `locationid` varchar(40) NOT NULL,
+  `location_name` varchar(100) DEFAULT NULL,
   `location_type` varchar(45) DEFAULT NULL,
   `country` varchar(45) DEFAULT NULL,
   `state` varchar(45) DEFAULT NULL,
