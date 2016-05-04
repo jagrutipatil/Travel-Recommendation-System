@@ -36,7 +36,9 @@ public class ClientAPI extends ServerResource{
 	    }
 	    
 	    responseDetailsJson.put("forms", jsonArray);//Here you can see the data in json format
-	    return responseDetailsJson.toJSONString();	    
+	    String str = responseDetailsJson.toJSONString();
+	    System.out.println();
+	    return str;	    
 	}
 		
 	@Delete
@@ -48,16 +50,16 @@ public class ClientAPI extends ServerResource{
 	public String readMethod() throws Exception{
 		String requestedKey = (String) this.getRequestAttributes().get(SystemConstants.KEY);		
 		int userId = Integer.parseInt(requestedKey);
-		List<Location> products = TravelRecommendation.getInstance().getRecommendationForUser(userId);
+		List<Location> products = TravelRecommendation.getInstance().getRecommendationForUser(userId);		
 		JSONObject responseDetailsJson = new JSONObject();
 	    JSONArray jsonArray = new JSONArray();
 	    
 	    for(Location p : products) {
 	    	JSONObject jsonObject = HelperUtils.locationToJSONObj(p);
 	    	jsonArray.add(jsonObject);
-	    }	    
 	    
 	    responseDetailsJson.put("forms", jsonArray);//Here you can see the data in json format
+	    }	    
 
 	    String str =  responseDetailsJson.toJSONString();
 	    return str;
