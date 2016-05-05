@@ -215,3 +215,13 @@ exports.getData1=function(req,res)
 			 res.send(json_responses);
 			 
 }
+
+exports.getUID = function(req,res){
+	
+	
+	var uid=req.param("uid");
+	
+	console.log("******************user id in node...yayyy !!!!"+uid);
+	console.log("User ID from session is "+req.session.userId);
+	
+}

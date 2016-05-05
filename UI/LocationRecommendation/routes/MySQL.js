@@ -5,9 +5,9 @@ function getConnection(){
 	var connection = mysql.createConnection({
 	    host     : '127.0.0.1',
 	    user     : 'root',
-	    password : 'Aparna',
+	    password : 'tanvi',
 	    database : 'cmpe239',
-	    port	 : 3310
+	    port	 : 3306
 	});
 	return connection;
 }

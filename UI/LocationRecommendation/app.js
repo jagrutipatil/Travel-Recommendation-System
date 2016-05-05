@@ -44,7 +44,7 @@ app.post('/SignUpPage',index.GetSignUpPage);
 
 app.post('/Signup',index.Signup);
 app.post('/Login',index.Login);
-
+app.post('/getUID',index.getUID);
 app.post('/success_login',index.redirectToHome);
 
 //////
