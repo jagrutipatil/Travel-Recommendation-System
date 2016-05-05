@@ -1,0 +1,114 @@
+INSERT INTO location VALUES (1 , 'Gateway Of India Mumbai' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Mumbai, Maharashtra, India' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (2 , 'Ajanta Caves' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Maharashtra 431117, India' , 15.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (3 , 'Shaniwar Wada Fort' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Shaniwar Peth, Pune, Maharashtra 411030, India' , 18.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (4 , 'Bhuleshwar Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Bhuleshwar Road, Malshiras, Maharashtra 412104, India' , 12.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (5 , 'Zero Mile Stone India' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Wardha Rd, Civil Lines, Nagpur, Maharashtra 440004, India' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (6 , 'Karla Caves' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Karla, Lonavala, Pune, Maharashtra 410405, India' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (7 , 'Offbeat Destinations' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Chandrashekhar Agashe Path, Pulachi Wadi, Narayan Peth, Pune, Maharashtra 411030, India' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (8 , 'Elephanta Caves' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Gharapuri, Maharashtra 400094, India' , 20.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (9 , 'Haji Ali Dargah' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Dargah Rd, Haji Ali, Mumbai, Maharashtra, India' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (10 , 'Saptashrungi Devi Temple Vani' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Saptashrungi, Nasik, Maharashtra 422215, India' , 10.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (11 , 'Shree Siddhivinayak Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'SK Bole road, Prabhadevi, Mumbai, Maharashtra 400028, India' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (12 , 'Raigad Fort' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Mahad, Raigad, Maharashtra, India' , 16.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (13 , 'Khandoba Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Jejuri, Maharashtra 412303, India' , 15.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (14 , 'Shani Maharaj Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Sonai, Nevasa, Ahamadnagar, Maharashtra 414105, India' , 12.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (15 , 'Trimbakeshwar Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Dist Nashik, Trimbak, Maharashtra 422212, India' , 12.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (16 , 'Garudmachi - High places' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Patnus, Maharashtra 412108, India' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (17 , 'Kailasa Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Ellora, Maharashtra, India' , 16.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (18 , 'Takhat Sachkhand Sri Hazur Abchal Nagar Sahib' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Near Station, Harsh Nagar, Nanded, Maharashtra 431601, India' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (19 , 'Kamalgad' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Nandgane, Maharashtra 412803, India' , 20.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (20 , 'Dholya Ganapati Mandir' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Ganpati Ali, Wai, Maharashtra 412803, India' , 17.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (21 , 'Baneshwar Mandir, Nasrapur' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Baneshwar Temple Access Road, Nasrapur, Maharashtra 412213, India' , 19.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (22 , 'Shree Vajreshwari Yogini Devi Mandir' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Vajreshwari, Maharashtra 401204, India' , 19.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (23 , 'Renuka Devi Mandir' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Shrikshetra, Mahuragada, Mahur, Nanded, Maharashtra 431721, India' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (24 , 'Mahalaxmi Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Bhulabhai Desai Road, Mumbai, Maharashtra 400026, India' , 20.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (25 , 'Neelkantheshwar Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Road1, Kondhur, Maharashtra 412107, India' , 13.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (26 , 'Ganpatipule Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Post Ganpatipule, Ratnagiri, Maharashtra 415615, India' , 17.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (27 , 'Anjaneri Hanuman Temple' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Anjaneri, Maharashtra 422213, India' , 11.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (28 , 'Ekvira Devi Mandir' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Ekvira Devi Road, Pune, Maharashtra 410405, India' , 13.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (29 , 'Shiv Mandir' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Barku Pada, Ambernath, Maharashtra 421005, India' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (30 , 'Sita Gufaa' , 'historical India' , 'historical' , 'India' , 'maharashtra' , 'Panchavati, Nashik, Maharashtra 422003, India' , 14.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (31 , 'Govindaji Temple' , 'historical Manipur' , 'historical' , 'Manipur' , 'India' , 'Kangla, Imphal, Manipur 795001, India' , 20.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (32 , 'Ancelin Place' , 'historical Manipur' , 'historical' , 'Manipur' , 'India' , 'Opposite CRPF Camp, NH39, Mantripukhri, Achanbigei, Imphal, Manipur 795002, India' , 12.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (33 , 'ISKCON Temple' , 'historical Manipur' , 'historical' , 'Manipur' , 'India' , 'Imphal, Manipur 795140, India' , 15.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (34 , 'Mahabali Temple' , 'historical Manipur' , 'historical' , 'Manipur' , 'India' , 'Wangkhei, Imphal, Manipur 795001, India' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+	
+
+
+INSERT INTO location VALUES (31 , 'Mingle With The Star' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '139 Wan Chai Rd, Hong Kong' , 12.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (32 , 'Lanson Place Hotel Hong Kong' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '133 Leighton Rd, Causeway Bay, Hong Kong' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (33 , 'Causeway Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Hong Kong' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (34 , 'Jasmine Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Shop 5, LG/F, Jardine House, Central, Hong Kong' , 15.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (35 , 'The Pasta Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '8 Hillier St, Hong Kong' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (36 , 'Pacific Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '88 Queensway, Hong Kong' , 10.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (37 , 'Cordis, Hong Kong' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '555 Shanghai St, Mong Kok, Hong Kong' , 18.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (38 , 'The Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Hong Kong, Mong Kok, Shanghai St, Level L, Cordis, Hong Kong, Mongkok, Kowloon' , 20.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (39 , 'The Children's Place (Hong Kong) Ltd' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Hong Kong, 九龍觀塘鴻圖道1號' , 12.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (40 , 'Newton Place Hotel' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '163 Wai Yip St, Kwun Tong, Hong Kong' , 14.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (41 , 'Good Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '18 Hanoi Rd, Hong Kong' , 10.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (42 , 'The Harbourview Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '1 Austin Rd W, Hong Kong' , 17.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (43 , 'Ming Court' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Hong Kong, Mong Kok, Shanghai St, Level 6, Cordis, Hong Kong, Mongkok, Kowloon' , 18.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (44 , 'The Executive Centre' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Three Pacific Place, Level 3, 1 Queens Road East, Admiralty, Hong Kong' , 18.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (45 , 'Four Seasons Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '8 Finance St, Hong Kong' , 12.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (46 , 'JW Marriott Hotel Hong Kong' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'One Pacific Place, 88 Queensway, Hong Kong' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (47 , 'Hoi Kee Walnut Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '232 Sai Yeung Choi St S, Mong Kok, Hong Kong' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (48 , 'the beauty place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '3rd Floor Jade Centre, 98 Wellington St, Central, Hong Kong' , 14.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (49 , 'Two Pacific Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Hong Kong, 金鐘道88號' , 20.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (50 , 'Market Place by Jasons' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'The Repulse Bay Tower III Harston, 109 Repulse Bay Rd, Hong Kong' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (51 , 'Social Place 唐宮小聚' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'The L. Place, 139 Queen's Road Central, Central, Hong Kong' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (52 , 'Conrad Hong Kong' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'One Pacific Place, 88 Queensway, Admiralty, Hong Kong' , 17.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (53 , 'Yoga Place - Mong Kok' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Hong Kong, 九龍通菜街244號3樓' , 11.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (54 , 'Island Shangri-La, Hong Kong' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Pacific Place, Supreme Ct Rd, Central, Hong Kong' , 10.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (55 , 'D2 Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '9 Cheung Yee St, Cheung Sha Wan, Hong Kong' , 15.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (56 , 'Nadaman Japanese Restaurant at Island Shangri-La, Hong Kong' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Supreme Court Road, 7/F, Pacific Place, Central, Hong Kong' , 18.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (57 , 'Fishsteria Seafood Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '111 Queen's Rd E, Wan Chai, Hong Kong' , 20.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (58 , 'Hong Kong City Hall' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '5 Edinburgh Pl, Hong Kong' , 20.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (59 , 'City Gallery 展城館' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , '3 Edinburgh Pl, Central, Hong Kong' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (60 , 'Lane Crawford Pacific Place' , 'historical Hong Kong' , 'historical' , 'Hong Kong' , 'Hong Kong' , 'Shop 126, 88 Queensway,, Admiralty, Hong Kong' , 16.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (31 , 'Howland Island' , 'historical Howland Island' , 'historical' , 'Howland Island' , 'Howland Island' , 'Howland Island, United States Minor Outlying Islands' , 10.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (31 , 'Hungarian Parliament Building' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Kossuth Lajos tér 1-3, 1055 Hungary' , 19.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (32 , 'Fisherman's Bastion' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Szentháromság tér, 1014 Hungary' , 11.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (33 , 'Basilica of Esztergom' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Esztergom, Szent István tér 1, 2500 Hungary' , 17.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (34 , 'Gellért Hill Cave' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Hungary' , 10.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (35 , 'St. Stephen's Basilica' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Szent István tér 1, 1051 Hungary' , 15.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (36 , 'Vajdahunyad Castle' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Vajdahunyad vár, 1146 Hungary' , 13.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (37 , 'Dohány Street Synagogue' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Dohány u. 2, 1074 Hungary' , 11.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (38 , 'Matthias Church' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Szentháromság tér 2, 1014 Hungary' , 17.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (39 , 'New Synagogue' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Szeged, Jósika u. 10, 6722 Hungary' , 16.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (40 , 'Buda Castle' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Szent György tér 2, 1014 Hungary' , 19.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (41 , 'Reformed Church - Debrecen' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Debrecen, Kossuth tér 1, 4026 Hungary' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (42 , 'Boscolo Hotel Budapest' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Erzsébet krt. 9, 1073 Hungary' , 14.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (43 , 'Holmes Place Budapest' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Budapest, Holló u. 12, 1075 Hungary' , 17.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (44 , 'Budapest Places Studios' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'บูดาเปสต์, Akácfa u. 12-14, 1072 Hungary' , 10.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (45 , 'Tiger Tim's Place' , 'historical Hungary' , 'historical' , 'Hungary' , 'Budapest' , 'Doorbell 64, Teréz krt. 58, 1066 Hungary' , 17.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+INSERT INTO location VALUES (31 , 'Guide to Iceland' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Laugavegur 12, 101 Reykjavík, Iceland' , 15.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (32 , 'North Iceland Marketing Office' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Hafnarstræti, Akureyri, Iceland' , 10.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (33 , 'Total Iceland' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Bakkabraut, Kópavogur, Iceland' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (34 , 'Extreme Iceland' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Vatnagarðar, Reykjavík, Iceland' , 11.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (35 , 'Iceland Beyond' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Laugavegur, Reykjavík, Iceland' , 17.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (36 , 'Westfjords Marketing Office' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Árnagata, Ísafjörður, Iceland' , 14.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (37 , 'Icelandic Sorcery & Witchcraft' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Hólmavík, Iceland' , 14.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (38 , 'Gjáin' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Stangarvegur, Iceland' , 16.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (39 , 'Skaftafell' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Reykjavík, Iceland' , 18.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (40 , 'DIVE.IS - Sportköfunarskóli Íslands' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Hólmaslóð 2, 101 Reykjavík, Iceland' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (41 , 'Lotus Car Rental Iceland' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Sundagarðar, Reykjavík, Iceland' , 14.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (42 , 'Icelandic Phallological Museum' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Laugavegur 116, 105 Reykjavík, Iceland' , 14.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (43 , 'Icerental 4x4' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Bogatröð 2122, 235 Keflavík, Iceland' , 19.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (44 , 'TripCreator' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , '201,, Hlíðasmári 3, Kópavogur, Iceland' , 13.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (45 , 'Blue Car Rental' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , '3, Blikavöllur, 235 Keflavík, Iceland' , 12.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (46 , 'Hvitserkur' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Vatnsnesvegur, Iceland' , 17.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (47 , 'Hallgrimskirkja' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Hallgrímstorg 101, Reykjavík, Iceland' , 19.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (48 , 'Iceland Photo Tours - Aurora Hunters ehf.' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Kapellustígur 1, 113 Reykjavík, Iceland' , 20.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (49 , 'Icelandic Fish and Chips' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , 'Tryggvagata 11, 101 Reykjavík, Iceland' , 17.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (50 , 'Arctic Sea Tours Whale Watching' , 'historical Iceland' , 'historical' , 'Iceland' , 'Iceland' , '22, Hafnarbraut, 620 Dalvík, Iceland' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
