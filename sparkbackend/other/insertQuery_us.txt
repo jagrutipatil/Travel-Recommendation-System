@@ -1,0 +1,1542 @@
+INSERT INTO location VALUES (925264 , 'Growing Places Preschool' , 'Historical Massachusetts' , 'Scenery' , 'Massachusetts' , 'USA' , '30 Common St, Watertown, MA 02472, United States' , 11.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925265, 'Spots Street' , 'Historical Pennsylvania' , 'Scenery' , 'Pennsylvania' , 'USA' , 'Spots St, Glen Campbell, PA 15742, USA' , 16.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925266 , 'Spots Lane' , 'Historical Pennsylvania' , 'Scenery' , 'Pennsylvania' , 'USA' , 'Spots Ln, Pottersdale, PA 16871, USA' , 20.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925267 , 'Spots Road' , 'Historical Pennsylvania' , 'Scenery' , 'Pennsylvania' , 'USA' , 'Spots Rd, Glen Campbell, PA 15742, USA' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925268 , 'Duke & Duke (Trading Places movie)' , 'Historical Pennsylvania' , 'Scenery' , 'Pennsylvania' , 'USA' , '135 S Broad St, Philadelphia, PA 19109, USA' , 12.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925269 , 'Peter Places' , 'Historical Pennsylvania' , 'Scenery' , 'Pennsylvania' , 'USA' , '701 Market St, Philadelphia, PA 19106, USA' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925270 , 'Low Places Country Night Club' , 'Historical Pennsylvania' , 'Scenery' , 'Pennsylvania' , 'USA' , '2250 Lincoln Hwy E, Lancaster, PA 17602, USA' , 20.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925271, 'Georgia Visitor Information Center' , 'Historical Georgia' , 'Sports' , 'Georgia' , 'USA' , '1763 US-280, Plains, GA 31780, United States' , 20.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925272, 'Fun Junction USA' , 'Historical Georgia' , 'Sports' , 'Georgia' , 'USA' , '1675 GA-85, Fayetteville, GA 30214, United States' , 20.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925273 , 'Georgia Magazine' , 'Historical Georgia' , 'Sports' , 'Georgia' , 'USA' , '286 Oconee St # 200, Athens, GA 30601, United States' , 18.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925274 , 'Travel South USA' , 'Historical Georgia' , 'Sports' , 'Georgia' , 'USA' , '3500 Piedmont Rd NE #210, Atlanta, GA 30305, United States' , 14.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925275, 'Golden Isles CVB' , 'Historical Georgia' , 'Sports' , 'Georgia' , 'USA' , '1505 Richmond St, Brunswick, GA 31520, United States' , 20.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925276 , 'Georgia Visitor Information Center' , 'Historical Georgia', 'Sports' , 'Georgia' , 'USA' , '100 St Marys Rd, Kingsland, GA 31548, United States' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925277 , 'Georgia Visitor Information Center' , 'Historical Georgia' , 'Sports' , 'Georgia' , 'USA' , '1751 Williams Rd, Columbus, GA 31904, United States' , 10.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925278, 'The Georgia Trust for Historic Preservation' , 'Historical Georgia' , 'Sports' , 'Georgia' , 'USA' , '1516 Peachtree St NW, Atlanta, GA 30309, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925279 , 'Georgia Visitor Information Center - West Point' , 'Historical Georgia' , 'Clubbing' , 'Georgia' , 'USA' , 'Seaboard Coast Line Railroad, West Point, GA 31833, United States' , 16.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925280 , 'Tank Town USA' , 'Historical Georgia' , 'Clubbing' , 'Georgia' , 'USA' , '10408 Appalachian Hwy, Morganton, GA 30560, United States' , 11.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925281 , 'Care USA' , 'Historical Georgia' , 'Clubbing' , 'Georgia' , 'USA' , '151 Ellis St NE # 1, Atlanta, GA 30303, United States' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925282 , 'Pak Mail Peachtree City South' , 'Historical Georgia' , 'Clubbing' , 'Georgia' , 'USA' , '1200 GA-74 #6, Peachtree City, GA 30269, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925283 , 'North Carolina Welcome Center' , 'Historical North Carolina' , 'Clubbing' , 'North Carolina' , 'USA' , '2120 I-26, Columbus, NC 28722, United States' , 20.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925284 , 'Skateland USA West' , 'Historical North Carolina' , 'Clubbing' , 'North Carolina' , 'USA' , '200 Stage Coach Trail, Greensboro, NC 27409, United States' , 12.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925285 , 'His High Places' , 'Historical North Carolina' , 'Clubbing' , 'North Carolina' , 'USA' , '206 Alderly Cir, Blowing Rock, NC 28605, United States' , 19.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925286 , 'Attractions' , 'Historical North Carolina' , 'Clubbing' , 'North Carolina' , 'USA' , '3328 Guess Rd #1A, Durham, NC 27705, United States' , 20.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925287 , 'Charlottes Visitor Info Center' , 'Historical North Carolina' , 'Clubbing' , 'North Carolina' , 'USA' , '501 S College St, Charlotte, NC 28202, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925288 , 'North Carolina Central University' , 'Historical North Carolina' , 'Clubbing' , 'North Carolina' , 'USA' , '1801, 1801 Fayetteville St, Durham, NC 27701, United States' , 15.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925289 , 'Duke Homestead' , 'Historical North Carolina' , 'Clubbing' , 'North Carolina' , 'USA' , '2828 Duke Homestead Rd, Durham, NC 27705, United States' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925290 , 'Land of Oz' , 'Historical North Carolina' , 'Clubbing' , 'North Carolina' , 'USA' , '2669 S Beech Mountain Pkwy, Banner Elk, NC 28604, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925291 , 'Oconaluftee Visitor Center' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '1194 Newfound Gap Rd, Cherokee, NC 28719, United States' , 11.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925292 , 'NC Division of Tourism' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '301 North Wilmington Street, Raleigh, NC 27601, United States' , 19.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925293 , 'Hiddenite Gems Emerald Hollow Mine' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '484 Emerald Hollow Mine Dr, Hiddenite, NC 28636, United States' , 17.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925294 , 'Mooresville Convention and Visitors Bureau' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , 'Landings Dr, Mooresville, NC 28117, United States' , 17.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925295 , 'Kentner Stadium' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , 'Winston-Salem, NC 27106, United States' , 13.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925296 , 'Orton Plantation Gardens' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '9149 Orton Rd SE, Winnabow, NC 28479, United States' , 16.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925297 , 'Skateland USA North' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '3801 N Church St, Greensboro, NC 27405, United States' , 12.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925298 , 'Skateland USA of Clemmons' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '2512 Neudorf Rd, Clemmons, NC 27012, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925299 , 'Fields of the Wood' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '10000 NC-294, Murphy, NC 28906, United States' , 20.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925300 , 'Historic Sites Administration' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '430 N Salisbury St, Raleigh, NC 27603, United States' , 15.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925301 , 'Historic Bath' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '207 Carteret St, Bath, NC 27808, United States' , 13.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925302 , 'Amtrak Administration Facility' , 'Historical North Carolina' , 'Wild Life' , 'North Carolina' , 'USA' , '400 S West St, Raleigh, NC 27601, United States' , 12.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925303 , 'Minnesota Clay Co' , 'Historical Minnesota' , 'Wild Life' , 'Minnesota' , 'USA' , '2960 Niagara Ln N, Plymouth, MN 55447, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925304 , 'Drive A Tank' , 'Historical Minnesota' , 'Wild Life' , 'Minnesota' , 'USA' , '550 W Cherry St, Kasota, MN 56050, United States' , 11.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925305 , 'A&W' , 'Historical Minnesota' , 'Wild Life' , 'Minnesota' , 'USA' , '404 Wilson Ave NW, Faribault, MN 55021, United States' , 14.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925306 , 'Shred-it' , 'Historical Minnesota' , 'Religious' , 'Minnesota' , 'USA' , '8400 89th Ave N #430, Minneapolis, MN 55445, United States' , 10.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925307 , 'Harbor Freight Tools' , 'Historical Minnesota' , 'Religious' , 'Minnesota' , 'USA' , '5115 Burning Tree Rd, Duluth, MN 55811, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925308 , 'Albert Lea / Austin KOA' , 'Historical Minnesota' , 'Religious' , 'Minnesota' , 'USA' , '84259 County Rd 46, Hayward, MN 56043, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+
+
+INSERT INTO location VALUES (925309 , 'Portland Oregon Visitors Association' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , '701 SW 6th Ave, Portland, OR 97204, United States' , 20.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925310 , 'Pit Stop USA' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , '4184 Main St, Springfield, OR 97478, United States' , 13.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925311 , 'Columbia River Gorge National Scenic Area' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , 'Cascade Locks, OR 97014, United States' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925312 , 'Travel Oregon' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , '7000 NE Airport Way Suite 2201, Portland, OR 97218, United States' , 17.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925313 , 'Burgerville' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , '118 W 3rd St, The Dalles, OR 97058, United States' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925314 , 'Pit Stop USA' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , '1995 W 11th Ave, Eugene, OR 97402, United States' , 16.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925315 , 'Burgerville' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , '11900 SW Canyon Rd, Beaverton, OR 97005, United States' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925316 , 'Burgerville' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , '2310 Santiam Hwy SE, Albany, OR 97322, United States' , 20.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925317 , 'Burgerville' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , '18350 Willamette Dr, West Linn, OR 97068, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925318 , 'Burgerville' , 'Historical Oregon' , 'Religious' , 'Oregon' , 'USA' , '2514 Portland Rd, Newberg, OR 97132, United States' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+
+INSERT INTO location VALUES (925319 , 'Travel Michigan' , 'Historical Michigan' , 'Religious' , 'Michigan' , 'USA' , '300 N Washington Square, Lansing, MI 48933, United States' , 10.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925320 , 'Ann Arbor SPARK' , 'Historical Michigan' , 'Religious' , 'Michigan' , 'USA' , '201 S Division St #430, Ann Arbor, MI 48104, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925321 , 'Historic Trinity Lutheran Church' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '1345 Gratiot Ave, Detroit, MI 48207, United States' , 10.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925322 , 'Laser Tag of Clinton Township' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '35335 S Gratiot Ave, Charter Twp of Clinton, MI 48035, United States' , 16.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925323 , 'Michigan Central Station' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '2001 15th St, Detroit, MI 48216, United States' , 17.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925324 , 'Hitch House USA' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '12855 Levan Rd, Livonia, MI 48150, United States' , 16.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925325 , 'U.S.A. Trailer Sales' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '6896 N Telegraph Rd, Monroe, MI 48162, United States' , 14.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925326 , 'Turnip Rock' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '44.068345,-82.959081, United States' , 12.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925327 , 'Halloween Store' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '4787 Bay Rd, Saginaw, MI 48604, United States' , 14.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925328 , 'Pak Mail' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '621 W Main St, Gaylord, MI 49735, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925329 , 'UPS Drop Box' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '7326 Allen Rd, Allen Park, MI 48101, United States' , 20.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925330 , 'Biomat USA' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '1901 W Western Ave, South Bend, IN 46619, United States' , 19.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925331 , 'The Children's Place' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '18900 Michigan Ave, Dearborn, MI 48126, United States' , 12.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925332 , '55 PLACES' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '1525 W Homer St #302, Chicago, IL 60642, United States' , 15.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925333 , 'USA Hockey Arena' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '14900 Beck Rd, Plymouth, MI 48170, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925334 , 'USA Trailer LLC' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '444 W Howard City Edmore Rd, Edmore, MI 48829, United States' , 17.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925335 , 'Google Ann Arbor' , 'Historical Michigan' , 'Winter Vacation' , 'Michigan' , 'USA' , '2300 Traverwood Dr, Ann Arbor, MI 48105, United States' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925336 , 'USA Trailers Grayling' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '6659 M 93 Hwy S, Grayling, MI 49738, United States' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925337 , 'Alamo Rent A Car' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '5235 Portage Rd, Portage, MI 49002, United States' , 10.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925338 , 'USA Trailers Ionia' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '12208 S State Rd, Lake Odessa, MI 48849, United States' , 13.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925339 , 'Motown Museum' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '2648 W Grand Blvd, Detroit, MI 48208, United States' , 16.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925340 , 'Eternal Tattoos' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '7987 Lochlin Dr, Brighton, MI 48116, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925341 , 'A & W All-American Food' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '304 N State St, Big Rapids, MI 49307, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925342 , 'Rent-A-Wreck' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '39600 Michigan Ave, Canton, MI 48188, United States' , 14.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925343 , 'Spirit Halloween' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '1190 N W Ave, Jackson, MI 49202, United States' , 15.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925344 , 'Pak Mail of Battle Creek' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '30 E Columbia Ave F-1, Battle Creek, MI 49015, United States' , 14.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925345 , 'Pak Mail' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '271 W Centre Ave, Portage, MI 49024, United States' , 14.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925346 , 'PAK MAIL CENTER OF LAPEER' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '778 S Main St, Lapeer, MI 48446, United States' , 11.0 , 39.0 , 3000.0 , 150.0 , 'INR');
+
+INSERT INTO location VALUES (925347 , 'The Childrens Place Outlet' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '601 Wabash St, Michigan City, IN 46360, United States' , 20.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925348 , 'Halloween City' , 'Historical Michigan' , 'Beach' , 'Michigan' , 'USA' , '3570 Washtenaw Ave, Ann Arbor, MI 48104, United States' , 10.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925349 , 'CERTEX USA - Decatur' , 'Historical Alabama' , 'Beach' , 'Alabama' , 'USA' , '4099 AL-20, Trinity, AL 35673, United States' , 11.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925350, 'U.S. Space & Rocket Center' , 'Historical Alabama' , 'Beach' , 'Alabama' , 'USA' , '1 Tranquility Base, Huntsville, AL 35805, United States' , 16.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925351 , 'Pet Station USA' , 'Historical Alabama' , 'Temple' , 'Alabama' , 'USA', '8475 AL-59, Foley, AL 36535, United States' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925352 , 'Country Places, Inc.' , 'Historical Alabama' , 'Temple' , 'Alabama' , 'USA' , 'Blowing Cave Rd, Alabama 35748, United States' , 18.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925353 , 'Alabama Rehabilitation Services' , 'Historical Alabama' , 'Temple' , 'Alabama' , 'USA' , '1610 Center St # A, Mobile, AL 36604, United States' , 10.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925354 , 'MURPHY USA' , 'Historical Alabama' , 'Temple' , 'Alabama' , 'USA' , '15441 AL-24, Moulton, AL 35650, United States' , 10.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925355 , 'Pak Mail' , 'Historical Alabama' , 'Temple' , 'Alabama' , 'USA' , '300 N Dean Rd #5, Auburn, AL 36830, United States' , 12.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925356 , 'CERTEX USA - Birmingham' , 'Historical Alabama' , 'Temple' , 'Alabama' , 'USA' , '248A Oxmoor Ct, Birmingham, AL 35209, United States' , 10.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925357 , 'Pak Mail' , 'Historical Alabama' , 'Temple' , 'Alabama' , 'USA' , '2415 Moores Mill Rd #265, Auburn, AL 36830, United States' , 20.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925358 , 'Pak Mail' , 'Historical Alabama' , 'Temple' , 'Alabama' , 'USA' , '1207 E Forrest St, Athens, AL 35613, United States' , 18.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+
+
+INSERT INTO location VALUES (925359 , 'Garmisch USA Resort' , 'Historical Wisconsin' , 'Temple' , 'Wisconsin' , 'USA' , '23040 Garmisch Rd, Cable, WI 54821, United States' , 10.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925360 , 'Old Rock School' , 'Historical Wisconsin' , 'Temple' , 'Wisconsin' , 'USA' , 'E Parrish St, Prairie du Chien, WI 53821, United States' , 19.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925361 , 'Harley-Davidson Museum®' , 'Historical Wisconsin' , 'Temple' , 'Wisconsin' , 'USA' , '400 W Canal St, Milwaukee, WI 53201, United States' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925362 , 'Wild Eagle Lodge' , 'Historical Wisconsin' , 'Temple' , 'Wisconsin' , 'USA' , '4443 Chain O Lakes Rd, Eagle River, WI 54521, United States' , 20.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925363 , 'Carpet City Flooring Center Green Bay' , 'Historical Wisconsin' , 'Temple' , 'Wisconsin' , 'USA' , '2777 Allied St, Green Bay, WI 54304, United States' , 17.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925364 , 'Pak Mail' , 'Historical Wisconsin' , 'Temple' , 'Wisconsin' , 'USA' , '2238 W Bluemound Rd, Waukesha, WI 53186, United States' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925365 , 'Little Norway' , 'Historical Wisconsin' , 'Temple' , 'Wisconsin' , 'USA' , '3576 Co Rd JG, Mt Horeb, WI 53572, United States' , 20.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925366 , 'Growing Places' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '56 Pinkham Rd, Lee, NH 03861, United States' , 10.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925367 , 'Growing Places' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '11 Lee Rd, Madbury, NH 03823, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925368 , 'Growing Places-Early Care Educ' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '60 Strafford Ave, Durham, NH 03824, United States' , 17.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925369 , 'The Works Bakery Cafe' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '5a Mill Road Plaza, Durham, NH 03824, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925370 , 'Jiffy Lube Oil Change Center' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '150 Loudon Rd, Concord, NH 03301, United States' , 14.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925371 , 'Chesterfield Inn' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '20 Cross Rd, West Chesterfield, NH 03466, United States' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925372 , 'Discover New England' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '100 International Dr #352, Portsmouth, NH 03801, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925373 , 'Fort Stark State Historical Site' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '211 Wild Rose Ln, New Castle, NH 03854, United States' , 18.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925374 , 'The Works Bakery Cafe' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '9 Congress Street, Portsmouth, NH 03801, United States' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925375 , 'CommonPlaces' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '186 Granite St, Manchester, NH 03101, United States' , 12.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925376 , 'Ruggles Mine' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , 'Underhill Rd, Grafton, NH 03240, United States' , 11.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925377 , 'New Hampshire Tourism' , 'Historical New Hampshire' , 'Family Vacation' , 'New Hampshire' , 'USA' , '172 Pembroke Rd, Concord, NH 03301, United States' , 17.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925378 , 'Story Land' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '850 NH-16, Glen, NH 03838, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925379 , 'Canobie Lake Park' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '85 N Policy St, Salem, NH 03079, United States' , 19.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925380 , 'Old North Cemetery' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , 'N State St, Concord, NH 03301, United States' , 20.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925381 , 'Ski New Hampshire' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '264 Main St, Lincoln, NH 03251, United States' , 20.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925382 , 'White Mountains Visitor Center' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '200 Kancamagus Hwy, North Woodstock, NH 03262, United States' , 10.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925383 , 'Lost River Gorge & Boulder Caves' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '1712 Lost River Rd, North Woodstock, NH 03262, United States' , 11.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925384 , 'Sals Pizza' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '296 S Willow St, Manchester, NH 03103, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925385 , 'Lakes Region Tourism Association' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '61 Laconia Rd, Tilton, NH 03276, United States' , 20.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925386 , 'Fish & Game Department-Visitors Center' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '25 Fish Hatchery Rd, Warren, NH 03279, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925387 , 'Kimball Castle' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , 'Gilford, NH, United States' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925388 , 'Franconia Notch State Park' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , 'Flume Gorge, Daniel Webster Hwy, Lincoln, NH 03251, United States' , 10.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925389 , 'Tire Warehouse' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '426 NH-108, Somersworth, NH 03878, United States' , 19.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925390 , 'Cross Country Ski Areas' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '259 Bolton Rd, Winchester, NH 03470, United States' , 13.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925391 , 'Polar Caves Park' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '705 NH-25, Rumney, NH 03266, United States' , 15.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925392 , 'Madame Sherri Forest' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , 'West Chesterfield, NH 03466, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925393 , 'ScenicNH Photography LLC' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , 'NH-112, Lincoln, NH 03251, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925394 , 'Northern Extremes Snowmobile Rentals' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '1328 Main St, Bartlett, NH 03812, United States' , 13.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925395 , 'Nature Conservancy' , 'Historical New Hampshire' , 'Adventure' , 'New Hampshire' , 'USA' , '112 Bay Rd, Newmarket, NH 03857, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925396 , 'Carpetland USA Cedar Rapids' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '4700 Tama St SE, Cedar Rapids, IA 52403, United States' , 20.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925397 , 'Iowa Interstate Welcome Center' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , 'I-80 E, Underwood, IA 51576, United States' , 12.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925398 , 'Carpetland USA Burlington' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '905 Wellshire Dr, Burlington, IA 52601, United States' , 15.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925399 , 'Carpetland USA Dubuque' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '4095 McDonald Dr, Dubuque, IA 52003, United States' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925400 , 'Carpetland USA' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '1234 Flammang Dr, Waterloo, IA 50702, United States' , 12.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925401 , 'Biomat USA' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '1223 6th Ave, Des Moines, IA 50314, United States' , 17.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925402 , 'Trainland USA' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '3135 IA-117, Colfax, IA 50054, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925403 , 'Old Rock School' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , 'E Parrish St, Prairie du Chien, WI 53821, United States' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925404 , 'Carpetland USA Davenport' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '4337 N Brady St, Davenport, IA 52806, United States' , 11.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925405 , 'Terrace Hill' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '2300 Grand Ave, Des Moines, IA 50312, United States' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925406 , 'Emergency Dental Care USA' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '1620 NW 114th St, Clive, IA 50325, United States' , 15.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925407 , 'Murphy USA' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '3420 Singing Hills Blvd, Sioux City, IA 51106, United States' , 15.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925408 , 'Murphy USA' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '3405 8th St SW, Altoona, IA 50009, United States' , 20.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925409 , 'Iowa Tourism Office' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '200 E Grand Ave, Des Moines, IA 50309, United States' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925410 , 'Grand Slam USA' , 'Historical Iowa' , 'Jungle' , 'Iowa' , 'USA' , '4137 120th St, Urbandale, IA 50323, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925411 , 'Stoller USA' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '1201 9th St SW, Cedar Rapids, IA 52404, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925412 , 'Pita Pit' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '113 Iowa Ave, Iowa City, IA 52240, United States' , 14.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925413 , 'Murphy USA' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '5805 Elmore Avenue, Davenport, IA 52807, United States' , 17.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925414 , 'Specialty Leather Productions, Inc.' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '2135 Industrial Park Rd, Boone, IA 50036, United States' , 17.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925415 , 'Siegwerk USA Inc' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '3535 SW 56th St, Des Moines, IA 50321, United States' , 16.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925416 , 'Murphy USA' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '3115 Floyd Blvd, Sioux City, IA 51108, United States' , 11.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925417 , 'Girl Scouts' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '10715 Hickman Rd, Urbandale, IA 50322, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925418 , 'QPS Employment Group' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '26 E Main St, Marshalltown, IA 50158, United States' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925419 , 'Pita Pit' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '517 2nd St, Coralville, IA 52241, United States' , 10.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925420 , 'Biomat USA' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '617 Mynster St, Council Bluffs, IA 51503, United States' , 14.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925421 , 'Girl Scouts of Eastern Iowa and Western Illinois' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '2644 Pennsylvania Ave, Dubuque, IA 52001, United States' , 10.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925422 , 'Girl Scouts of Eastern Iowa and Western Illinois' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '940 Golden Valley Dr, Bettendorf, IA 52722, United States' , 19.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925423 , 'USA Staffing' , 'Historical Iowa' , 'Lakes' , 'Iowa' , 'USA' , '1112 West St, Grinnell, IA 50112, United States' , 14.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+INSERT INTO location VALUES (925424 , 'Colorado Ski Country USA' , 'Historical Colorado' , 'Lakes' , 'Colorado' , 'USA' , '1444 Wazee St #320, Denver, CO 80202, United States' , 20.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925425 , 'Black Canyon of the Gunnison National Park' , 'Historical Colorado' , 'Lakes' , 'Colorado' , 'USA' , 'Colorado, United States' , 12.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925426 , 'Colorado Tourism Office' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '1625 Broadway #2700, Denver, CO 80202, United States' , 18.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925427 , 'iTZ Family, Food, & Fun - Colorado Springs' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '3035 New Center Point, Colorado Springs, CO 80922, United States' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925428 , 'USA Wrestling' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '6155 Lehman Dr, Colorado Springs, CO 80918, United States' , 10.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925429 , 'USA Fencing' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '4065 Sinton Rd #140, Colorado Springs, CO 80907, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925430 , 'Trinidad Lake' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '32610 CO-12, Trinidad, CO 81082, United States' , 14.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925431 , 'Dinosaur National Monument' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '11625 East 1500 South, Jensen, UT 84035, United States' , 14.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925432 , 'Mesa Verde National Park' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , 'Mesa Verde, CO, United States' , 16.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925433 , 'Colorado Welcome Center' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '928 E Main St, Cortez, CO 81321, United States' , 13.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925434 , 'Pak Mail Colorado' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '4419 Centennial Blvd, Colorado Springs, CO 80907, United States' , 17.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925435 , 'Pak Mail' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '1042 Baptist Rd, Colorado Springs, CO 80921, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925436 , 'Pak Mail # 003' , 'Historical Colorado' , 'Beach' , 'Colorado' , 'USA' , '875 S Colorado Blvd, Denver, CO 80246, United States' , 16.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+INSERT INTO location VALUES (925437 , 'Tennessee Avenue' , 'Historical Tennesse' , 'Beach' , 'Tennesse' , 'USA' , 'Tennessee Ave, Fort Wayne, IN, USA' , 15.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925438 , 'South Tennessee Place' , 'Historical Tennesse' , 'Beach' , 'Tennesse' , 'USA' , 'S Tennessee Pl, Mason City, IA 50401, USA' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925439 , 'West Tennessee Place' , 'Historical Tennesse' , 'Beach' , 'Tennesse' , 'USA' , 'W Tennessee Pl, Lakewood, CO, USA' , 18.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925440 , 'West Tennessee Place' , 'Historical Tennesse' , 'Beach' , 'Tennesse' , 'USA' , 'W Tennessee Pl, Lakewood, CO 80226, USA' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925441 , 'Tennessee Place Northeast' , 'Historical Tennesse' , 'Tourist' , 'Tennesse' , 'USA' , 'Tennessee Pl NE, Albuquerque, NM 87109, USA' , 12.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925442 , 'East Tennessee Place' , 'Historical Tennesse' , 'Tourist' , 'Tennesse' , 'USA' , 'E Tennessee Pl, Aurora, CO 80017, USA' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925443 , 'South Tennessee Place' , 'Historical Tennesse' , 'Tourist' , 'Tennesse' , 'USA' , 'S Tennessee Pl, Tucson, AZ 85714, USA' , 20.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925444 , 'Tennessee Place Southeast' , 'Historical Tennesse' , 'Tourist' , 'Tennesse' , 'USA' , 'Tennessee Pl SE, Albuquerque, NM 87108, USA' , 20.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925445 , 'North Tennessee Place' , 'Historical Tennesse' , 'Tourist' , 'Tennesse' , 'USA' , 'N Tennessee Pl, Mason City, IA 50401, USA' , 11.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925446 , 'Southwest Tennessee Place' , 'Historical Tennesse' , 'Tourist' , 'Tennesse' , 'USA' , 'SW Tennessee Pl, Beaverton, OR 97008, USA' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+INSERT INTO location VALUES (925447 , 'Virginia Avenue' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'Virginia Ave, Indianapolis, IN, USA' , 15.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925448 , 'West Virginia Avenue' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'W Virginia Ave, Kokomo, IN 46902, USA' , 17.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925449 , 'Virginia Avenue' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'Virginia Ave, Fort Wayne, IN 46808, USA' , 19.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925450 , 'Virginia' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'Virginia, Pensacola, FL 32507, USA' , 10.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925451 , 'North Place Lane' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'N Place Ln, Strasburg, VA 22657, USA' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925452, 'East Virginia Place' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'E Virginia Pl, Aurora, CO 80012, USA' , 19.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925453 , 'Virginia Place Northeast' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'Virginia Pl NE, Atlanta, GA 30305, USA' , 16.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925454 , 'Virginia Avenue' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'Virginia Ave, New Port Richey, FL 34652, USA' , 14.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925455 , 'West Virginia Place' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'W Virginia Pl, Lakewood, CO 80226, USA' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925456 , 'West Virginia Place' , 'Historical Virginia' , 'Tourist' , 'Virginia' , 'USA' , 'W Virginia Pl, Green River, WY 82935, USA' , 20.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925457 , 'Pump It Up' , 'Historical South Carolina' , 'Tourist' , 'South Carolina' , 'USA' , '440 Southport Commerce Blvd, Spartanburg, SC 29306, United States' , 10.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925458 , 'Hardeeville Welcome Center' , 'Historical South Carolina' , 'Tourist' , 'South Carolina' , 'USA' , '4968 Jasper Hwy, Hardeeville, SC 29927, United States' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925459 , 'SC Chamber Of Commerce' , 'Historical South Carolina' , 'Tourist' , 'South Carolina' , 'USA' , '1301 Gervais Street #1100, Columbia, SC 29201, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925460 , 'The Red Horse Inn' , 'Historical South Carolina' , 'Tourist' , 'South Carolina' , 'USA' , '45 Winstons Chase Ct, Landrum, SC 29356, United States' , 10.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925461 , 'Historic Preservation' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '8301 Parklane Rd, Columbia, SC 29223, United States' , 13.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925462 , 'Forestry Department' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '5500 Broad River Rd, Columbia, SC 29212, United States' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925463 , 'Jiffy Lube' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '2109 Union Rd, Gastonia, NC 28054, United States' , 13.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925464 , 'Old Sheldon Church Ruins' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , 'Old Sheldon Church Rd, Yemassee, SC 29945, United States' , 11.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925465 , 'The Cottages on Charleston Harbor' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '16 Patriots Point Rd, Mt Pleasant, SC 29464, United States' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925466 , 'Boone Hall Plantation & Gardens' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '1235 Long Point Rd, Mt Pleasant, SC 29464, United States' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925467 , 'Eastwind Castle' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '527 Johnston Hwy, Trenton, SC 29847, United States' , 18.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925468 , 'Ashtabula Historic House' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '2725 Old Greenville Hwy, Central, SC 29630, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925469 , 'Mepkin Abbey' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '1098 Mepkin Abbey Rd, Moncks Corner, SC 29461, United States' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925470 , 'Fred W. Symmes Chapel' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '100 YMCA Camp Rd, Cleveland, SC 29635, United States' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925471 , 'Bessingers BBQ Restaurant' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '1602 Savannah Hwy, Charleston, SC 29407-7869, United States' , 18.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925472 , 'Falls Park on the Reedy' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '601 S Main St, Greenville, SC 29601, United States' , 13.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925473 , 'US Air Force Base' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , 'Shaw AFB, SC 29152, United States' , 18.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925474 , 'The Powder Magazine' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '79 Cumberland St, Charleston, SC 29401, United States' , 12.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925475 , 'North Carolina Welcome Center' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '2120 I-26, Columbus, NC 28722, United States' , 19.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925476 , 'Pump It Up' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '75 Brookfield Oaks Dr #100, Greenville, SC 29607, United States' , 10.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925477 , 'Dixie Drive In' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '600 Montague Ave, Greenwood, SC 29649, United States' , 10.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925478 , 'Sky Zone' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '2465 Laurens Rd, Greenville, SC 29607, United States' , 17.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925479 , 'Macco - Car Pros Plaza' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '103 Old Trolley Rd, Summerville, SC 29485, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925480 , 'Charleston Area Convention and Visitors Bureau' , 'Historical South Carolina' , 'Swimming' , 'South Carolina' , 'USA' , '423 King St, Charleston, SC 29403, United States' , 19.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925481 , 'South Carolina Association' , 'Historical South Carolina' , 'Family Vacation' , 'South Carolina' , 'USA' , '615 St Andrews Rd, Columbia, SC 29210, United States' , 13.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925482 , 'Carolina Girl' , 'Historical South Carolina' , 'Family Vacation' , 'South Carolina' , 'USA' , '95 Ripley Point Dr, Charleston, SC 29407, United States' , 10.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925483 , 'Hampton Plantation State Historic Site' , 'Historical South Carolina' , 'Family Vacation' , 'South Carolina' , 'USA' , '1950 Rutledge Rd, McClellanville, SC 29458, United States' , 14.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925484 , 'National Trust For Historic' , 'Historical South Carolina' , 'Family Vacation' , 'South Carolina' , 'USA' , '456 King St, Charleston, SC 29403, United States' , 12.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925485 , 'Hymans' , 'Historical South Carolina' , 'Family Vacation' , 'South Carolina' , 'USA' , '215 Meeting St, Charleston, SC 29401, United States' , 15.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925486 , 'CSL Plasma' , 'Historical South Carolina' , 'Family Vacation' , 'South Carolina' , 'USA' , '215 Assembly St, Columbia, SC 29201, United States' , 11.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925487 , 'Cincinnati USA Regional Tourism Network' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '50 E Rivercenter Blvd #1100, Covington, KY 41011, United States' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925488 , 'Advance Pay USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '4802 Turney Rd, Cleveland, OH 44125, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925489 , 'Tan Pro USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '1432 E Wooster St, Bowling Green, OH 43402, United States' , 10.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925490 , 'Skatetown USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '8730 North Pavillion Drive, West Chester, OH 45069, United States' , 10.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925491 , 'Cincinnati USA Convention & Visitors Bureau' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '525 Vine St #1500, Cincinnati, OH 45202, United States' , 19.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925492 , 'Advance Pay USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '74 Boardman Poland Rd, Boardman, OH 44512, United States' , 10.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925493 , 'Advance Pay USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '1082 E Tallmadge Ave, Akron, OH 44310, United States' , 14.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925494 , 'Balgriffin Park' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '5715 Norn St, Dublin, OH 43016, United States' , 11.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925495 , 'PackShip USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '1347 N Main St, Orrville, OH 44667, United States' , 15.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925496 , 'Tan Pro USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '1949 Tiffin Ave, Findlay, OH 45840, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925497 , 'Advance Pay USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '22530 Lakeshore Blvd, Cleveland, OH 44123, United States' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925498 , 'United Skates of America' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '3362 Refugee Rd, Columbus, OH 43232, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925499 , 'Tan Pro USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '1081 N 21st St, Newark, OH 43055, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925500 , 'Advance Pay USA' , 'Historical Ohio' , 'Family Vacation' , 'Ohio' , 'USA' , '4308 Ridge Rd, Cleveland, OH 44144, United States' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925501 , 'Tan Pro USA' , 'Historical Ohio' , 'Clubbing' , 'Ohio' , 'USA' , '358 S Hamilton Rd, Gahanna, OH 43230, United States' , 16.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925502 , 'Tan Pro USA' , 'Historical Ohio' , 'Clubbing' , 'Ohio' , 'USA' , '177 W Milltown Rd, Wooster, OH 44691, United States' , 17.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925503 , 'Olympic National Park' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '3002 Mt Angeles Rd, Port Angeles, WA 98362, United States' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925504 , 'Space Needle' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '400 Broad St, Seattle, WA 98109, United States' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925505 , 'Theo Chocolate Inc' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '3400 Phinney Ave N, Seattle, WA 98103, United States' , 17.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925506 , 'Olympic Peninsula Gateway Visitors Center' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '93 Beaver Valley Rd, Port Ludlow, WA 98365, United States' , 11.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925507 , 'Seattle CityPASS' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '400 Broad St, Seattle, WA 98109, United States' , 12.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925508 , 'The Cedar Creek Grist Mill' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '43907 NE Grist Mill Rd, Woodland, WA 98674, United States' , 14.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925509 , 'Mount Rainier National Park' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , 'Washington, United States' , 12.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925510 , 'Chuck E. Cheeses' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '2239 148th Ave NE, Bellevue, WA 98007, United States' , 13.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925511 , 'Nature Conservancy' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '6 Yakima St # 1, Wenatchee, WA 98801, United States' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925512 , 'Visit Seattle' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '701 Pike St #800, Seattle, WA 98101, United States' , 11.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925513 , 'Thrift Books' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '18300 Cascade Ave S #150, Tukwila, WA 98188, United States' , 17.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925514 , 'Chuck E. Cheeses' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '2610 N Columbia Center Blvd, Richland, WA 99352, United States' , 16.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925515 , 'Forks Chamber Of Commerce' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '1411 S Forks Ave, Forks, WA 98331, United States' , 11.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925516 , 'Chuck E. Cheeses' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '7721 NE Vancouver Plaza Dr, Vancouver, WA 98662, United States' , 17.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925517 , 'Five Guys Burgers and Fries' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '1500 NW Market St, Seattle, WA 98107, United States' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925518 , 'Chuck E. Cheeses' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '621 Cascade Mall Dr, Burlington, WA 98233, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925519 , 'UPS Drop Box' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , '1016 N Bradley Rd, Spokane Valley, WA 99212, United States' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925520 , 'Palouse Falls State Park' , 'Historical Washington' , 'Clubbing' , 'Washington' , 'USA' , 'Palouse Falls Rd, Lacrosse, WA 99143, United States' , 19.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925521 , 'Chuck E. Cheeses' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '3717 196th St SW #100, Lynnwood, WA 98036, United States' , 12.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925522 , 'Barnes & Noble' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '15310 E Indiana Ave, Spokane Valley, WA 99216, United States' , 19.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925523 , 'Nature Conservancy' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '4770 WA-20, Island Park, ID 83429, United States' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925524 , 'Nature Conservancy' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '32 N 3rd St, Yakima, WA 98901, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925525 , 'Bavarian Lodge' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '810 US-2, Leavenworth, WA 98826, United States' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925526 , 'Nature Conservancy' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '120 Union Ave SE, Olympia, WA 98501, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925527 , 'High Steel Bridge' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , 'NF-2340, Shelton, WA 98584, United States' , 10.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925528 , 'The Nature Conservancy in Washington' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '74 Wall St, Seattle, WA 98121, United States' , 18.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925529 , 'Red Robin Gourmet Burgers' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '18029 Garden Way NE, Woodinville, WA 98072, United States' , 10.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925530 , 'The Childrens Place' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '14700 E Indiana Ave, Spokane, WA 99216, United States' , 13.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925531 , 'Five Guys Burgers and Fries' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '311 NE 103rd St, Seattle, WA 98125, United States' , 11.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925532 , 'Wilderness Society-Washington' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , 'Pacific Building, 720 3rd Ave #1410, Seattle, WA 98104, United States' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+INSERT INTO location VALUES (925533 , 'Zip Line USA' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '3335 US-160, Reeds Spring, MO 65737, United States' , 20.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925534 , 'Missouri USA Wrestling' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '1201 NW Jefferson St # D, Blue Springs, MO 64015, United States' , 19.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925535 , 'Bright Futures USA' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '4037 E 7th St, Joplin, MO 64801, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925536 , 'Auto Start USA Service Center' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '30 NE Vivion Rd, Kansas City, MO 64118, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925537 , 'Metals USA' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '2840 E Heartland Dr, Liberty, MO 64068, United States' , 10.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925538 , 'Phone Fix USA' , 'Historical Nebraska' , 'Night Life' , 'Nebraska' , 'USA' , '3865 South St, Lincoln, NE 68506, United States' , 18.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925539 , 'Chevyland USA' , 'Historical Nebraska' , 'Night Life' , 'Nebraska' , 'USA' , '7247 Buffalo Creek Rd, Elm Creek, NE 68836, United States' , 15.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925540 , 'Defy Gravity Omaha' , 'Historical Nebraska' , 'Night Life' , 'Nebraska' , 'USA' , '10421 Portal Rd, La Vista, NE 68128, United States' , 10.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925521 , 'Chuck E. Cheeses' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '3717 196th St SW #100, Lynnwood, WA 98036, United States' , 12.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925522 , 'Barnes & Noble' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '15310 E Indiana Ave, Spokane Valley, WA 99216, United States' , 19.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925523 , 'Nature Conservancy' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '4770 WA-20, Island Park, ID 83429, United States' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925524 , 'Nature Conservancy' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '32 N 3rd St, Yakima, WA 98901, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925525 , 'Bavarian Lodge' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '810 US-2, Leavenworth, WA 98826, United States' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925526 , 'Nature Conservancy' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '120 Union Ave SE, Olympia, WA 98501, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925527 , 'High Steel Bridge' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , 'NF-2340, Shelton, WA 98584, United States' , 10.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925528 , 'The Nature Conservancy in Washington' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '74 Wall St, Seattle, WA 98121, United States' , 18.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925529 , 'Red Robin Gourmet Burgers' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '18029 Garden Way NE, Woodinville, WA 98072, United States' , 10.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925530 , 'The Childrens Place' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '14700 E Indiana Ave, Spokane, WA 99216, United States' , 13.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925531 , 'Five Guys Burgers and Fries' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , '311 NE 103rd St, Seattle, WA 98125, United States' , 11.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925532 , 'Wilderness Society-Washington' , 'Historical Washington' , 'Night Life' , 'Washington' , 'USA' , 'Pacific Building, 720 3rd Ave #1410, Seattle, WA 98104, United States' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925533 , 'Zip Line USA' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '3335 US-160, Reeds Spring, MO 65737, United States' , 20.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925534 , 'Missouri USA Wrestling' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '1201 NW Jefferson St # D, Blue Springs, MO 64015, United States' , 19.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925535 , 'Bright Futures USA' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '4037 E 7th St, Joplin, MO 64801, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925536 , 'Auto Start USA Service Center' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '30 NE Vivion Rd, Kansas City, MO 64118, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925537 , 'Metals USA' , 'Historical Missouri' , 'Night Life' , 'Missouri' , 'USA' , '2840 E Heartland Dr, Liberty, MO 64068, United States' , 10.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925538 , 'Phone Fix USA' , 'Historical Nebraska' , 'Night Life' , 'Nebraska' , 'USA' , '3865 South St, Lincoln, NE 68506, United States' , 18.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925539 , 'Chevyland USA' , 'Historical Nebraska' , 'Night Life' , 'Nebraska' , 'USA' , '7247 Buffalo Creek Rd, Elm Creek, NE 68836, United States' , 15.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925540 , 'Defy Gravity Omaha' , 'Historical Nebraska' , 'Night Life' , 'Nebraska' , 'USA' , '10421 Portal Rd, La Vista, NE 68128, United States' , 10.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925541 , 'Reno Tahoe USA' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '4001 S Virginia St, Reno, NV 89502, United States' , 17.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925542 , 'USA Cash Services' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '1111 N Carson St, Carson City, NV 89701, United States' , 13.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925543 , 'USA Cash Services' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '601 S Maine St, Fallon, NV 89406, United States' , 18.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925544 , 'Little ALe Inn' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '9631 Old Mill St, Alamo, NV 89001, United States' , 14.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925545 , 'USA Cash Services' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '290 Kingsbury Grade Rd, Stateline, NV 89449, United States' , 20.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925546 , 'USA Cash Services' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '1245 Baring Blvd, Sparks, NV 89434, United States' , 19.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925547 , 'Lake Tahoe' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , 'California 96151, United States' , 10.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925548 , 'USA Cash Services' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '420 E Main St, Fernley, NV 89408, United States' , 18.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925549 , 'Lake Mead National Recreation Area Headquarters' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '601 Nevada Way, Boulder City, NV 89005, United States' , 17.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925550 , 'Boys Town Nevada' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '821 N Mojave Rd, Las Vegas, NV 89101, United States' , 10.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925551 , 'Heart Attack Grill' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '450 Fremont St #130, Las Vegas, NV 89101, United States' , 12.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925552 , 'BLM Battle Mountain District Office' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '50 Bastian Rd, Battle Mountain, NV 89820, United States' , 19.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925553 , 'Deer Creek Inn' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '116 Nevada St, Nevada City, CA 95959, United States' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925553 , 'Bureau of Land Management' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '1000 Scenic Loop Dr, Las Vegas, NV 89124, United States' , 16.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925554 , 'U.S. Bureau of Land Management' , 'Historical Nevada' , 'African Safaris' , 'Nevada' , 'USA' , '4701 N Torrey Pines Dr, Las Vegas, NV 89130, United States' , 13.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925555 , 'Furniture Gallery USA' , 'Historical Oklahoma' , 'African Safaris' , 'Oklahoma' , 'USA' , '231 S 30th St, Enid, OK 73701, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925556 , 'USA Screen Printing & Embroidery' , 'Historical Oklahoma' , 'African Safaris' , 'Oklahoma' , 'USA' , '3100 S Meridian Ave, Oklahoma City, OK 73119, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925557 , 'Murphy USA' , 'Historical Oklahoma' , 'African Safaris' , 'Oklahoma' , 'USA' , '363 N Interstate Dr, Norman, OK 73069, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925558 , 'Murphy USA' , 'Historical Oklahoma' , 'African Safaris' , 'Oklahoma' , 'USA' , '24 E Interstate 240 Service Rd, Oklahoma City, OK 73149, United States' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925559 , 'Murphy USA' , 'Historical Oklahoma' , 'African Safaris' , 'Oklahoma' , 'USA' , '2321 W Kenosha St, Broken Arrow, OK 74012, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925560 , 'National Softball Hall of Fame' , 'Historical Oklahoma' , 'African Safaris' , 'Oklahoma' , 'USA' , '2801 NE 50th St, Oklahoma City, OK 73111, United States' , 16.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925561 , 'Furniture Gallery USA' , 'Historical Oklahoma' , 'Religious' , 'Oklahoma' , 'USA' , '6807 SE 15th St, Oklahoma City, OK 73110, United States' , 10.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925562 , 'Murphy USA' , 'Historical Oklahoma' , 'Religious' , 'Oklahoma' , 'USA' , '6312 S Elm Pl, Broken Arrow, OK 74011, United States' , 11.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925563 , 'Round House Manufacturing' , 'Historical Oklahoma' , 'Religious' , 'Oklahoma' , 'USA' , '1 American Way, Shawnee, OK 74804, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925564 , 'The Childrens Place Outlet' , 'Historical Oklahoma' , 'Religious' , 'Oklahoma' , 'USA' , '7628 W Reno Ave, Oklahoma City, OK 73127, United States' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925565 , 'The Childrens Place' , 'Historical Oklahoma' , 'Religious' , 'Oklahoma' , 'USA' , '2501 W Memorial Rd, Oklahoma City, OK 73134, United States' , 15.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925566 , 'Pearls Place' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '3114 Severn Ave, Metairie, LA 70002, United States' , 13.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925567 , 'Childrens Place Outlet' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '2400 Tanger Blvd, Gonzales, LA 70737, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925568 , 'Place dArmes Hotel' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '625 St Ann St, New Orleans, LA 70116, United States' , 13.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925569 , 'Poverty Point State Historic Site' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '6859 LA-577, Pioneer, LA 71266, United States' , 13.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925570 , 'National Trust-Historic Preservation' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '317 E Main St, New Iberia, LA 70560, United States' , 18.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925571 , 'Voodoo Spiritual Temple' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '828 N Rampart St, New Orleans, LA 70116, United States' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925572 , 'Privateer Place' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '2000 Lakeshore Dr, New Orleans, LA 70148, United States' , 16.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925573 , 'Americas Home Place' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '3670 Hollywood St, Beaumont, TX 77701, United States' , 17.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925574 , 'Los Adaes State Historic Site' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '6354 LA-485, Robeline, LA 71469, United States' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925575 , 'Fort Jesup State Historic Site' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '32 Geoghagan Rd, Many, LA 71449, United States' , 17.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925576 , 'Fort Macomb' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , 'New Orleans, LA 70129, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925577 , 'Mansfield State Historic Site' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '15149 LA-175, Mansfield, LA 71052, United States' , 12.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925578 , 'Robert E. Lee Monument' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , 'New Orleans, LA 70130, United States' , 17.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925579 , 'Forts Randolph & Buhlow State Historic Site' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '135 Riverfront St, Pineville, LA 71360, United States' , 15.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925580 , 'The Children's Place' , 'Historical Lousiana' , 'Religious' , 'Lousiana' , 'USA' , '9773 Cortana Pl, Baton Rouge, LA 70815, United States' , 10.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925581 , 'The Children's Place' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '401 Palace Dr., Hammond, LA 70401, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925582 , 'Destrehan Plantation' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '13034 River Rd, Destrehan, LA 70047, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925583 , 'Port Hudson State Historic Site' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '236 US-61, Jackson, LA 70748, United States' , 18.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925584 , 'Holiday Inn Express & Suites La Place' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '4284 US-51, Laplace, LA 70068, United States' , 18.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925585 , 'The Childrens Place' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '3437 Masonic Dr, Alexandria, LA 71301, United States' , 19.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925586 , 'Americas Home Place' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , 'Lafayette, LA 70503, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925587 , 'Rosedown Plantation State Historic Site' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '12501 LA-10, St Francisville, LA 70775, United States' , 13.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925588 , 'Americas Home Place' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '2122 O'Neal Ln, Baton Rouge, LA 70816, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925589 , 'The Childrens Place' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '5725 Johnston St, Lafayette, LA 70503, United States' , 11.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925590 , 'Plaquemine Lock State Historic Site' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '57730 Main St, Plaquemine, LA 70764, United States' , 19.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925591 , 'Allied Discount Tire & Brake' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '205 S Morrison Blvd, Hammond, LA 70403, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925592 , 'Houmas House Plantation and Gardens' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '40136 LA-942, Darrow, LA 70725, United States' , 11.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925593 , 'Marksville State Historic Site' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '837 Martin Luther King Dr, Marksville, LA 71351, United States' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925594 , 'Longfellow-Evangeline State Historic Site' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '1200 N Main St, St Martinville, LA 70582, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925595 , 'Marigold Place' , 'Historical Lousiana' , 'Night Life' , 'Lousiana' , 'USA' , '5723 Jackson St, Alexandria, LA 71303, United States' , 15.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925596 , 'Bounce Town USA' , 'Historical Connecticut' , 'Night Life' , 'Connecticut' , 'USA' , '1770 Boston Post Rd, Milford, CT 06460, United States' , 11.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925597 , 'Connecticut Trust for Historic Preservation' , 'Historical Connecticut' , 'Night Life' , 'Connecticut' , 'USA' , '940 Whitney Ave, Hamden, CT 06517, United States' , 11.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925598 , 'BounceU of North Branford' , 'Historical Connecticut' , 'Night Life' , 'Connecticut' , 'USA' , '1289 Foxon Rd, North Branford, CT 06471, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925599 , 'Great Clips' , 'Historical Connecticut' , 'Night Life' , 'Connecticut' , 'USA' , '315 W Main St, Avon, CT 06001, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925600 , 'Gillette Castle State Park' , 'Historical Connecticut' , 'Night Life' , 'Connecticut' , 'USA' , '67 River Rd, East Haddam, CT 06423, United States' , 14.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925601 , 'National Shooting Sports Foundation Inc' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '11 Mile Hill Rd, Newtown, CT 06470, United States' , 12.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925602 , 'Kent Falls State Park' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '462 Kent Cornwall Rd, Kent, CT 06757, United States' , 17.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925603 , 'Castle Craig' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , 'Peak Dr, Meriden, CT 06451, United States' , 14.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925604 , 'Connecticut Welcome Center' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , 'Danbury, CT 06810, United States' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925605 , 'Sky Zone Trampoline Park' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '13 Francis J Clarke Cir, Bethel, CT 06801, United States' , 15.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925606 , 'Weir Farm National Historic Site' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '735 Nod Hill Rd, Wilton, CT 06897, United States' , 13.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925607 , 'BounceU of Stratford' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '305 Hathaway Dr, Stratford, CT 06615, United States' , 12.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925608 , 'USA Gymnastics' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '811 Straits Turnpike, Watertown, CT 06795, United States' , 17.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925609 , 'BounceU of Rocky Hill' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '712 Brook St, Rocky Hill, CT 06067, United States' , 14.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925610 , 'Zhengs Chinese Restaurant' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '2211 Meriden-Waterbury Turnpike, Southington, CT 06489, United States' , 12.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925611 , 'Guardian Life Insurance Company of America' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '29 S Main St, West Hartford, CT 06107, United States' , 14.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925612 , 'Outdoor Adventure Games' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '67 Bank St, Waterbury, CT 06702, United States' , 11.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925613 , 'Connecticut River Museum' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '67 Main St, Essex, CT 06426, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925614 , 'Rockin Jump - Trumbull' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '25 Trefoil Dr, Trumbull, CT 06611, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925615 , 'Holy Land Monument' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , 'Waterbury, CT 06706, United States' , 10.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925616 , 'Nature Conservancy' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '33 Pent Rd, Weston, CT 06883, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925617 , 'Great Clips' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '345 N Main St, West Hartford, CT 06117, United States' , 16.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925618 , 'Pak Mail of Avon' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '304 W Main St, Avon, CT 06001, United States' , 17.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925619 , 'Sleeping Giant State Park' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '200 Mt Carmel Ave, Hamden, CT 06518, United States' , 16.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925620 , 'Elizabeth Park Conservancy' , 'Historical Connecticut' , 'Adventure' , 'Connecticut' , 'USA' , '1561 Asylum Ave, West Hartford, CT 06117, United States' , 18.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925621 , 'JCPenney Portraits' , 'Historical Connecticut' , 'Hill Station' , 'Connecticut' , 'USA' , '525 Union St, Waterbury, CT 06706, United States' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925622 , 'Charge Point Charging Station' , 'Historical Connecticut' , 'Hill Station' , 'Connecticut' , 'USA' , '360 State St, New Haven, CT 06510, United States' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925623 , 'Great Clips Sand Hill Plaza' , 'Historical Connecticut' , 'Hill Station' , 'Connecticut' , 'USA' , '228 S Main St, Newtown, CT 06470, United States' , 16.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925624 , 'Bounce Town LLC' , 'Historical Connecticut' , 'Hill Station' , 'Connecticut' , 'USA' , '97 Commerce Way, South Windsor, CT 06074, United States' , 14.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925625 , 'Sky Zone Wallingford' , 'Historical Connecticut' , 'Hill Station' , 'Connecticut' , 'USA' , '805 N Colony Rd, Wallingford, CT 06492, United States' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925626 , 'USA Cash Services' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , '1180 US-40, Vernal, UT 84078, United States' , 17.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925627 , 'Zion National Park' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , 'Utah, United States' , 12.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925628 , 'Bryce Canyon National Park' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , 'Utah, United States' , 10.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925629 , 'Arches National Park' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , 'Utah, United States' , 11.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925630 , 'Bad Apple' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , '10324 Redwood Rd, South Jordan, UT 84095, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925631 , 'USA Cash Services' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , '3598 Washington Blvd, Ogden, UT 84403, United States' , 18.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925632 , 'USA Cash Services' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , '1209 N Main St, Tooele, UT 84074, United States' , 14.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925633 , 'Capitol Reef National Park' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , 'Utah, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925634 , 'Canyonlands National Park' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , 'Utah, United States' , 10.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925635 , 'USA Cash Services' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , '333 2nd St # 9, Ogden, UT 84404, United States' , 12.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925636, 'Horseshoe Canyon Unit' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , 'Utah, United States' , 12.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925637 , 'Dinosaur National Monument' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , '11625 East 1500 South, Jensen, UT 84035, United States' , 13.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925638 , 'Coral Pink Sand Dunes Park' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , '12500 Sand Dune Road, Kanab, UT 84741, United States' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925639 , 'Natural Bridges National Monument' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , 'Hwy 275, Lake Powell, UT 84533, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925640 , 'Cementation USA Inc.' , 'Historical Utah' , 'Hill Station' , 'Utah' , 'USA' , '10150 Centennial Pkwy #110, Sandy, UT 84070, United States' , 13.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925641 , 'Biomat USA' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , '3073 Harrison Blvd, Ogden, UT 84403, United States' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925642 , 'Delicate Arch' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , 'Utah, United States' , 11.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925643 , 'Double Arch' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , 'The Windows Rd, Moab, UT 84532, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925644 , 'Deer Valley Resort' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , '2250 Deer Valley Dr S, Park City, UT 84060, United States' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925645 , 'Snowbird Ski & Summer Resort' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , '9600 Little Cottonwood Canyon Rd, Sandy, UT 84092, United States' , 11.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925646 , 'Biomat USA' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , '501 900 E, Provo, UT 84606, United States' , 14.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925647 , 'The Narrows' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , 'The Narrows Bottom Up, Hurricane, UT 84737, United States' , 17.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925648 , 'The Lodge at Bryce Canyon' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , 'UT-63, Bryce, UT 84764, United States' , 14.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925649 , 'USA Cash Services' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , '340 S State St, Clearfield, UT 84015, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925650 , 'AutoMatch USA' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , '13111 Minuteman Dr, Draper, UT 84020, United States' , 20.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925651 , 'Panguitch KOA' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , '555 S Main St, Panguitch, UT 84759, United States' , 12.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925652 , 'Biomat USA' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , '2520 4700 S, Taylorsville, UT 84118, United States' , 17.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925653 , 'Best Western Bryce Canyon Grand Hotel' , 'Historical Utah' , 'Wild Life' , 'Utah' , 'USA' , '30 N 100 E, Bryce Canyon, UT 84764, United States' , 10.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925654 , 'Pump It Up' , 'Historical Mississippi' , 'Wild Life' , 'Mississippi' , 'USA' , '1576 Old Fannin Rd, Brandon, MS 39047, United States' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925655 , 'Columbus Convention & Visitor Bureau' , 'Historical Mississippi' , 'Wild Life' , 'Mississippi' , 'USA' , '117 3rd St S, Columbus, MS 39701, United States' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925656 , 'Mississippi Heritage Trust' , 'Historical Mississippi' , 'Wild Life' , 'Mississippi' , 'USA' , '600 E Amite St # 201, Jackson, MS 39201, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925657 , 'Beauvoir' , 'Historical Mississippi' , 'Wild Life' , 'Mississippi' , 'USA' , '2244 Beach Blvd, Biloxi, MS 39531, United States' , 17.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925658 , 'Monmouth Historic Inn' , 'Historical Mississippi' , 'Wild Life' , 'Mississippi' , 'USA' , '1358 John A Quitman Blvd, Natchez, MS 39120, United States' , 20.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925659 , 'Mississippi Gulf Coast' , 'Historical Mississippi' , 'Wild Life' , 'Mississippi' , 'USA' , '1716 Beach Blvd, Biloxi, MS 39531, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925660 , 'Mississippi Petrified Forest' , 'Historical Mississippi' , 'Wild Life' , 'Mississippi' , 'USA' , '124 Forest Park Rd, Flora, MS 39071, United States' , 20.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925661 , 'Red Bluff' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , 'Foxworth, MS 39483, United States' , 14.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925662 , 'Mockingbird Cafe' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '110 S 2nd St, Bay St Louis, MS 39520, United States' , 14.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925663 , 'Mississippi Sports Hall-Fame' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '1152 Lakeland Dr, Jackson, MS 39216, United States' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925664 , 'Longwood' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '140 Lower Woodville Rd, Natchez, MS 39120, United States' , 18.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925665 , 'Eudora Welty House and Garden' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '1119 Pinehurst St, Jackson, MS 39202, United States' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925666 , 'Gold Coast Skydivers' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '3865 MS-13, Lumberton, MS 39455, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925667 , 'Guardian Life Insurance' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '129 Executive Dr # G, Madison, MS 39110, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925668 , 'Gulf Coast Hotel Reservation' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '827 Howard Ave, Biloxi, MS 39531, United States' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925669 , 'Nature Conservancy' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , 'Csts Env 6678, Hattiesburg, MS 39407, United States' , 10.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925670 , 'Howlin Wolf Blues Museum' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '307 E Westbrook St, West Point, MS 39773, United States' , 18.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925671 , 'Duling Hall' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '622 Duling Ave, Jackson, MS 39216, United States' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925672 , 'Does Eat Place' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '502 Nelson St, Greenville, MS 38701, United States' , 13.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925673 , 'Natchez Trace Parkway' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , 'United States' , 14.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925674 , 'Mary Mahoneys Old French House' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '110 Rue Magnolia, Biloxi, MS 39530, United States' , 19.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925675 , 'Mammys Cupboard' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '555 US-61, Natchez, MS 39120, United States' , 18.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925676 , 'Visit Jackson' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '111 E Capitol St #102, Jackson, MS 39201, United States' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925677 , 'Dunleith Historic Inn' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '84 Homochitto St, Natchez, MS 39120, United States' , 13.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925678 , 'Windsor Ruins' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , 'rodney road, Port Gibson, MS 39150, United States' , 20.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925679 , 'Waverley Plantation Mansion' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '1852 Waverly Mansion Rd, 1852 Waverly Rd, West Point, MS 39773, United States' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925680 , 'Brandon Hall Plantation' , 'Historical Mississippi' , 'Swimming' , 'Mississippi' , 'USA' , '73 Natchez Trace Pkwy, Natchez, MS 39120, United States' , 15.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925681 , 'Hattiesburg Visitors Center' , 'Historical Mississippi' , 'Lakes' , 'Mississippi' , 'USA' , '5 Convention Center Plaza, Hattiesburg, MS 39401, United States' , 12.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925682 , 'Tires Plus Total Car Care' , 'Historical Mississippi' , 'Lakes' , 'Mississippi' , 'USA' , '130 MS-589, Purvis, MS 39475, United States' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925683 , 'Pump It Up' , 'Historical Mississippi' , 'Lakes' , 'Mississippi' , 'USA' , '741 Hillcrest Rd, Mobile, AL 36695, United States' , 12.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+INSERT INTO location VALUES (925684 , 'Kentucky Travel & Tourism' , 'Historical Kentucky' , 'Lakes' , 'Kentucky' , 'USA' , '500 Mero St #22, Frankfort, KY 40601, United States' , 13.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925685 , 'Cincinnati USA Regional Tourism Network' , 'Historical Kentucky' , 'Lakes' , 'Kentucky' , 'USA' , '50 E Rivercenter Blvd #1100, Covington, KY 41011, United States' , 18.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925686 , 'USA Cares Inc' , 'Historical Kentucky' , 'Lakes' , 'Kentucky' , 'USA' , '562 N Dixie Blvd #3, Radcliff, KY 40160, United States' , 20.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925687 , 'Smoketown USA' , 'Historical Kentucky' , 'Lakes' , 'Kentucky' , 'USA' , '1153 Logan St, Louisville, KY 40204, United States' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925688 , 'Maine Campground Owners Association' , 'Historical Maine' , 'Lakes' , 'Maine' , 'USA' , '10 Falcon Rd # 1, Lewiston, ME 04240, United States' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925689 , 'Acadia National Park' , 'Historical Maine' , 'Lakes' , 'Maine' , 'USA' , 'Maine, United States' , 17.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925690 , 'Tourism Office' , 'Historical Maine' , 'Lakes' , 'Maine' , 'USA' , '111 Sewall St, Augusta, ME 04330, United States' , 12.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925691 , 'Discover New England' , 'Historical Maine' , 'Lakes' , 'Maine' , 'USA' , '100 International Dr #352, Portsmouth, NH 03801, United States' , 19.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925692 , 'West Quoddy Head Lighthouse' , 'Historical Maine' , 'Lakes' , 'Maine' , 'USA' , 'S Lubec Rd, Lubec, ME 04652, United States' , 14.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925693 , 'Montana Drive' , 'Historical Montana' , 'Lakes' , 'Montana' , 'USA' , 'Montana Dr, Fort Wayne, IN 46815, USA' , 12.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925694 , 'Montana Street' , 'Historical Montana' , 'Lakes' , 'Montana' , 'USA' , 'Montana St, Laredo, TX 78041, USA' , 18.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925695 , 'Montana Street' , 'Historical Montana' , 'Lakes' , 'Montana' , 'USA' , 'Montana St, Indianapolis, IN 46218, USA' , 12.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925696 , 'East Montana Place' , 'Historical Montana' , 'Lakes' , 'Montana' , 'USA' , 'E Montana Pl, Denver, CO, USA' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925697 , 'Place Creek Road' , 'Historical Montana' , 'Lakes' , 'Montana' , 'USA' , 'Place Creek Rd, Bozeman, MT 59715, USA' , 10.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925698 , 'Montana Avenue' , 'Historical Montana' , 'Lakes' , 'Montana' , 'USA' , 'Montana Ave, New Port Richey, FL, USA' , 19.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925699 , 'North Montana' , 'Historical Montana' , 'Lakes' , 'Montana' , 'USA' , 'N Montana, Peoria, AZ 85345, USA' , 11.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925700 , 'West Montana Place' , 'Historical Montana' , 'Lakes' , 'Montana' , 'USA' , 'W Montana Pl, Lakewood, CO, USA' , 11.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925701 , 'Montana Place North' , 'Historical Montana' , 'Temple' , 'Montana' , 'USA' , 'Montana Pl N, Santa Monica, CA 90402, USA' , 17.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925702 , 'East Montana Place' , 'Historical Montana' , 'Temple' , 'Montana' , 'USA' , 'E Montana Pl, Aurora, CO 80017, USA' , 18.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925703 , 'Wyoming Pass' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'Wyoming Pass, Fort Wayne, IN 46815, USA' , 14.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925704 , 'West Wyoming Street' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'W Wyoming St, Indianapolis, IN, USA' , 10.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925705 , 'West Wyoming Place' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'W Wyoming Pl, Denver, CO 80219, USA' , 20.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925706 , 'East Wyoming Place' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'E Wyoming Pl, Aurora, CO 80017, USA' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925707 , 'Wyoming Avenue' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'Wyoming Ave, New Port Richey, FL, USA' , 20.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925708 , 'Wyoming Place Northeast' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'Wyoming Pl NE, Massillon, OH 44646, USA' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925709 , 'East Wyoming Place' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'E Wyoming Pl, Denver, CO, USA' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925710 , 'East Wyoming Place' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'E Wyoming Pl, Aurora, CO 80018, USA' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925711 , 'East Wyoming Place' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'E Wyoming Pl, Milwaukee, WI 53202, USA' , 14.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925712 , 'West Wyoming' , 'Historical Wyoming' , 'Temple' , 'Wyoming' , 'USA' , 'W Wyoming, Peoria, AZ 85345, USA' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+INSERT INTO location VALUES (925713 , 'ChargePoint Network Charging Station' , 'Historical Rhode Island' , 'Temple' , 'Rhode Island' , 'USA' , '1681 Quaker Ln, West Warwick, RI 02893, United States' , 18.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925714 , 'Tire Warehouse' , 'Historical Rhode Island' , 'Temple' , 'Rhode Island' , 'USA' , '1170 Oaklawn Avenue, Cranston, RI 02920, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925715 , 'East Side Clinical Laboratory' , 'Historical Rhode Island' , 'Temple' , 'Rhode Island' , 'USA' , '600 Putnam Pike # 2, Greenville, RI 02828, United States' , 15.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925716 , 'Spirit Halloween' , 'Historical Rhode Island' , 'Temple' , 'Rhode Island' , 'USA' , '207 Swansea Mall Dr, Swansea, MA 02777, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925717 , 'JCPenney Portrait Studios' , 'Historical Rhode Island' , 'Temple' , 'Rhode Island' , 'USA' , '1019 S Washington Street, Emerald Square Mall, North Attleborough, MA 02760, United States' , 12.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925718 , 'Meineke Car Care Center' , 'Historical Rhode Island' , 'Temple' , 'Rhode Island' , 'USA' , '240 S Main St, Woonsocket, RI 02895, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925719 , 'JCPenney Portrait Studios' , 'Historical Rhode Island' , 'Temple' , 'Rhode Island' , 'USA' , '600 RI-2, Warwick, RI 02886, United States' , 19.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925720 , 'Dels Lemonade of E Providence' , 'Historical Rhode Island' , 'Temple' , 'Rhode Island' , 'USA' , '400 Waterman Ave, East Providence, RI 02914, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925721 , 'Charge Point Charging Station' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '107 Taunton St, Plainville, MA 02762, United States' , 14.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925722 , 'East Side Clinical Laboratory' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '75 Lambert Lind Hwy, Warwick, RI 02886, United States' , 19.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925723 , 'Things Remembered' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '400 Bald Hill RD STE 133, Warwick, RI 02886-0000, United States' , 12.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925724 , 'East Side Clinical Laboratory' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '176 Toll Gate Rd # 102, Warwick, RI 02886, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925725 , 'Del's Lemonade' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '306 Cowesett Ave, West Warwick, RI 02893, United States' , 17.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925726 , 'Charge Point Charging Station' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '4 Fisher St, Foxborough, MA 02035, United States' , 10.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925727 , 'The Childrens Place' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '34 Providence Pl, Providence, RI 02903, United States' , 10.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925728 , 'Tire Warehouse' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '852 Elmwood Ave, Providence, RI 02907, United States' , 20.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925729 , 'Dels Lemonade' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '65 Child St, Warren, RI 02885, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925730 , 'JCPenney Portraits' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '120 N Dartmouth Mall, North Dartmouth, MA 02747, United States' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925731 , 'Dels Lemonade' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '1624 Grand Army Hwy, Somerset, MA 02726, United States' , 11.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925732 , 'Charge Point Charging Station' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '196 E Main St, Milford, MA 01757, United States' , 11.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925733 , 'Panera Bread' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '43 Providence Pl, Providence, RI 02903, United States' , 19.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925734 , 'Five Guys Burgers and Fries' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '300 Quaker Ln, Warwick, RI 02886, United States' , 17.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925735 , 'Pinkberry Newport' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '359 Thames St., Unit E, Newport, RI 02840, United States' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925736 , 'FiRE+iCE' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '48 Providence Pl, Providence, RI 02903, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925737 , 'Geek Squad' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '24 Universal Blvd, Warwick, RI 02886, United States' , 10.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925738 , 'Johnny Rockets' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '59 Providence Place, Providence, RI 02903, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925739 , 'Boloco' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '1000 Bald Hill Rd, Warwick, RI 02886, United States' , 10.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925740 , 'Bennys Plaza' , 'Historical Rhode Island' , 'Sports' , 'Rhode Island' , 'USA' , '5600 Post Rd, East Greenwich, RI 02818, United States' , 11.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925741 , 'b.good' , 'Historical Rhode Island' , 'Family Vacation' , 'Rhode Island' , 'USA' , '62 Hillside Rd, Cranston, RI 02920, United States' , 18.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925742 , 'Firestone Complete Auto Care' , 'Historical Rhode Island' , 'Family Vacation' , 'Rhode Island' , 'USA' , '22 Dowling Village Blvd, North Smithfield, RI 02896, United States' , 12.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925743 , 'New Mexico Tourism Department' , 'Historical New Mexico' , 'Family Vacation' , 'New Mexico' , 'USA' , '491 Old Santa Fe Trail, Santa Fe, NM 87501, United States' , 11.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925744 , 'White Sands National Monument' , 'Historical New Mexico' , 'Family Vacation' , 'New Mexico' , 'USA' , 'New Mexico, United States' , 19.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925745 , 'El Morro National Monument' , 'Historical New Mexico' , 'Family Vacation' , 'New Mexico' , 'USA' , 'NM-53, Ramah, NM 87321, United States' , 17.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925746 , 'Ski New Mexico Ski Reports' , 'Historical New Mexico' , 'Family Vacation' , 'New Mexico' , 'USA' , '7432 La Jara NE, Albuquerque, NM 87109, United States' , 17.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925747 , 'Bisti/De-Na-Zin Wilderness' , 'Historical New Mexico' , 'Family Vacation' , 'New Mexico' , 'USA' , 'County Rd 7297, Bloomfield, NM 87413, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925748 , 'Shakespeare Ghost Town' , 'Historical New Mexico' , 'Family Vacation' , 'New Mexico' , 'USA' , '92 Ghost Town Rd, Lordsburg, NM 88045, United States' , 18.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925749 , 'Aztec Ruins National Monument' , 'Historical New Mexico' , 'Family Vacation' , 'New Mexico' , 'USA' , '725 Ruins Rd, Aztec, NM 87410, United States' , 11.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925750 , 'Glenrio VIC Tourism' , 'Historical New Mexico' , 'Family Vacation' , 'New Mexico' , 'USA' , 'San Jon, NM 88434, United States' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925751 , '55 PLACES' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '1525 W Homer St #302, Chicago, IL 60642, United States' , 13.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925752 , 'Indiana Chamber of Commerce' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '115 W Washington St #850s, Indianapolis, IN 46204, United States' , 13.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925753 , 'Huddleston Farmhouse, Indiana Landmarks, Eastern Regional Office' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '838 National Rd, Cambridge City, IN 47327, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925754 , 'Indiana Landmarks' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '1201 Central Ave, Indianapolis, IN 46202, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925755 , 'Central Indiana Community Foundation' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '615 Alabama St # 119, Indianapolis, IN 46204, United States' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925756 , 'DunesWalk Inn at the Furness Mansion' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '1491 N Furnleigh Ln, Chesterton, IN 46304, United States' , 18.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925757 , 'Indy Grill' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '2544 S Lynhurst Dr, Indianapolis, IN 46241, United States' , 14.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925758 , 'Visit Bloomington' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '2855 N Walnut St, Bloomington, IN 47404, United States' , 10.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925759 , 'Country Squire Lakes' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '8 Hoosier Dr, North Vernon, IN 47265, United States' , 18.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925760 , 'Historic Madison Inc' , 'Historical Indiana' , 'Family Vacation' , 'Indiana' , 'USA' , '500 West St, Madison, IN 47250, United States' , 13.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925761 , 'Sky Zone Trampoline Park' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '5520 Grape Rd, Mishawaka, IN 46545, United States' , 12.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925762 , 'Defries Gardens' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '17477 Co Rd 46, New Paris, IN 46553, United States' , 15.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925763 , 'Paoli Peaks' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '2798 W Co Rd 25 S, Paoli, IN 47454, United States' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925764 , 'Whispers Estate' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '714 W Warren St, Mitchell, IN 47446, United States' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925765 , 'National Trust For Historic' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '53 W Jackson Blvd # 350, Chicago, IL 60604, United States' , 17.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925766 , 'VisitMadison, Inc.' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '601 W 1st St, Madison, IN 47250, United States' , 19.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925767 , 'Skydive Indianapolis' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '3009 IN-28, Frankfort, IN 46041, United States' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925768 , 'The Comedy Attic' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '123 S Walnut St, Bloomington, IN 47408, United States' , 16.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925769 , 'Downtown Goshen' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '234 S Main St #4, Goshen, IN 46526, United States' , 12.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925770 , 'Tippecanoe Place Restaurant' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '620 W Washington St, South Bend, IN 46601, United States' , 11.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925771 , 'Story Inn' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '6404 State Road 135, Nashville, IN 47448, United States' , 10.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925772 , 'Zaharakos' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '329 Washington St, Columbus, IN 47201, United States' , 20.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925773 , 'Brick' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '309 Walnut St, Jonesville, IN 47247, United States' , 12.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925774 , 'ShelbyvilleToday' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '1640 IN-44 #6, Shelbyville, IN 46176, United States' , 13.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925775 , 'CheckSmart' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '2235 E Main St, Plainfield, IN 46168, United States' , 11.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925776 , 'Mother Bears Pizza' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '1428 E 3rd St, Bloomington, IN 47401, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925777 , 'Historic Landmarks Foundation' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '4696 Veraestau Ln, Aurora, IN 47001, United States' , 11.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925778 , 'Waverly Hills Sanatorium' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '4400 Paralee Ln, Louisville, KY 40272, United States' , 10.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925779 , 'The Guardian Life Insurance Company of America' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '201 W 103rd St #390, Indianapolis, IN 46290, United States' , 11.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925780 , 'Rawhide Ranch USA' , 'Historical Indiana' , 'Historical' , 'Indiana' , 'USA' , '1292 IN-135, Nashville, IN 47448, United States' , 13.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925781 , 'Delaware Beach Weddings' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '210 Munson St, Rehoboth Beach, DE 19971, United States' , 13.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+INSERT INTO location VALUES (925782 , 'Delaware Tourism Office - Visit Delaware' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '99 Kings Hwy NE, Dover, DE 19901, United States' , 16.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925783 , 'Delaware Lottery Office' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '1575 McKee Rd #102, Dover, DE 19904, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925784 , 'Read House & Gardens' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '42 The Strand, New Castle, DE 19720, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925785 , 'Delaware Memorial Bridges' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , 'Wilmington, DE 19801, United States' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925786 , 'Dover Air Force Base' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '442 13th St, Dover, DE 19902, United States' , 17.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925787 , 'Parks Department' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '89 Kings Hwy SW, Dover, DE 19901, United States' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925788 , 'Brick Hotel' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '18 The Cir, Georgetown, DE 19947, United States' , 12.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925789 , 'JCPenney Portrait Studios' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , 'Dover Mall, 1365 N Dupont Hwy, Dover, DE 19901, United States' , 20.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925790 , 'Nature Conservancy' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '1661 S Dupont Hwy, Dover, DE 19901, United States' , 10.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925791 , 'John Dickinson Plantation' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '340 Kitts Hummock Rd, Dover, DE 19901, United States' , 16.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925792 , 'Delaware State Capitol' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '411 Legislative Ave, Dover, DE 19901, United States' , 10.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925793 , 'Election Department' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '119 N Race St, Georgetown, DE 19947, United States' , 14.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925794 , 'Funland' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '6 Delaware Avenue, Rehoboth Beach, DE 19971, United States' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925795 , 'Ocean-City' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '9927 Stephen Decatur Hwy, Ocean City, MD 21842, United States' , 12.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925796 , 'Broadkill Store' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '2 S Bayshore Dr, Milton, DE 19968, United States' , 16.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925797 , 'Cantwells Tavern' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '109 Main St, Odessa, DE 19730, United States' , 17.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925798 , 'Nemours Estate, formerly Nemours Mansion and Gardens' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '850 Alapocas Dr, Wilmington, DE 19803, United States' , 13.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925799 , 'Nectar Cafe & Juice Bar' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '111 Neils Alley, Lewes, DE 19958, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925800 , 'Boat Registration Department' , 'Historical Delaware' , 'Temple' , 'Delaware' , 'USA' , '89 Kings Hwy SW, Dover, DE 19901, United States' , 20.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925801 , 'Mariner Finance' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '319 Civic Ave, Salisbury, MD 21804, United States' , 11.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925802 , 'Wilmington & Western Railroad' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '2201 Newport Gap Pike, Wilmington, DE 19808, United States' , 19.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925803 , 'Cape Henlopen State Park' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '15099, Cape Henlopen Dr, Lewes, DE 19958, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925804 , 'Delaware Dances Parties LLC' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '4905 Mermaid Blvd, Wilmington, DE 19808, United States' , 20.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925805 , 'Delaware Agricultural Museum' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '866 N Dupont Hwy, Dover, DE 19901, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925806 , 'Bancroft Mills Inc' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '49 Bancroft Mills Rd, Wilmington, DE 19806, United States' , 16.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925807 , 'Lavender Fields' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '18864 Cool Springs Rd, Milton, DE 19968, United States' , 14.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925808 , 'Striper Bites' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '107 Savannah Rd, Lewes, DE 19958, United States' , 15.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925809 , 'Christiana Fire Co' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '2 E Main St, Christiana, DE 19702, United States' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925810 , 'Black Bear Archery' , 'Historical Delaware' , 'Adventure' , 'Delaware' , 'USA' , '1695 S Dupont Hwy, St Georges, DE 19733, United States' , 13.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925811 , 'Historic Preservation' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , '323 Center St #1600, Little Rock, AR 72201, United States' , 18.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925812 , 'Arkansas Department of Parks and Tourism' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , '1 Capitol Mall 4a 900, Little Rock, AR 72201, United States' , 18.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925813 , 'Longbow Resort' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , '4349 Prim Rd, Prim, AR 72130, United States' , 19.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925814 , 'Allen House' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , '705 N Main St, Monticello, AR 71655, United States' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925815 , 'Treehouse Cottages' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , '165 W Van Buren, Eureka Springs, AR 72632, United States' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925816 , 'Mather Lodge Restaurant' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , '1069 Petit Jean Mountain Rd, Morrilton, AR 72110, United States' , 18.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925817 , 'Blanchard Springs Caverns' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , 'NF 54 Forest Rd 1110-A, Fifty-Six, AR 72533, United States' , 12.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925818 , 'Little Rock Central High School' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , '1500 S Park St, Little Rock, AR 72202, United States' , 18.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925819 , 'Rush Historic District' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , 'Yellville, AR 72687, United States' , 20.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925820 , 'Garvan Woodland Gardens' , 'Historical Arkansas' , 'Adventure' , 'Arkansas' , 'USA' , '550 Arkridge Rd, Hot Springs, AR 71913, United States' , 14.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925821 , 'Thorncrown Chapel' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '12968 US-62, Eureka Springs, AR 72632, United States' , 13.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925822 , 'Cadron Settlement Park' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '6200 Hwy 319 W, Conway, AR 72034, United States' , 18.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925823 , 'Louisiana Purchase Historic State Park' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , 'AR-362, Holly Grove, AR 72069, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925824 , 'Pizza Pro Of Butlerville' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '14074 Hwy 31, Ward, AR 72176, United States' , 19.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925825 , 'Wolfpen ATV Campground' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '559 Polk Rd 61, Mena, AR 71953, United States' , 19.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925826 , 'Upper Buffalo Wilderness' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , 'Kingston, AR 72742, United States' , 16.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925827 , 'Paintball Arkansas' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '558 Sturgis Rd, Conway, AR 72034, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925828 , 'Arkansas Grand Canyon Cabins' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , 'AR-7, Jasper, AR 72641, United States' , 19.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925829 , 'StoneWind Retreat' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '15840 Wilson Branch Dr, Chester, AR 72934, United States' , 12.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925830 , 'Little Rock River Market' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '400 President Clinton Ave, Little Rock, AR 72201, United States' , 13.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925831 , 'Glory Hole Falls' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , 'Ozone, AR 72854, United States' , 18.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925832 , 'Enchanted Forest Resort' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '1840 AR-23, Eureka Springs, AR 72631, United States' , 20.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925833 , 'Shady Oak Trail Getaway' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '146 Shady Oak Trail, Hot Springs, AR 71913, United States' , 13.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925834 , 'Rods Pizza Cellar' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '3350 Central Ave, Hot Springs, AR 71913, United States' , 10.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925835 , 'Ozark National Forest' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , 'Russellville, AR 72801, United States' , 14.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925836 , 'Diamond Springs Water Park' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '209 State Park Rd, Murfreesboro, AR 71958, United States' , 20.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925837 , 'Governors Mansion Historic District' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '1800 Center St, Little Rock, AR 72206, United States' , 16.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925838 , 'Petit Jean State Park' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '1285 Petit Jean Mountain Rd, Morrilton, AR 72110, United States' , 17.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925839 , 'Diamond Johns Riverside Retreat' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , '81 Roy Rd, Murfreesboro, AR 71958, United States' , 16.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925840 , 'Cliff House Inn' , 'Historical Arkansas' , 'Wild Life' , 'Arkansas' , 'USA' , 'HCR 31 Box 85, Jasper, AR 72641, United States' , 19.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925841 , 'Furniture City USA' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '1323 2nd St S, Nampa, ID 83651, United States' , 14.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925842 , 'LIVE IN IDAHO REAL ESTATE ASSOCIATES' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '290 Bobwhite Ct, Boise, ID 83706, United States' , 12.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925843 , 'Dog Bark Park Inn' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '2421 U.S. 95 Business, Cottonwood, ID 83522, United States' , 10.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925844 , 'USA Cash Services' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '1565 Yellowstone Ave, Pocatello, ID 83201, United States' , 20.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925845 , 'Boise National Forest' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , 'Boise County, ID, United States' , 14.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925846 , 'Craters of the Moon National Monument & Preserve' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , 'Arco, ID, United States' , 19.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925847 , 'Healthy Systems USA' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '1075 S Utah Ave #181, Idaho Falls, ID 83402, United States' , 10.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925848 , 'Threads' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '326 Blue Lakes Blvd N, Twin Falls, ID 83301, United States' , 16.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925849 , 'Bureau Of Land Management' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '1405 Hollipark Dr, Idaho Falls, ID 83401, United States' , 18.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925850 , 'Bureau of Land Management' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '4350 South Cliffs Drive, Pocatello, ID 83204, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925851 , 'Power Lube USA' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '2100 Channing Way, Idaho Falls, ID 83404, United States' , 14.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925852 , 'US Land Management Bureau' , 'Historical Idaho' , 'Religious' , 'Idaho' , 'USA' , '630 W Broadway St, Idaho Falls, ID 83402, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925853 , 'Best Pizza' , 'Historical New York' , 'Religious' , 'New York' , 'USA' , '33 Havemeyer St, Brooklyn, NY 11211, United States' , 16.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925854 , 'Great Place To Work' , 'Historical New York' , 'Religious' , 'New York' , 'USA' , '40 E 34th St #902, New York, NY 10016, United States' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925855 , 'Crain's New York Business' , 'Historical New York' , 'Religious' , 'New York' , 'USA' , '685 3rd Ave, New York, NY 10017, United States' , 14.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925856 , 'Project For Public Spaces' , 'Historical New York' , 'Religious' , 'New York' , 'USA' , '419 Lafayette St #7, New York, NY 10003, United States' , 18.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925857 , 'Sit Down New York' , 'Historical New York' , 'Religious' , 'New York' , 'USA' , '873 Broadway, New York, NY 10003, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925858 , 'Best Bagel & Coffee' , 'Historical New York' , 'Religious' , 'New York' , 'USA' , '225 W 35th St, New York, NY 10001, United States' , 16.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925859 , 'The New York Pass' , 'Historical New York' , 'Religious' , 'New York' , 'USA' , '36 W 44th St #1407, New York, NY 10036, United States' , 17.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925860 , 'Rockefeller Center' , 'Historical New York' , 'Religious' , 'New York' , 'USA' , '45 Rockefeller Plaza, New York, NY 10111, United States' , 14.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925861 , 'New York Habitat' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '307 7th Ave # 306, New York, NY 10001, United States' , 15.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925862 , 'Fancy LLC' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '11 Broadway #515, New York, NY 10004, United States' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925863 , 'Foursquare' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '10, 568 Broadway, New York, NY 10012, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925864 , 'Obscura Antiques & Oddities' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '207 Avenue A, New York, NY 10009, United States' , 11.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925865 , 'The Champagne Bar at The Plaza' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '768 5th Ave, New York, NY 10019, United States' , 10.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925866 , 'Brooklyn Heights Promenade' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , 'Pierrepont Pl, Brooklyn, NY 11201, United States' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925867 , 'Central Park' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , 'New York, NY, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925868 , 'Empire State Building' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '350 5th Ave, New York, NY 10118, United States' , 16.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925869 , 'Caracas Arepa Bar' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '291 Grand St, Brooklyn, NY 11211, United States' , 11.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925870 , 'Mahayana Temple Buddhist Association' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '133 Canal St # 1, New York, NY 10002, United States' , 16.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925871 , 'Cones Ice Cream Artisans' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '272 Bleecker St, New York, NY 10014, United States' , 15.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925872 , 'Statue of Liberty National Monument' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , 'New York, NY, United States' , 14.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925873 , 'Times Square' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , 'Manhattan, NY 10036, United States' , 20.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925874 , 'NYC & Company' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '810 7th Ave, New York, NY 10019, United States' , 19.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925875 , 'US Passport Acceptance' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '2273 Church Ave, Brooklyn, NY 11226, United States' , 17.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925876 , 'Flatiron Building' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '175 5th Ave, New York, NY 10010, United States' , 19.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925877 , 'Kickstarter' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '58 Kent St, Brooklyn, NY 11222, United States' , 18.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925878 , 'Best Italian Pizza' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '202 E Fordham Rd, Bronx, NY 10458, United States' , 11.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925879 , 'Solomon R. Guggenheim Museum' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '1071 5th Ave, New York, NY 10128, United States' , 20.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925880 , 'Lobster Joint' , 'Historical New York' , 'African Safaris' , 'New York' , 'USA' , '1073 Manhattan Ave, Brooklyn, NY 11222, United States' , 18.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925881 , 'Central Park Zoo' , 'Historical New York' , 'Tourist' , 'New York' , 'USA' , '64th St and 5th Ave, New York, NY 10021, United States' , 14.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925882 , 'The High Line' , 'Historical New York' , 'Tourist' , 'New York' , 'USA' , 'New York, NY, United States' , 16.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925883 , 'Lake Champlain Regional Chamber of Commerce' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '60 Main St #100, Burlington, VT 05401, United States' , 16.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925884 , 'Gold Brook Bridge' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '100 Stowe Rd, Vermont, CT 06704, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925885 , 'Sustainability Institute' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '3 Linden Rd, Hartland, VT 05048, United States' , 18.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925886 , 'Penny Cluse Café' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '169 Cherry St, Burlington, VT 05401, United States' , 19.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925887 , 'Vermont Attractions Association' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '751 Granger Rd, Barre, VT 05641, United States' , 17.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925888 , 'Stowe Area Association' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '51 S Main St, Stowe, VT 05672, United States' , 11.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925889 , 'Darkroom Gallery' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '12 Main St, Essex Junction, VT 05452, United States' , 20.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925890 , 'Business People Vermont' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '237 Commerce St # 202, Williston, VT 05495, United States' , 14.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925891 , 'Vermont Department of Tourism & Marketing' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '1 National Life Dr, Montpelier, VT 05620, United States' , 20.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925892 , 'Okemo Mountain Resort' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '77 Okemo Ridge Rd, Ludlow, VT 05149, United States' , 10.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925893 , 'Ben & Jerrys' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '1281 Waterbury Stowe Road, Waterbury, VT 05676, United States' , 20.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925894 , 'Vermont Ski Areas Association' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '26 State St, Montpelier, VT 05602, United States' , 17.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925895 , 'University of Vermont' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , 'Burlington, VT 05405, United States' , 17.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925896 , 'Crystal Lake State Park' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , 'Barton, VT 05822, United States' , 14.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925897 , 'Lake Champlain Committee' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '208 Flynn Ave #3f, Burlington, VT 05401, United States' , 12.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925898 , 'Vermonter' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '28 Andrea Ln, Milton, VT 05468, United States' , 18.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925899 , 'Isystems LLC' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '800 Hinesburg Rd, Burlington, VT 05403, United States' , 18.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925900 , 'Okemo Valley Regional Chamber of Commerce' , 'Historical Vermont' , 'Tourist' , 'Vermont' , 'USA' , '57 Pond St, Ludlow, VT 05149, United States' , 19.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925901 , 'Vermont Housing Finance Agency (VHFA)' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '164 St Paul St, Burlington, VT 05402, United States' , 16.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925902 , 'Vermont Tire & Services Inc' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '1877 Williston Rd, South Burlington, VT 05403, United States' , 10.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925903 , 'Hildene-The Lincoln Family Home' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '1005 Hildene Rd, Manchester, VT 05254, United States' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925904 , 'Vermont.com' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '5376 Main St, Manchester Center, VT 05255, United States' , 15.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925905 , 'Karmê Chöling: Shambhala Meditation Center' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '369 Patneaude Ln, Barnet, VT 05821, United States' , 15.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925906 , 'Tire Warehouse' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '5 2nd St, Claremont, NH 03743, United States' , 15.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925907 , 'Morgan Horse Farm' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '74 Battell Dr, Weybridge, VT 05753, United States' , 16.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925908 , 'The Farmhouse Tap & Grill' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '160 Bank St, Burlington, VT 05401, United States' , 16.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925909 , 'Sneakers Bistro' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '28 Main St, Winooski, VT 05404, United States' , 14.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925910 , 'Simon Pearce Flagship: Bar & Restaurant, Retail Boutique & Glassblowing' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '1760 Quechee Main St, Quechee, VT 05059, United States' , 20.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925911 , 'Country Store & Deli' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '1457 Lake Dunmore Rd, Salisbury, VT 05769, United States' , 16.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925912 , 'Maaco Collision Repair & Auto Painting' , 'Historical Vermont' , 'Family Vacation' , 'Vermont' , 'USA' , '1891 Williston Rd, South Burlington, VT 05403, United States' , 16.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+INSERT INTO location VALUES (925913 , 'Travel North Dakota' , 'Historical North Dakota' , 'Family Vacation' , 'North Dakota' , 'USA' , '1600 E Century Ave #2, Bismarck, ND 58502-2057, United States' , 10.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925914 , 'Bonanzaville USA' , 'Historical North Dakota' , 'Family Vacation' , 'North Dakota' , 'USA' , '1351 Main Ave W, West Fargo, ND 58078, United States' , 10.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925915 , 'Mister Money USA (44)' , 'Historical North Dakota' , 'Family Vacation' , 'North Dakota' , 'USA' , '3350 13th Ave S, Fargo, ND 58103, United States' , 19.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925916 , 'Fort Union Trading Post National Historic Site' , 'Historical North Dakota' , 'Family Vacation' , 'North Dakota' , 'USA' , '15550 ND-1804, Williston, ND 58801, United States' , 14.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925917 , 'Theodore Roosevelt National Park' , 'Historical North Dakota' , 'Family Vacation' , 'North Dakota' , 'USA' , 'North Dakota, United States' , 15.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925918 , 'Frost Fire Ski Area' , 'Historical North Dakota' , 'Family Vacation' , 'North Dakota' , 'USA' , '12600 104th St NE, Walhalla, ND 58282, United States' , 14.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925919 , 'US Geological Survey' , 'Historical North Dakota' , 'Family Vacation' , 'North Dakota' , 'USA' , '821 E Interstate Ave, Bismarck, ND 58503, United States' , 20.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925920 , 'Rent-A-Wreck' , 'Historical North Dakota' , 'Family Vacation' , 'North Dakota' , 'USA' , '529 W Burdick Expy, Minot, ND 58701, United States' , 20.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925921 , 'Badlands National Park' , 'Historical South Dakota' , 'Family Vacation' , 'South Dakota' , 'USA' , 'South Dakota, United States' , 18.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925922 , 'Mount Rushmore National Memorial' , 'Historical South Dakota' , 'Family Vacation' , 'South Dakota' , 'USA' , '13000 SD-244, Keystone, SD 57751, United States' , 15.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925923 , 'Bear Country USA' , 'Historical South Dakota' , 'Family Vacation' , 'South Dakota' , 'USA' , '13820 US-16, Rapid City, SD 57702, United States' , 19.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925924 , 'Vermillion Information Center' , 'Historical South Dakota' , 'Family Vacation' , 'South Dakota' , 'USA' , '47093 SD-50, Burbank, SD 57010, United States' , 12.0 , 925264.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925925 , 'Crazy Horse Memorial' , 'Historical South Dakota' , 'Family Vacation' , 'South Dakota' , 'USA' , '12151 Avenue of the Chiefs, Crazy Horse, SD 57730, United States' , 20.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925926 , 'Minuteman Missile' , 'Historical South Dakota' , 'Lakes' , 'South Dakota' , 'USA' , '24545 Cottonwood Rd, Philip, SD 57567, United States' , 17.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925927 , 'Valley Springs Information Center' , 'Historical South Dakota' , 'Lakes' , 'South Dakota' , 'USA' , 'I-90 West, MRM 412.1, Valley Springs Township, SD 57068, United States' , 13.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925928 , 'Wilmot Information Center' , 'Historical South Dakota' , 'Lakes' , 'South Dakota' , 'USA' , 'SD-15, Wilmot, SD 57279, United States' , 12.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925929 , 'Chamberlain Information Center' , 'Historical South Dakota' , 'Lakes' , 'South Dakota' , 'USA' , 'I-90, Chamberlain, SD 57325, United States' , 18.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925930 , 'Vivian Information Center' , 'Historical South Dakota' , 'Lakes' , 'South Dakota' , 'USA' , 'I-90, Presho, SD 57568, United States' , 16.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925931 , 'Healthy Systems USA' , 'Historical South Dakota' , 'Lakes' , 'South Dakota' , 'USA' , '2650 Jackson Blvd #9, Rapid City, SD 57702, United States' , 16.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925932 , 'KOA Kampgrounds' , 'Historical South Dakota' , 'Lakes' , 'South Dakota' , 'USA' , '675 Streeter Drive, North Sioux City, SD 57049, United States' , 18.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925933 , 'Alzheimers Association South Dakota Chapter' , 'Historical South Dakota' , 'Lakes' , 'South Dakota' , 'USA' , '1000 Northwest Ave #250, Sioux Falls, SD 57104, United States' , 19.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+
+INSERT INTO location VALUES (925934 , 'I-64 Tourist Information Center' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , 'I-64 E Bound Welcome Center Mile Marker 10, Huntington, WV 25701, United States' , 12.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925935 , 'Visit Southern West Virginia' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '1408 Harper Rd, Beckley, WV 25801, United States' , 17.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925936 , 'Pies & Pints Pizzeria' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '222 Capitol St, Charleston, WV 25301, United States' , 11.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925937 , 'Trans-Allegheny Lunatic Asylum' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '71 Asylum Dr, Weston, WV 26452, United States' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925938 , 'Harmans North Fork Cottages' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '10042 N Fork Hwy, Cabins, WV 26855, United States' , 16.0 , 30.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925939 , 'New River Gorge Preserve' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '130 Laurel Creek Rd, Fayetteville, WV 25840, United States' , 12.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925940 , 'West Virginia Penitentiary' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '818 Jefferson Ave, Moundsville, WV 26041, United States' , 13.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925941 , 'Greater Morgantown Convention and Visitors Bureau' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '1, 341 Chaplin Road, Morgantown, WV 26501, United States' , 12.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925942 , 'Snowshoe Mountain Resort' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '10 Snowshoe Dr, Snowshoe, WV • 26209-0010, United States' , 16.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925943 , 'Tri-County Tire: A Glotfelty Tire Store' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '822 Lunice Creek Hwy, Petersburg, WV 26847, United States' , 12.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925944 , 'Canaan Valley Resort State Park' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '230 Main Lodge Rd, Davis, WV 26260, United States' , 20.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925945 , 'Graceland Inn & Conference Center' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '100 Campus Dr, Elkins, WV 26241, United States' , 11.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925946 , 'Smoke Hole Caverns' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '8290 N Fork Hwy, Cabins, WV 26855, United States' , 15.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925947 , 'Mystery Hole' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '16724 Midland Trail, Ansted, WV 25812, United States' , 20.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925948 , 'Country Road Cabins' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '1508 Sunday Rd, Hico, WV 25854, United States' , 12.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925949 , 'Hillbrook Inn' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '4490 Summit Point Rd, Charles Town, WV 25414, United States' , 15.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925950 , 'Shaw House' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , 'Campus Dr W, Fairmont, WV 26554, United States' , 13.0 , 38.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925951 , 'Blackwater Falls State Park' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '1584 Blackwater Lodge Rd, Davis, WV 26260, United States' , 20.0 , 36.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925952 , 'Black Bear Resort' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '247 Lodge Dr, Davis, WV 26260, United States' , 14.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925953 , 'Winterplace Ski Resort' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '100 Old Flat Top Mountain Road, Ghent, WV 25843, United States' , 11.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925954 , 'Wild, Wonderful West Virginia' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '90 Maccorkle Ave SW, South Charleston, WV 25303, United States' , 14.0 , 33.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925955 , 'Old Stone House' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '313 Chestnut St, Morgantown, WV 26505, United States' , 12.0 , 35.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925956 , 'West Virginia Land Trust' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '1045 Bridge Rd, Charleston, WV 25314, United States' , 10.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925957 , 'Chuck E. Cheeses' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '2846 Mountaineer Blvd, Charleston, WV 25309, United States' , 13.0 , 31.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925958 , 'Grave Creek Mound' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '801 Jefferson Ave, Moundsville, WV 26041, United States' , 14.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925959 , 'Historic Fayetteville Convention & Visitors Bureau' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '310 N Court St, Fayetteville, WV 25840, United States' , 12.0 , 32.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925960 , 'Around the Panhandle Magazine' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '84 Rue de Todd, Martinsburg, WV 25403, United States' , 13.0 , 34.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925961 , 'Colasessanos Pizza And Pepperoni Rolls' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '506 Pennsylvania Ave, Fairmont, WV 26554, United States' , 13.0 , 39.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925962 , 'The Cabins At Pine Haven' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '242 Log Cabin Rd, Beaver, WV 25813, United States' , 10.0 , 40.0 , 3000.0 , 15000.0 , 'INR');
+
+INSERT INTO location VALUES (925963 , 'Cass Scenic Railroad State Park' , 'Historical West Virginia' , 'Lakes' , 'West Virginia' , 'USA' , '242 Main St, Cass, WV 24927, United States' , 14.0 , 37.0 , 3000.0 , 15000.0 , 'INR');
+
+
+
+
+
+
+
+
