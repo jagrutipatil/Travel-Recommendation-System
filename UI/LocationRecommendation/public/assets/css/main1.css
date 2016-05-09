@@ -1670,8 +1670,13 @@
 		font-style: italic;
 	}
 
+
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+	}
+
+	div.horizontal {
+    	overflow: auto;
 	}
 
 	br.clear {

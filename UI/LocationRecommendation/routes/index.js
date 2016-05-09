@@ -3,7 +3,7 @@
  * GET home page.
  */
 var ejs = require("ejs");
-var mysql = require('./MYSQL');
+var mysql = require('./MySQL');
 var session=require('client-sessions');
 var request = require('sync-request');
 
@@ -187,32 +187,30 @@ exports.getData=function(req,res)
 }
 
 //with country state and type
-exports.getData1=function(req,res)
-{
+exports.getData1=function(req,res) {
 
 		var fcountry=req.param("country");
 		var fstate=req.param("state");
 		var ftype=req.param("type");
 		var userId1=req.session.userId + "";
-		var str='http://localhost:8081/restlet/test/'+req.session.userId;
-		console.log("User ID from session is "+req.session.userId);	
-		var httpcall = request('GET', str, {
-			  'headers': {
-			    'user-agent': 'example-user-agent'
-			  }
+
+		console.log("Country: " + fcountry);
+		console.log("State: " + fstate);
+		console.log("Type: " + ftype);
+		console.log("User ID: " + userId1);
+		
+		var httpcall = request('POST', 'http://localhost:8081/restlet/test', {
+			  json: { country: fcountry,
+				  	  state:fstate,
+				  	  type:ftype,
+				  	  userId:userId1
+				  }
 			});
-//		var httpcall = request('POST', 'http://localhost:8081/restlet/test', {
-//			  json: { country: fcountry,
-//				  state:fstate,
-//				  type:ftype,
-//				  userId:req.session.userId}
-//			});
 			
-			console.log("Sync call in getData1");
-			console.log(httpcall.getBody('utf8'));
-			var str={"forms":[{"maxTemp":66.0,"desc":"Historical Afghanistan","address":"Proich , Badakhshan , Afghanistan","name":"Proich","state":"Badakhshan","locationId":9,"minTemp":14.0,"type":"Historical","currency":"INR","country":"Afghanistan"},{"maxTemp":26.0,"desc":"Historical Afghanistan","address":"Eil , Badakhshan , Afghanistan","name":"Eil","state":"Badakhshan","locationId":10,"minTemp":14.0,"type":"Historical","currency":"INR","country":"Afghanistan"},{"maxTemp":48.0,"desc":"Historical Afghanistan","address":"Preshab , Badakhshan , Afghanistan","name":"Preshab","state":"Badakhshan","locationId":4,"minTemp":17.0,"type":"Historical","currency":"INR","country":"Afghanistan"},{"maxTemp":27.0,"desc":"Historical Afghanistan","address":"Aih , Badakhshan , Afghanistan","name":"Aih","state":"Badakhshan","locationId":5,"minTemp":14.0,"type":"Historical","currency":"INR","country":"Afghanistan"},{"maxTemp":26.0,"desc":"Historical Afghanistan","address":"Tass , Badakhshan , Afghanistan","name":"Tass","state":"Badakhshan","locationId":3,"minTemp":16.0,"type":"Historical","currency":"INR","country":"Afghanistan"},{"maxTemp":54.0,"desc":"Historical Afghanistan","address":"Brurjs , Badakhshan , Afghanistan","name":"Brurjs","state":"Badakhshan","locationId":2,"minTemp":12.0,"type":"Historical","currency":"INR","country":"Afghanistan"},{"maxTemp":36.0,"desc":"Historical Afghanistan","address":"Fljif , Badakhshan , Afghanistan","name":"Fljif","state":"Badakhshan","locationId":8,"minTemp":20.0,"type":"Historical","currency":"INR","country":"Afghanistan"},{"maxTemp":35.0,"desc":"Historical Afghanistan","address":"Jwaik , Badakhshan , Afghanistan","name":"Jwaik","state":"Badakhshan","locationId":7,"minTemp":10.0,"type":"Historical","currency":"INR","country":"Afghanistan"},{"maxTemp":68.0,"desc":"Historical Afghanistan","address":"Kounn , Badakhshan , Afghanistan","name":"Kounn","state":"Badakhshan","locationId":6,"minTemp":19.0,"type":"Historical","currency":"INR","country":"Afghanistan"}]};
-			var json_responses = {"Status" : "success","JsonData" : httpcall.getBody('utf8')};
-			 res.send(json_responses);
+		console.log("Sync call in getData1");
+		console.log(httpcall.getBody('utf8'));		
+		var json_responses = {"Status" : "success","JsonData" : httpcall.getBody('utf8')};
+		res.send(json_responses);
 			 
 }
 

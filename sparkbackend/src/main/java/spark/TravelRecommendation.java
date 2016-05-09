@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -62,8 +63,8 @@ public class TravelRecommendation implements Serializable{
 		conn = new DatabaseConnection("com.mysql.jdbc.Driver", ConfigurationService.getInstance().getUrl(), ConfigurationService.getInstance().getUsername(), ConfigurationService.getInstance().getPassword());
 		loadLocationFromDB();
 		loadUsersFromDB();
-		loadRatingFromFile();
-		getRecommendationModel();
+		loadRatingFromFile();		
+		getRecommendationModel();		
 	}	
 	
 	public List<Location> getRecommendationForUser(int user) {
@@ -71,7 +72,7 @@ public class TravelRecommendation implements Serializable{
         List<Rating> recommendations;
         JavaRDD<Tuple2<Integer, Rating>> ratings = DataService.getInstance().getRatings();        
         JavaSparkContext sc = DataService.getInstance().getSc();
-        Map<Integer, Location> products = DataService.getInstance().getProducts().collectAsMap();
+        JavaPairRDD<Integer, Location> productRDD = DataService.getInstance().getProducts();
         
         //Getting the users ratings
         JavaRDD<Rating> userRatings = ratings.filter(
@@ -97,8 +98,18 @@ public class TravelRecommendation implements Serializable{
                 }
         );
         
-        List<Integer> productSet = new ArrayList<Integer>();
-        productSet.addAll(products.keySet());
+        final List<String> checkinTypes = loadCheckinHistory(userId);
+        List<Integer> productSet = new ArrayList<Integer>();               
+        JavaPairRDD<Integer, Location> filteredProducts = productRDD.filter(
+                new Function<Tuple2<Integer, Location>, Boolean>() {
+                    public Boolean call(Tuple2<Integer, Location> tuple) throws Exception {
+                        return checkinTypes.contains("" + tuple._2().getType());
+                    }
+                }
+        );
+        
+        Map<Integer, Location> products = filteredProducts.collectAsMap();        
+        productSet.addAll(products.keySet());        
         
         Iterator<Tuple2<Object, Object>> productIterator = userProducts.toLocalIterator();
         
@@ -122,25 +133,29 @@ public class TravelRecommendation implements Serializable{
         
         MatrixFactorizationModel bestModel = DataService.getInstance().getBestModel();
         recommendations = bestModel.predict(JavaPairRDD.fromJavaRDD(userCandidates)).collect();        
-        
-        //Sorting the recommended products and sort them according to the rating
+
         Collections.sort(recommendations, new Comparator<Rating>() {
             public int compare(Rating r1, Rating r2) {
                 return r1.rating() < r2.rating() ? -1 : r1.rating() > r2.rating() ? 1 : 0;
             }
         });
-        
+                
         //get top 50 from the recommended products.
-        recommendations = recommendations.subList(0, recommendations.size());
+        recommendations = recommendations.subList(0, 10);
         List<Location> locations = new ArrayList<Location>();
 
         //TODO fetch product ID Information
         System.out.println("Recommendations for user: " + userId);
+
+        
         for (Rating r : recommendations) {
         	locations.add(products.get(r.product()));
         }        
+        
+        printDataCount(DataService.getInstance().getRatings());
         return locations;
 	}
+	
 
 	public List<Location> getFilteredRecommendation(String inCountry, String inState, String inType, int user) {
 		final int userId = user;
@@ -371,7 +386,65 @@ public class TravelRecommendation implements Serializable{
 		).collectAsMap();
 		return locations;
 	}
+	
+	
+//Integer locationId, String name, String desc, String type, String country, String state, String address, 
+//	double minTemp, double maxTemp, double minPrice, double maxPrice, String currency
+	
+	public List<String> loadCheckinHistory(int userId) {		
+		Connection conn = null;
+		Statement stmt = null;
+		List<String> types = new ArrayList<String>();
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(ConfigurationService.getInstance().getUrl(), ConfigurationService.getInstance().getUsername(), ConfigurationService.getInstance().getPassword());
+			stmt = conn.createStatement();
+			
+			String sql = "SELECT * FROM checkin_history WHERE userid ="+ userId;
+		    ResultSet rs = stmt.executeQuery(sql);
+		    
+		    while(rs.next()){
+		         types.add(rs.getString("location_type"));
+		    }
+		    rs.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally{
+		      //finally block used to close resources
+		      try{
+		         if(stmt!=null)
+		            conn.close();
+		      }catch(SQLException se){
+		      }// do nothing
+		      try{
+		         if(conn!=null)
+		            conn.close();
+		      }catch(SQLException se){
+		         se.printStackTrace();
+		      }//end finally try
+		   }
+		
+//		JdbcRDD<Object[]> locationJdbcRDD = new JdbcRDD<>(DataService.getInstance().getSc().sc(), conn, "select * from checkin_history where checkin_history.userid > ? and checkin_history.userid < ?", -1,
+//                499999999, 10, new MapResult(), ClassManifestFactory$.MODULE$.fromClass(Object[].class));
+//		JavaRDD<Object[]> locationRDD = JavaRDD.fromRDD(locationJdbcRDD, ClassManifestFactory$.MODULE$.fromClass(Object[].class));
+//		JavaPairRDD<Integer, Location> locations = locationRDD.mapToPair(
+//		        new PairFunction<Object[], Integer, Location>() {
+//		            public Tuple2<Integer, Location> call(final Object[] record) throws Exception {
+//		            	Location loc = new Location(Integer.parseInt(record[0] + ""), record[1] + "", record[2] + "", record[3] + "", record[4] + "", record[5] + "", record[6] + "", Double.parseDouble(record[7] + ""), Double.parseDouble(record[8] + ""), Double.parseDouble(record[9] + ""), Double.parseDouble(record[10] + ""), "" + record[11]);
+//		            	String str = HelperUtils.locationTOJSON(loc);
+//		                	return new Tuple2<Integer, Location>(Integer.parseInt(record[0] + ""), loc);
+//		                }
+//		        }
+//		);
+//		
+//		DataService.getInstance().setProducts(locations);
+//		System.out.println("Loaded Location Data");
+//		printLocation(locations);
+		return types;
+	}
 
+	
 	public void loadLocationFromDB() {		
 		JdbcRDD<Object[]> locationJdbcRDD = new JdbcRDD<>(DataService.getInstance().getSc().sc(), conn, "select * from location where location.locationid > ? and location.locationid < ?", -1,
                 499999999, 10, new MapResult(), ClassManifestFactory$.MODULE$.fromClass(Object[].class));
@@ -423,9 +496,7 @@ public class TravelRecommendation implements Serializable{
 	
 
 	public void loadFromDB() {		
-
 //		printRatings(ratingRDD);
-		
 //        JavaRDD<Tuple2<Integer, Rating>> ratings = ratingRDD.map(new Function<Object[], Tuple2<Integer, Rating>>() {
 //            @Override
 //            public Tuple2<Integer, Rating> call(final Object[] record) throws Exception {
@@ -440,7 +511,6 @@ public class TravelRecommendation implements Serializable{
 //                return new Tuple2<Integer, Location>(Integer.parseInt(record[0] + ""), new Location(record[1] + "", record[2] + ""));
 //            }
 //        }).collectAsMap();
-
 	}
 	
 	

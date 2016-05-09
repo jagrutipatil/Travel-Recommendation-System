@@ -1,6 +1,5 @@
 package com.edu.spark.generation;
 
-
 import java.io.FileReader;
 import java.sql.*;
 import java.util.*;
@@ -13,9 +12,9 @@ import org.json.simple.parser.JSONParser;
 public class FacebookCheckins {
 
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://localhost:3310/cmpe239";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/cmpe239";
 	static final String USER = "root";
-	static final String PASS = "Aparna";
+	static final String PASS = "linux2015";
 	
 	 public static void main(String[] args) {
 		 
@@ -30,14 +29,14 @@ public class FacebookCheckins {
 	        	conn = DriverManager.getConnection(DB_URL, USER, PASS);
 	        	stmt = conn.createStatement();
 	        	
-	            Object obj = parser.parse(new FileReader(
-	                    "C:/Users/Saurabh/Vacation-Recommendation-System/sparkbackend/src/main/java/com/edu/spark/generation/FBCheckinData.txt"));
+	            Object obj = parser.parse(new FileReader("/home/jagruti/workspace/Vacation-Recommendation-System/sparkbackend/src/main/java/com/edu/spark/generation/FBCheckinData.txt"));
 	 
 	           JSONObject jsonObject = (JSONObject) obj; 
 	           JSONArray users = (JSONArray) jsonObject.get("users");
+	           int count = 1;
 	           
 	           for(int i=0;i<users.size();i++){
-	        	   
+	        	   int userID = i+1;
 	        	   
 	        	   JSONObject id = (JSONObject)users.get(i);
 	        	   JSONArray data;
@@ -46,18 +45,18 @@ public class FacebookCheckins {
 	        	   data = (JSONArray)id.get("data"); 
 	        	   List<String> uniqueCheckInEntries = new ArrayList<String>();
 	        	   
+	        	   
 	        	   for(int j=0;j<data.size();j++){
 	        			  
 	        		      int k=j+1;
-	        		
+	        		      int checkinId = j+1;
 	        			  
 	        			  System.out.println("Checkin "+k+" : ");
 	        			  JSONObject innerid = (JSONObject)data.get(j); 
 	        			  JSONObject place = (JSONObject)innerid.get("place");
 	        			  
 	        			  System.out.println("Location id is : "+ place.get("id"));
-	        			  String locid =(String)place.get("id");
-	        			  
+	        			  String locid =(String)place.get("id");	        			  
 	        			  String uniqueCheckIn = userid+"-"+locid;
 	        			  
 	        			 // if(uniqueCheckInEntries.contains(uniqueCheckIn)){
@@ -72,37 +71,16 @@ public class FacebookCheckins {
 	        			  System.out.println("Country is : "+location.get("country"));
 	        			  String loccountry = (String)location.get("country");
 	        			  System.out.println("Type of Location is : "+location.get("type"));
-	        			  String loctype =(String)location.get("type");
-	        			  
-	        		System.out.println("**********************************************");	
-	        		 String query = "INSERT INTO checkin_history VALUES ( "+userid+ ", '"+locid+ "', '"+ locname + "','"+loctype+"','"+loccountry+"','"+locstate+"','"+loccity+"')";
-	        		 stmt.executeUpdate(query);
-	        	   System.out.println("Inserted into the db !!");
-	        			  //}
-	        		   
-	        	   
-	        	   }  
-	        	  
-	        	  
-	        	   
-	        	   
-	        	   
+	        			  String loctype =(String)location.get("type"); 	        			  	        			  
+	        			  System.out.println("**********************************************");	
+	        			  String query = "INSERT INTO checkin_history VALUES ( "+ userID + ", "+ checkinId + ", '"+locid+ "', '"+ locname + "','"+loctype+"','"+loccountry+"','"+locstate+"','"+loccity+"')";
+	        			  stmt.executeUpdate(query);
+	        			  System.out.println("Inserted into the db !!");	        	   
+	        	   }  	        	   
 	           }
 	            
 	    } catch (Exception e) {
 	            e.printStackTrace();
 	        }
-	    }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	    }	
 }

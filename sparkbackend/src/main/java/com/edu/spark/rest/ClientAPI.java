@@ -24,7 +24,13 @@ public class ClientAPI extends ServerResource{
 		String state = (String) jObj.get(SystemConstants.STATE);		
 		String type = (String) jObj.get(SystemConstants.TYPE);
 		String key = (String) jObj.get(SystemConstants.USERID);
-		int userId = Integer.parseInt(key);		
+		int userId;
+		if (key.equalsIgnoreCase("undefined")) {
+			userId = 1;
+		} else {
+			userId = Integer.parseInt(key);
+		}
+				
 		
 		List<Location> products = TravelRecommendation.getInstance().getFilteredRecommendation(country, state, type, userId);
 		JSONObject responseDetailsJson = new JSONObject();
@@ -48,8 +54,14 @@ public class ClientAPI extends ServerResource{
 	
 	@Get
 	public String readMethod() throws Exception{
-		String requestedKey = (String) this.getRequestAttributes().get(SystemConstants.KEY);		
-		int userId = Integer.parseInt(requestedKey);
+		String key = (String) this.getRequestAttributes().get(SystemConstants.KEY);
+		int userId = 0;
+
+		if (key.equalsIgnoreCase("undefined")) {
+			userId = 1;
+		} else {
+			userId = Integer.parseInt(key);
+		}
 		List<Location> products = TravelRecommendation.getInstance().getRecommendationForUser(userId);		
 		JSONObject responseDetailsJson = new JSONObject();
 	    JSONArray jsonArray = new JSONArray();
@@ -62,8 +74,7 @@ public class ClientAPI extends ServerResource{
 	    }	    
 
 	    String str =  responseDetailsJson.toJSONString();
-	    return str;
-	    
+	    return str;	    
 	}
 	
 	@Put

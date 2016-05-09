@@ -9,53 +9,27 @@
 		<title>User Homepage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>		
 		<link rel="stylesheet" href="assets/css/main1.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		
 		<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
-    
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="angularjs/login.js"></script>	
-		
+	    <link rel='stylesheet' href='/stylesheets/style.css' />
+    	<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    	<link rel='stylesheet' href='http://getbootstrap.com/css/#tables-responsive' />
+    	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    	<script src="angularjs/login.js"></script>			
 	</head>
 	<body ng-app="LocationRecommendation" ng-controller="LocationCtrl">
-
-		<!-- Header -->
 			<div id="header">
-
 				<div class="top">
-
-					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="http://www.fashatude.com/static/fashatude/img/user_icon.png" alt="" /></span>
 							<h1 id="title">User HomePage</h1>
 							<p>Explorer</p>
 						</div>
-
-					<!-- Nav -->
 						<nav id="nav">
-							<!--
-
-								Prologue's nav expects links in one of two formats:
-
-								1. Hash link (scrolls to a different section within the page)
-
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-							-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
 								<li><button id="top-link" class="skel-layers-ignoreHref" onclick="Login()"><span class="icon fa-home">Attach my FB Profile</span></button></li>
@@ -64,32 +38,147 @@
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-history">My TravelLog History</span></a></li>
 							</ul>
 						</nav>
-						
-						
-
 				</div>
-
 				<div class="bottom">
-
-					<!-- Social Icons -->
-						<!--<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>-->
-
 				</div>
+			</div>			
+
+	<!-- Main -->
+	<div id="main">
+			<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt"><strong><strong><strong>Welcome to TraveLog</strong></strong></strong></h2>
+								<h3 class="alt"><strong>Beyond your dreams....Within your reach !</strong></h3>
+							</header>
+						</div>
+			</section>
 
 
+				<!-- Portfolio -->
+			<section id="portfolio" class="two">
+				<div class="container">
+				<header>
+					<h2>Explore.</h2>
+				</header>
+				<p>"The gladdest moment in human life, me thinks, is a departure into unknown lands."</p>
+
+   				<div style='text-align:center;'>
+
+	<form>
+		Select Country (with states):   <select ng-model="country" id="country" name ="country"></select> </br></br>
+		Select State: <select ng-model="state" name ="state" id ="state"></select>  </br> </br></hr>
+		Select Type of Location: 
+		<select ng-model="type" name ="type" id=" type">
+			<option>Historical</option>
+			<option>Hill Station</option>
+			<option>Adventure</option>
+			<option>Scenery</option>
+			<option>Sports</option>		
+		</select>
+		<br>
+			<input type="submit"  ng-click="getData();" value="Get Trip Locations (Without Preference)"></input>
+			<input type="submit"  ng-click="getData1();" value="Get Trip Locations (With Preference)"></input>
+			<div class="horizontal">
+			<table class="table table-striped table-bordered table-responsive">
+               <thead>
+                  <tr>                  
+                     <th>Name</th>
+                     <th>Type</th>
+                     <th>Description</th>
+                     <th>Country</th>
+                     <th>State</th>
+                     <th>Address</th>                     
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr ng-repeat="item in storeItems">                  
+                     <td>{{ item.name }}</td>
+                     <td>{{ item.type }}</td>
+               		 <td>{{ item.desc }}</td>
+               		 <td>{{ item.country }}</td>
+               		 <td>{{ item.state }}</td>
+               		 <td>{{ item.address }}</td>
+               	  </tr>
+               </tbody>
+            </table>
+    	</div>		
+	</form>
 
 
+</div>
+</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+							ornare iaculis.</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<pre>You can contact us on our following ID:
+							Haddophunters.sjsu.edu
+							</pre>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
 
 			</div>
-			
-			
-<script>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main1.js"></script>
+			<script>
 var access,uid;
 
 var accessToken;
@@ -218,177 +307,12 @@ var accessToken;
    }(document));
  
 </script>
-			
-			
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt"><strong><strong><strong>Welcome to TraveLog</strong></strong></strong></h2>
-								<h3 class="alt"><strong>Beyond your dreams....Within your reach !</strong></h3>
-							</header>
-
-							<!--<footer>
-								<a href="#portfolio" class="button scrolly">Ready to begin your journey ?</a>
-							</footer>-->
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-<section id="portfolio" class="two">
-		<div class="container">
-
-							<header>
-								<h2>Explore.</h2>
-							</header>
-
-							<p>"The gladdest moment in human life, me thinks, is a departure into unknown lands."</p>
-
-
-
-
-<div style='text-align:center;'>
-	<script type= "text/javascript" src = "\assets\js\countries.js"></script>
-	<form>
-	Select Country (with states):   <select ng-model="country" id="country" name ="country"></select> </br></br>
-	Select State: <select ng-model="state" name ="state" id ="state"></select>  </br> </br></hr>
-	Select Type of Location: <select ng-model="type" name ="type" id=" type">
-	<option>Historical</option>
-	<option>Hill Station</option>
-	<option>Adventure</option>
-	<option>Lakes</option>
-	<option>Beach</option>
-	<option>Scenery</option>
-	<option>Temple</option>
-	<option>Jungle</option>
-	<option>Sports</option>
-	<option>Tourist</option>
-	<option>Family Vacation</option>
-	<option>Clubbing</option>
-	<option>Night Life</option>
-	<option>Winter Vacation</option>
-	<option>Swimming</option>
-	<option>Wild Life</option>
-	<option>African Safaris</option>
-	<option>Religious</option>
-	
-	
-	
-	
-	</select>
-	<br>
-	<input type="submit"  ng-click="getData1();" value="Get Trip Locations"></input>
-	</form>
-	
-	
-<script language="javascript">
-	populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
-	populateCountries("country2");
-	//populateLocType("type");
-	//populateCountries("country2");
-</script>
-<table class="table table-striped table-bordered">
-               <thead>
-                  <tr>
-                  
-                     <th>Name</th>
-                     <th>Type</th>
-                     <th>Description</th>
-                     <th>Country</th>
-                     <th>State</th>
-                     <th>Address</th>
-                     
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr ng-repeat="item in storeItems">
-                  
-                     <td>{{ item.name }}</td>
-                     <td>{{ item.type }}</td>
-               		<td>{{ item.desc }}</td>
-               		<td>{{ item.country }}</td>
-               		<td>{{ item.state }}</td>
-               		<td>{{ item.address }}</td>
-               	</tr>
-               </tbody>
-            </table>
-</div>
-</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<pre>You can contact us on our following ID:
-							Haddophunters.sjsu.edu
-							</pre>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main1.js"></script>
-
+				<script type= "text/javascript" src = "\assets\js\countries.js"></script>
+				<script language="javascript">
+					populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+					populateCountries("country2");
+				//populateLocType("type");
+				//populateCountries("country2");
+				</script>
 	</body>
 </html>

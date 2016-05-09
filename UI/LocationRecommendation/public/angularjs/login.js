@@ -18,52 +18,33 @@ login.controller('LocationCtrl', function($scope, $http) {
 				"email" : $scope.email,
 				"password" : $scope.password
 			}
-		}).success(function(data) {
-	       
-			alert(data.StatusCode);
+		}).success(function(data) {	       
 			if(data.statusCode==401)
 				{
 					$scope.invalid_login = false;
 				}
 			
 		}).error(function(error) {
-			alert(JSON.stringify(error));
+			console.log(error);
 		});
 	};
 
 	////get data
-	$scope.getData = function()
-	{
-		alert("inside getData");
+	$scope.getData = function() {
 		$http({
 			method : "GET",
 			url : '/getData',
-			data : {
-				"country" : $scope.country,
-				"state" : $scope.state,
-				"type":$scope.type
-			}
-		}).success(function(data)
-		{
-			// checking the response data for statusCode
+		}).success(function(data) {
 			$scope.status=data.Status;
-			alert($scope.status);
 			var temp=JSON.parse(data.JsonData);
-			$scope.storeItems = temp.forms;
-			alert(JSON.stringify($scope.storeItems));
-			alert($scope.storeItems[0].maxTemp);
-			//$route.reload();
-		
-		}).error(function(error)
-		{
-			alert("error");
+			$scope.storeItems = temp.forms;		
+		}).error(function(error) {
+			console.log(error);
 		});
 	};
 	
 	////get data with preference
-	$scope.getData1 = function()
-	{
-		alert("inside getData1");
+	$scope.getData1 = function() {
 		$http({
 			method : "POST",
 			url : '/getData1',
@@ -72,20 +53,12 @@ login.controller('LocationCtrl', function($scope, $http) {
 				"state" : $scope.state,
 				"type":$scope.type
 			}
-		}).success(function(data)
-		{
-			// checking the response data for statusCode
+		}).success(function(data) {
 			$scope.status=data.Status;
-			alert($scope.status);
 			var temp=JSON.parse(data.JsonData);
-			$scope.storeItems = temp.forms;
-			alert(JSON.stringify($scope.storeItems));
-			alert($scope.storeItems[0].maxTemp);
-			//$route.reload();
-		
-		}).error(function(error)
-		{
-			alert("error");
+			$scope.storeItems = temp.forms;		
+		}).error(function(error) {
+			console.log(error);
 		});
 	};
 	
@@ -126,8 +99,6 @@ login.controller('LocationCtrl', function($scope, $http) {
 			$scope.UserAlreadyPresent = true;
 			$scope.SuccessSignup=true;
 		});
-	};
-	
-	
+	};	
 })
 
