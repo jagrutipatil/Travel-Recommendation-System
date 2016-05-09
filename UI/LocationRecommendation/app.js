@@ -54,6 +54,8 @@ app.post('/success_login',index.redirectToHome);
 app.get('/getData',index.getData);
 app.post('/getData1',index.getData1);
 
+app.post('/logout',index.logout);
+
 //////
 
 

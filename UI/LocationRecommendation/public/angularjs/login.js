@@ -61,6 +61,17 @@ login.controller('LocationCtrl', function($scope, $http) {
 			console.log(error);
 		});
 	};
+
+	$scope.logout = function() {
+		$http({
+			method : "POST",
+			url : '/logout',
+			data : {}
+		}).success(function(data) {
+		}).error(function(error) {
+			console.log(error);
+		});
+	};
 	
 	$scope.Signup = function() {
 		$http({

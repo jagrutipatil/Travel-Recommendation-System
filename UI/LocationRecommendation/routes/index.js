@@ -10,8 +10,7 @@ var request = require('sync-request');
 var https = require("https");
 var http = require("http");
 
-exports.homePage=function(req,res)
-{
+exports.homePage=function(req,res) {
 	ejs.renderFile('./views/index.ejs',function(err3, result3) {
         // render on success
         if (!err3) {
@@ -26,8 +25,7 @@ exports.homePage=function(req,res)
 	
 };
 
-exports.GetLoginPage=function(req,res)
-{
+exports.GetLoginPage=function(req,res) {
 	ejs.renderFile('./views/Signin.ejs',function(err3, result3) {
         // render on success
         if (!err3) {
@@ -42,8 +40,7 @@ exports.GetLoginPage=function(req,res)
 	
 };
 
-exports.GetSignUpPage=function(req,res)
-{
+exports.GetSignUpPage=function(req,res) {
 	ejs.renderFile('./views/Signup.ejs',function(err3, result3) {
         // render on success
         if (!err3) {
@@ -60,8 +57,7 @@ exports.GetSignUpPage=function(req,res)
 
 
 
-exports.Login=function(req,res)
-{
+exports.Login=function(req,res) {
 	var getUser="select * from users where username='"+req.param("email")+"' and password='" + req.param("password") +"'";
 	console.log("Query is: "+getUser);
 	
@@ -101,8 +97,7 @@ exports.Login=function(req,res)
 	},getUser);
 };
 
-exports.redirectToHome=function(req,res)
-{
+exports.redirectToHome=function(req,res) {
 	console.log("inside redirectToHome function");
 	ejs.renderFile('./views/UserProfile.ejs',function(err, result) {
 		if (!err) {
@@ -119,8 +114,7 @@ exports.redirectToHome=function(req,res)
 
 
 
-exports.Signup=function(req,res)
-{
+exports.Signup=function(req,res) {
 	var getUser="select * from users where username='"+req.param("email")+"'";
 	var Message="";	
 	mysql.fetchData(function(err,results){
@@ -170,8 +164,7 @@ exports.Signup=function(req,res)
 };
 
 ////Without preference
-exports.getData=function(req,res)
-{
+exports.getData=function(req,res) {
 			var str='http://localhost:8081/restlet/test/'+req.session.userId;
 			console.log("api call is......."+str);
 			var httpcall = request('GET', str, {
@@ -182,8 +175,14 @@ exports.getData=function(req,res)
 			console.log("Sync call");
 			console.log(httpcall.getBody('utf8'));
 			var json_responses = {"Status" : "success","JsonData" : httpcall.getBody('utf8')};
-			
-			 res.send(json_responses);
+			res.send(json_responses);
+}
+
+exports.logout=function(req,res) {
+	req.session.userId="";			
+	res.send(json_responses);
+	var json_responses = {"Status" : "success"};
+	res.send(json_responses);
 }
 
 //with country state and type
@@ -214,9 +213,7 @@ exports.getData1=function(req,res) {
 			 
 }
 
-exports.getUID = function(req,res){
-	
-	
+exports.getUID = function(req,res){	
 	var uid=req.param("uid");
 	
 	console.log("******************user id in node...yayyy !!!!"+uid);
