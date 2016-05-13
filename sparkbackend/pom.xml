@@ -3,7 +3,33 @@
   <groupId>org.wso2.carbon.ml</groupId>
   <artifactId>spark</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>dateUtils</name>
+  <url>http://maven.apache.org</url>
+	
+  <properties>
+	<jdk.version>1.7</jdk.version>
+	<jodatime.version>2.5</jodatime.version>
+	<junit.version>4.11</junit.version>
+  </properties>
   
+  <repositories>
+        <repository>
+            <id>maven-restlet</id>
+            <name>Public online Restlet repository</name>
+            <url>http://maven.restlet.org</url>
+        </repository>
+    </repositories>
+	
+	        <resource>
+  			<directory>src/main/resources</directory>
+    		<includes>
+      		<include>*.conf</include>
+    		</includes>
+  			<targetPath>${project.build.directory}/classes</targetPath>
+		</resource>
+	  
+  	  
   <dependencies>
         <dependency>
             <groupId>org.apache.spark</groupId>
@@ -26,9 +52,107 @@
 			<version>2.0</version>
 		</dependency>
 		<dependency>
+            <groupId>org.restlet.jse</groupId>
+            <artifactId>org.restlet</artifactId>
+            <version>2.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.restlet.jse</groupId>
+            <artifactId>org.restlet.ext.simple</artifactId>
+            <version>2.1.2</version>
+        </dependency>		
+		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>1.7.1</version>
   		</dependency>		
+    	<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>		
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>${jodatime.version}</version>
+		</dependency>
+        <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version>
+		</dependency>       
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>		 
     </dependencies>
+    
+  <build>
+		<finalName>dateutils</finalName>
+		<plugins>
+			<plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-shade-plugin</artifactId>
+        		<version>2.4.3</version>
+        		<executions>
+          			<execution>
+            			<phase>package</phase>
+         		 	</execution>
+        		</executions>
+      		</plugin>
+      
+			<!-- download source code in Eclipse, best practice -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>false</downloadJavadocs>
+				</configuration>
+			</plugin>
+
+			<!-- Set a compiler level -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+
+			<!-- Maven Assembly Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4.1</version>
+				<configuration>					
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<!-- MainClass in mainfest make a executable jar -->
+					<archive>
+					  <manifest>
+						<mainClass>com.edu.spark.rest.MainClass</mainClass>
+					  </manifest>
+					</archive>
+				</configuration>
+				<executions>
+				  <execution>
+					<id>make-assembly</id>                                        
+					<phase>package</phase> 
+					<goals>
+						<goal>single</goal>
+					</goals>
+				  </execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+    
 </project>

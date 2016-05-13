@@ -144,133 +144,111 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script>
-								var access,uid;
-
-								var accessToken;
-								  window.fbAsyncInit = function() {
-								    FB.init({
-								      appId      : '1687049591543840', // Set YOUR APP ID
-								      //channelUrl : 'http://hayageek.com/examples/oauth/facebook/oauth-javascript/channel.html', // Channel File
-								      status     : true, // check login status
-								      cookie     : true, // enable cookies to allow the server to access the session
-								      xfbml      : true  // parse XFBML
-								    });
-								 
-								    FB.Event.subscribe('auth.authResponseChange', function(response) 
-								    {
-								     if (response.status === 'connected') 
-								    {
-								        document.getElementById("message").innerHTML +=  "<br>Connected to Facebook";
-								        //SUCCESS
-								 
-								    }    
-								    else if (response.status === 'not_authorized') 
-								    {
-								        document.getElementById("message").innerHTML +=  "<br>Failed to Connect";
-								 
-								        //FAILED
-								    } else 
-								    {
-								        document.getElementById("message").innerHTML +=  "<br>Logged Out";
-								 
-								        //UNKNOWN ERROR
-								    }
-								    }); 
-								 
-								    };
-								 
-								    function Login()
-								    {
-								 
-								        FB.login(function(response) {
-								           if (response.authResponse) 
-								           {
-								               
-								               //getAuthResponse(); 
-								               //access= response.authResponse.accessToken;
-								               uid =response.authResponse.userID;
-								               getLoginStatus();
-								               //alert(JSON.stringify(response.authResponse));
-								        	   //getUserInfo();
-								                //getCheckIns();
-								            } else 
-								            {
-								             console.log('User cancelled login or did not fully authorize.');
-								            }
-								         },{scope: 'email,user_photos,user_videos'});
-								 
-								    }
-								 
-								   
-								   function getLoginStatus(){
-
-
-								    FB.getLoginStatus(function(response){
-
-								      if(response.status === 'connected'){
-
-								        var uid = response.authResponse.userID;
-								        accessToken = response.authResponse.accessToken;
-								        
-								        
-								        
-								        
-								        alert("This is the access token : "+accessToken);
-										alert("This is the user : "+uid);
-										
-										
-										$.ajax({
-										type: "POST",
-										url: "/getUID",
-										data: 'uid='+uid,
-										success: function(data)
-										{
-											alert("inside success:"+JSON.stringify(data));
-											//console.log("data:"+data);
-											//console.log("login:"+data.login);
-											//window.location.assign('/driverselected');
-										}
-									}); 
-										
-										
-								        //getLongTimeToken();
-
-								      }
-
-
-
-								    });
-
-								   } 
-
-
-								  function getUserInfo() {
-								        FB.api('/me', function(response) {
-								 
-								      var str="<b>Name</b> : "+response.name+"<br>";
-								          str +="<b>id: </b>"+response.id+"<br>";
-								          document.getElementById("status").innerHTML=str;
-
-								 
-								    });
-								    }
-								  
-								  
-								      
-								    function Logout()
-								    {
-								        FB.logout(function(){document.location.reload();});
-								    }
-								 
-								  // Load the SDK asynchronously
-								  (function(d){
-								     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-								     if (d.getElementById(id)) {return;}
-								     js = d.createElement('script'); js.id = id; js.async = true;
-								     js.src = "//connect.facebook.net/en_US/all.js";
-								     ref.parentNode.insertBefore(js, ref);
-								   }(document));								 
-			</script>
+var access;
+  window.fbAsyncInit = function() {
+    FB.init({
+      //appId      : '1687049591543840', // Set YOUR APP ID
+      appId : '667311916755951',
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+ 
+    FB.Event.subscribe('auth.authResponseChange', function(response) 
+    {
+     if (response.status === 'connected') 
+    {
+        document.getElementById("message").innerHTML +=  "<br>Connected to Facebook";
+        //SUCCESS
+ 
+    }    
+    else if (response.status === 'not_authorized') 
+    {
+        document.getElementById("message").innerHTML +=  "<br>Failed to Connect";
+ 
+        //FAILED
+    } else 
+    {
+        document.getElementById("message").innerHTML +=  "<br>Logged Out";
+ 
+        //UNKNOWN ERROR
+    }
+    }); 
+ 
+    };
+ 
+    function Login() {
+ 
+        FB.login(function(response) {
+           if (response.authResponse) {
+           		console.log(response);
+               access= response.authResponse.accessToken;
+               getCheckIns();
+            } else  {
+             console.log('User cancelled login or did not fully authorize.');
+            }
+         },{scope: 'user_tagged_places'});
+    }
+ 
+   
+    
+  function getUserInfo() {
+        FB.api('/me', function(response) {
+ 
+      	var str="<b>Name</b> : "+response.name+"<br>";
+          	str +="<b>Link: </b>"+response.link+"<br>";
+          	str +="<b>Username:</b> "+response.username+"<br>";
+          	str +="<b>id: </b>"+response.id+"<br>";
+          	str +="<b>Email:</b> "+response.email+"<br>";
+          	//str +="<b>Access Token:</b>"+response.authResponse.accessToken+"<br>"
+          	str +="<input type='button' value='Get Photo' onclick='getPhoto();'/>";
+          	str +="<input type='button' value='Get Check Ins' onclick='getCheckIns();'/>";
+          	str +="<input type='button' value='Logout' onclick='Logout();'/>";
+          	document.getElementById("status").innerHTML=str;
+    });
+    }
+  
+  
+    function getPhoto() {
+        FB.api('/me/picture?type=normal', function(response) {
+          var str="<br/><b>Pic</b> : <img src='"+response.data.url+"'/>";
+          document.getElementById("status").innerHTML+=str;
+        });
+    } 
+	 
+    function getCheckIns() {       
+        alert(access);
+        console.log(access);
+        //FB.api('/me/tagged_places/',function(response){
+       FB.api('/me/tagged_places/?access_token='+access, function(response) {
+          alert(JSON.stringify(response.data));
+          console.log(JSON.stringify(response.data));
+          $.ajax({
+				type: "POST",
+				url: "/saveDataToDb",
+				data: 'data=' + JSON.stringify(response.data),
+				success: function(data) {
+					console.log("Sent Data to Backend Successfully");
+				}
+           }); 
+           // document.getElementById("status2").innerHTML+= response.data;
+            //console.log(str1);
+      });   
+    }
+      
+    function Logout() {
+        FB.logout(function(){document.location.reload();});
+    }
+ 
+  // Load the SDK asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+ 			</script>
 			<script type= "text/javascript" src = "\assets\js\countries.js"></script>
 			<script language="javascript">
 				populateCountries("country", "state");

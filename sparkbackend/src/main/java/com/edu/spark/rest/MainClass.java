@@ -9,7 +9,7 @@ public class MainClass {
 
 	public static void main(String args[]) {
 		try {
-			
+			System.setProperty("java.io.tmpdir", "/home/jagruti/softwares/spark/tmp");
 			ConfigurationService.getInstance().readProperties(args[0]);
 			if (args.length > 1) {
 				printUsage();

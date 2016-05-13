@@ -213,10 +213,29 @@ exports.getData1=function(req,res) {
 			 
 }
 
-exports.getUID = function(req,res){	
-	var uid=req.param("uid");
+
+exports.saveDataToDb = function(req,res) {
+	var result = []; 
+	result = req.param("data");
+				
+//	console.log(data[0].id + " " + data[0].created_time + " " + data[0].place);					
+//	console.log("******************Data...yayyy !!!!"+ data.place.location.city);			
+//	console.log(JSON.stringify(data));	
 	
-	console.log("******************user id in node...yayyy !!!!"+uid);
+	console.log("******************Data...yayyy !!!!"+ result);
 	console.log("User ID from session is "+req.session.userId);
 	
+	for (var i = 0; i < result.length; i++)
+	        console.log("Item name: " + result[i].id);
+			console.log("Item name: " + result[i].created_time);
+	        // console.log("Source: "+result[i][name].sourceUuid);
+			// console.log("Target: "+result[i][name].targetUuid);
+}
+
+
+exports.getUID = function(req,res) {	
+	var uid = req.param("uid");
+	
+	console.log("******************user id in node...yayyy !!!!" + uid);
+	console.log("User ID from session is "+req.session.userId);	
 }

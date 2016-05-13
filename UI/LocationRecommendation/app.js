@@ -11,6 +11,7 @@ var express = require('express')
   , path = require('path')
 , session = require('client-sessions');
 var index=require('./routes/index.js');
+var bodyParser = require('body-parser');
 //var sample=require('./routes/sample.js');
 
 
@@ -32,6 +33,9 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+
 
 // development only
 if ('development' == app.get('env')) {
@@ -45,6 +49,7 @@ app.post('/SignUpPage',index.GetSignUpPage);
 app.post('/Signup',index.Signup);
 app.post('/Login',index.Login);
 app.post('/getUID',index.getUID);
+app.post('/saveDataToDb',index.saveDataToDb);
 app.post('/success_login',index.redirectToHome);
 
 //////

@@ -62,6 +62,24 @@ login.controller('LocationCtrl', function($scope, $http) {
 		});
 	};
 
+	$scope.getData1 = function() {
+		$http({
+			method : "POST",
+			url : '/getData1',
+			data : {
+				"country" : $scope.country,
+				"state" : $scope.state,
+				"type":$scope.type
+			}
+		}).success(function(data) {
+			$scope.status=data.Status;
+			var temp=JSON.parse(data.JsonData);
+			$scope.storeItems = temp.forms;		
+		}).error(function(error) {
+			console.log(error);
+		});
+	};
+
 	$scope.logout = function() {
 		$http({
 			method : "POST",

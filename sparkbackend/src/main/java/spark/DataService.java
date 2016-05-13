@@ -25,7 +25,7 @@ public class DataService implements Serializable{
 	
 	public static DataService getInstance() {
 		if (instance == null) {
-						instance = new DataService();
+			instance = new DataService();
 		}
 		return instance;
 	}
