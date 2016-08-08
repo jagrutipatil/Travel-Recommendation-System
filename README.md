@@ -9,6 +9,7 @@
 </ul>
 
 <b>Project Screenshots:</b><br/>
+<br/>
 <b>Login Page:</b>
 <img src="https://github.com/jagrutipatil/Travel-Recommendation-System/blob/master/screenshots/login.png">
 <br/>
