@@ -5,7 +5,7 @@
    (Alternating Least Square). </li>
 <li> Used Facebook checkin Data of a user to provide dynamic recommendation about travel with 
    user's changing interest.</li>
-<li> Technologies: Java, Apache Spark, Angular.js, Node.js </li>
+<li> Technologies: Java, Apache Spark, Angular.js, Node.js, REST API </li>
 </ul>
 
 <b>Project Screenshots:</b><br/>
